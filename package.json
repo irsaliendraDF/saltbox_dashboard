@@ -1,0 +1,25 @@
+{
+  "name": "saltbox-dashboard",
+  "version": "1.0.0",
+  "description": "Saltbox Fund interactive dashboard. Data snapshot generated from the Saltbox workbook; see SCHEMA.md.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build-data": "node scripts/build-data.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "recharts": "^3.10.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.2.2"
+  }
+}

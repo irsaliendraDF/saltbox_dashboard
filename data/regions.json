@@ -1,0 +1,4328 @@
+[
+  {
+    "community": "Oxford",
+    "fsa": "B0M",
+    "fsa_in_energy_poverty_sheet": "B0M",
+    "municipality": "Oxford",
+    "province": "Nova Scotia",
+    "region_county": "Cumberland / Colchester",
+    "energy_poverty": {
+      "households_energy_poverty": 200,
+      "other_households": 330,
+      "total_households": 530,
+      "ep_rate_pct": 37.7,
+      "below_poverty_line": 45,
+      "core_housing_need": 35,
+      "major_repair": 35,
+      "major_repair_pct": 6.6,
+      "older_housing": 190,
+      "older_housing_pct": 35.8,
+      "renters": 30,
+      "seniors": 80
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 73,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7.8,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Shelburne",
+    "fsa": "B0T",
+    "fsa_in_energy_poverty_sheet": "B0T",
+    "municipality": "Shelburne",
+    "province": "Nova Scotia",
+    "region_county": "Queens / Shelburne",
+    "energy_poverty": {
+      "households_energy_poverty": 340,
+      "other_households": 450,
+      "total_households": 790,
+      "ep_rate_pct": 43,
+      "below_poverty_line": 90,
+      "core_housing_need": 90,
+      "major_repair": 50,
+      "major_repair_pct": 6.3,
+      "older_housing": 305,
+      "older_housing_pct": 38.6,
+      "renters": 110,
+      "seniors": 150
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 3,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 40,
+      "fsa_volume_tier": {
+        "label": "25–49",
+        "ordinal": 4
+      },
+      "fsa_gap_flag": {
+        "label": "Active",
+        "ordinal": 4
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Clark's Harbour",
+    "fsa": "B0W",
+    "fsa_in_energy_poverty_sheet": "B0W",
+    "municipality": "Clark's Harbour",
+    "province": "Nova Scotia",
+    "region_county": "Shelburne / Yarmouth",
+    "energy_poverty": {
+      "households_energy_poverty": 140,
+      "other_households": 220,
+      "total_households": 360,
+      "ep_rate_pct": 38.9,
+      "below_poverty_line": 20,
+      "core_housing_need": 40,
+      "major_repair": 20,
+      "major_repair_pct": 5.6,
+      "older_housing": 135,
+      "older_housing_pct": 37.5,
+      "renters": 20,
+      "seniors": 55
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 86,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.9,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Pictou",
+    "fsa": "B0K",
+    "fsa_in_energy_poverty_sheet": "B0K",
+    "municipality": "Pictou",
+    "province": "Nova Scotia",
+    "region_county": "Pictou",
+    "energy_poverty": {
+      "households_energy_poverty": 3605,
+      "other_households": 5545,
+      "total_households": 9150,
+      "ep_rate_pct": 39.4,
+      "below_poverty_line": 425,
+      "core_housing_need": 340,
+      "major_repair": 525,
+      "major_repair_pct": 5.7,
+      "older_housing": 2850,
+      "older_housing_pct": 31.1,
+      "renters": 370,
+      "seniors": 1725
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 3,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 117,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.9,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Trenton",
+    "fsa": "B0K",
+    "fsa_in_energy_poverty_sheet": "B0K",
+    "municipality": "Trenton",
+    "province": "Nova Scotia",
+    "region_county": "Pictou",
+    "energy_poverty": {
+      "households_energy_poverty": 415,
+      "other_households": 680,
+      "total_households": 1095,
+      "ep_rate_pct": 37.9,
+      "below_poverty_line": 65,
+      "core_housing_need": 35,
+      "major_repair": 95,
+      "major_repair_pct": 8.7,
+      "older_housing": 375,
+      "older_housing_pct": 34.2,
+      "renters": 75,
+      "seniors": 140
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 117,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.8,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Stellarton",
+    "fsa": "B0K",
+    "fsa_in_energy_poverty_sheet": "B0K",
+    "municipality": "Stellarton",
+    "province": "Nova Scotia",
+    "region_county": "Pictou",
+    "energy_poverty": {
+      "households_energy_poverty": 585,
+      "other_households": 1300,
+      "total_households": 1885,
+      "ep_rate_pct": 31,
+      "below_poverty_line": 65,
+      "core_housing_need": 60,
+      "major_repair": 105,
+      "major_repair_pct": 5.6,
+      "older_housing": 525,
+      "older_housing_pct": 27.9,
+      "renters": 130,
+      "seniors": 245
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 3,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 117,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.1,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Richmond",
+    "fsa": null,
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Richmond",
+    "province": "Nova Scotia",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 1555,
+      "other_households": 2405,
+      "total_households": 3960,
+      "ep_rate_pct": 39.3,
+      "below_poverty_line": 300,
+      "core_housing_need": 240,
+      "major_repair": 250,
+      "major_repair_pct": 6.3,
+      "older_housing": 1255,
+      "older_housing_pct": 31.7,
+      "renters": 215,
+      "seniors": 845
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 5,
+      "best_performance_band": "80–89%",
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 5.9,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Annapolis Royal",
+    "fsa": "B0S",
+    "fsa_in_energy_poverty_sheet": "B0S",
+    "municipality": "Annapolis-Royal",
+    "province": "Nova Scotia",
+    "region_county": "Annapolis",
+    "energy_poverty": {
+      "households_energy_poverty": 90,
+      "other_households": 235,
+      "total_households": 325,
+      "ep_rate_pct": 27.7,
+      "below_poverty_line": 15,
+      "core_housing_need": 30,
+      "major_repair": 20,
+      "major_repair_pct": 6.2,
+      "older_housing": 75,
+      "older_housing_pct": 23.1,
+      "renters": 15,
+      "seniors": 60
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 3,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 92,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.8,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Westville",
+    "fsa": "B0K",
+    "fsa_in_energy_poverty_sheet": "B0K",
+    "municipality": "Westville",
+    "province": "Nova Scotia",
+    "region_county": "Pictou",
+    "energy_poverty": {
+      "households_energy_poverty": 560,
+      "other_households": 1005,
+      "total_households": 1565,
+      "ep_rate_pct": 35.8,
+      "below_poverty_line": 30,
+      "core_housing_need": 15,
+      "major_repair": 95,
+      "major_repair_pct": 6.1,
+      "older_housing": 480,
+      "older_housing_pct": 30.7,
+      "renters": 75,
+      "seniors": 290
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 6,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 117,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "West Hants",
+    "fsa": "B0N",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "West Hants",
+    "province": "Nova Scotia",
+    "region_county": "Colchester / Kings / Hants",
+    "energy_poverty": {
+      "households_energy_poverty": 2820,
+      "other_households": 5550,
+      "total_households": 8370,
+      "ep_rate_pct": 33.7,
+      "below_poverty_line": 445,
+      "core_housing_need": 345,
+      "major_repair": 405,
+      "major_repair_pct": 4.8,
+      "older_housing": 2225,
+      "older_housing_pct": 26.6,
+      "renters": 380,
+      "seniors": 1335
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 156,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.4,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Middleton",
+    "fsa": "B0S",
+    "fsa_in_energy_poverty_sheet": "B0S",
+    "municipality": "Middleton",
+    "province": "Nova Scotia",
+    "region_county": "Annapolis",
+    "energy_poverty": {
+      "households_energy_poverty": 255,
+      "other_households": 665,
+      "total_households": 920,
+      "ep_rate_pct": 27.7,
+      "below_poverty_line": 75,
+      "core_housing_need": 65,
+      "major_repair": 45,
+      "major_repair_pct": 4.9,
+      "older_housing": 215,
+      "older_housing_pct": 23.4,
+      "renters": 95,
+      "seniors": 115
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "60–69%",
+      "fsa_total_ders": 92,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.8,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Digby",
+    "fsa": "B0V",
+    "fsa_in_energy_poverty_sheet": "B0V",
+    "municipality": "Digby",
+    "province": "Nova Scotia",
+    "region_county": "Digby / Annapolis",
+    "energy_poverty": {
+      "households_energy_poverty": 275,
+      "other_households": 755,
+      "total_households": 1030,
+      "ep_rate_pct": 26.7,
+      "below_poverty_line": 80,
+      "core_housing_need": 80,
+      "major_repair": 40,
+      "major_repair_pct": 3.9,
+      "older_housing": 250,
+      "older_housing_pct": 24.3,
+      "renters": 100,
+      "seniors": 110
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 20,
+      "fsa_volume_tier": {
+        "label": "10–24",
+        "ordinal": 3
+      },
+      "fsa_gap_flag": {
+        "label": "Moderate",
+        "ordinal": 3
+      }
+    },
+    "need_score": 4.7,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Lunenburg",
+    "fsa": "B0J",
+    "fsa_in_energy_poverty_sheet": "B0J",
+    "municipality": "Lunenburg",
+    "province": "Nova Scotia",
+    "region_county": "Lunenburg / Guysborough",
+    "energy_poverty": {
+      "households_energy_poverty": 390,
+      "other_households": 700,
+      "total_households": 1090,
+      "ep_rate_pct": 35.8,
+      "below_poverty_line": 55,
+      "core_housing_need": 30,
+      "major_repair": 35,
+      "major_repair_pct": 3.2,
+      "older_housing": 350,
+      "older_housing_pct": 32.1,
+      "renters": 110,
+      "seniors": 240
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 9,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 203,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.6,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Mahone Bay",
+    "fsa": "B0J",
+    "fsa_in_energy_poverty_sheet": "B0J",
+    "municipality": "Mahone Bay",
+    "province": "Nova Scotia",
+    "region_county": "Lunenburg / Guysborough",
+    "energy_poverty": {
+      "households_energy_poverty": 180,
+      "other_households": 340,
+      "total_households": 520,
+      "ep_rate_pct": 34.6,
+      "below_poverty_line": 25,
+      "core_housing_need": 40,
+      "major_repair": 30,
+      "major_repair_pct": 5.8,
+      "older_housing": 140,
+      "older_housing_pct": 26.9,
+      "renters": 40,
+      "seniors": 95
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 11,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 203,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.5,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Antigonish",
+    "fsa": "B0H",
+    "fsa_in_energy_poverty_sheet": "B2G",
+    "municipality": "Antigonish",
+    "province": "Nova Scotia",
+    "region_county": "Antigonish / Guysborough",
+    "energy_poverty": {
+      "households_energy_poverty": 410,
+      "other_households": 1795,
+      "total_households": 2205,
+      "ep_rate_pct": 18.6,
+      "below_poverty_line": 105,
+      "core_housing_need": 60,
+      "major_repair": 55,
+      "major_repair_pct": 2.5,
+      "older_housing": 355,
+      "older_housing_pct": 16.1,
+      "renters": 140,
+      "seniors": 185
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "60–69%",
+      "fsa_total_ders": 24,
+      "fsa_volume_tier": {
+        "label": "10–24",
+        "ordinal": 3
+      },
+      "fsa_gap_flag": {
+        "label": "Moderate",
+        "ordinal": 3
+      }
+    },
+    "need_score": 3.9,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Stewiacke",
+    "fsa": "B0N",
+    "fsa_in_energy_poverty_sheet": "B0N",
+    "municipality": "Stewiacke",
+    "province": "Nova Scotia",
+    "region_county": "Colchester / Kings / Hants",
+    "energy_poverty": {
+      "households_energy_poverty": 210,
+      "other_households": 505,
+      "total_households": 715,
+      "ep_rate_pct": 29.4,
+      "below_poverty_line": 35,
+      "core_housing_need": 50,
+      "major_repair": 35,
+      "major_repair_pct": 4.9,
+      "older_housing": 140,
+      "older_housing_pct": 19.6,
+      "renters": 80,
+      "seniors": 100
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 4,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 156,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 3.9,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Berwick",
+    "fsa": "B0P",
+    "fsa_in_energy_poverty_sheet": "B0P",
+    "municipality": "Berwick",
+    "province": "Nova Scotia",
+    "region_county": "Kings / Annapolis",
+    "energy_poverty": {
+      "households_energy_poverty": 275,
+      "other_households": 770,
+      "total_households": 1045,
+      "ep_rate_pct": 26.3,
+      "below_poverty_line": 45,
+      "core_housing_need": 55,
+      "major_repair": 20,
+      "major_repair_pct": 1.9,
+      "older_housing": 205,
+      "older_housing_pct": 19.6,
+      "renters": 85,
+      "seniors": 145
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 4,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 159,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 3.6,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Wolfville",
+    "fsa": "B0P",
+    "fsa_in_energy_poverty_sheet": "B4P",
+    "municipality": "Wolfville",
+    "province": "Nova Scotia",
+    "region_county": "Kings / Annapolis",
+    "energy_poverty": {
+      "households_energy_poverty": 395,
+      "other_households": 2045,
+      "total_households": 2440,
+      "ep_rate_pct": 16.2,
+      "below_poverty_line": 110,
+      "core_housing_need": 45,
+      "major_repair": 40,
+      "major_repair_pct": 1.6,
+      "older_housing": 295,
+      "older_housing_pct": 12.1,
+      "renters": 125,
+      "seniors": 180
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 159,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 3.6,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "New Glasgow",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "B2H",
+    "municipality": "New Glasgow",
+    "province": "Nova Scotia",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 1355,
+      "other_households": 3090,
+      "total_households": 4445,
+      "ep_rate_pct": 30.5,
+      "below_poverty_line": 200,
+      "core_housing_need": 110,
+      "major_repair": 180,
+      "major_repair_pct": 4,
+      "older_housing": 1195,
+      "older_housing_pct": 26.9,
+      "renters": 290,
+      "seniors": 685
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 12,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 3,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Bedeque and Area",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Bedeque & Area",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 70,
+      "other_households": 50,
+      "total_households": 120,
+      "ep_rate_pct": 58.3,
+      "below_poverty_line": 0,
+      "core_housing_need": 10,
+      "major_repair": 30,
+      "major_repair_pct": 25,
+      "older_housing": 60,
+      "older_housing_pct": 50,
+      "renters": 10,
+      "seniors": 30
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 9,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Hazelbrook",
+    "fsa": "C1A",
+    "fsa_in_energy_poverty_sheet": "C1A",
+    "municipality": "Hazelbrook",
+    "province": "Prince Edward Island",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 40,
+      "other_households": 45,
+      "total_households": 85,
+      "ep_rate_pct": 47.1,
+      "below_poverty_line": 0,
+      "core_housing_need": 0,
+      "major_repair": 30,
+      "major_repair_pct": 35.3,
+      "older_housing": 20,
+      "older_housing_pct": 23.5,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 9,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Brackley",
+    "fsa": "C1E",
+    "fsa_in_energy_poverty_sheet": "C1E",
+    "municipality": "Brackley",
+    "province": "Prince Edward Island",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 85,
+      "other_households": 155,
+      "total_households": 240,
+      "ep_rate_pct": 35.4,
+      "below_poverty_line": 10,
+      "core_housing_need": 0,
+      "major_repair": 50,
+      "major_repair_pct": 20.8,
+      "older_housing": 10,
+      "older_housing_pct": 4.2,
+      "renters": 0,
+      "seniors": 25
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 8.5,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Annandale-Little Pond-Howe Bay",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Annandale-Little Pond- Howe Bay",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 30,
+      "other_households": 60,
+      "total_households": 90,
+      "ep_rate_pct": 33.3,
+      "below_poverty_line": 0,
+      "core_housing_need": 0,
+      "major_repair": 20,
+      "major_repair_pct": 22.2,
+      "older_housing": 0,
+      "older_housing_pct": 0,
+      "renters": 10,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 8.3,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "St. Nicholas",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "St.Nicholas",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 25,
+      "other_households": 55,
+      "total_households": 80,
+      "ep_rate_pct": 31.2,
+      "below_poverty_line": 0,
+      "core_housing_need": 0,
+      "major_repair": 15,
+      "major_repair_pct": 18.8,
+      "older_housing": 0,
+      "older_housing_pct": 0,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 8.1,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Central Kings",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Central Kings",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 70,
+      "other_households": 100,
+      "total_households": 170,
+      "ep_rate_pct": 41.2,
+      "below_poverty_line": 10,
+      "core_housing_need": 20,
+      "major_repair": 15,
+      "major_repair_pct": 8.8,
+      "older_housing": 65,
+      "older_housing_pct": 38.2,
+      "renters": 0,
+      "seniors": 25
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 8,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "North Rustico",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "North Rustico",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 125,
+      "other_households": 195,
+      "total_households": 320,
+      "ep_rate_pct": 39.1,
+      "below_poverty_line": 25,
+      "core_housing_need": 25,
+      "major_repair": 75,
+      "major_repair_pct": 23.4,
+      "older_housing": 30,
+      "older_housing_pct": 9.4,
+      "renters": 0,
+      "seniors": 80
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "60–69%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7.9,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Central Prince",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Central Prince",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 160,
+      "other_households": 300,
+      "total_households": 460,
+      "ep_rate_pct": 34.8,
+      "below_poverty_line": 25,
+      "core_housing_need": 35,
+      "major_repair": 30,
+      "major_repair_pct": 6.5,
+      "older_housing": 135,
+      "older_housing_pct": 29.3,
+      "renters": 10,
+      "seniors": 80
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7.5,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Eastern Kings",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Eastern Kings",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 105,
+      "other_households": 155,
+      "total_households": 260,
+      "ep_rate_pct": 40.4,
+      "below_poverty_line": 0,
+      "core_housing_need": 75,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 0,
+      "older_housing_pct": 0,
+      "renters": 0,
+      "seniors": 55
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Greenmount-Montrose",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Greenmount-Montrose",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 35,
+      "other_households": 80,
+      "total_households": 115,
+      "ep_rate_pct": 30.4,
+      "below_poverty_line": 0,
+      "core_housing_need": 10,
+      "major_repair": 25,
+      "major_repair_pct": 21.7,
+      "older_housing": 15,
+      "older_housing_pct": 13,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "80–89%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Linkletter",
+    "fsa": "C1N",
+    "fsa_in_energy_poverty_sheet": "C1N",
+    "municipality": "Linkletter",
+    "province": "Prince Edward Island",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 55,
+      "other_households": 75,
+      "total_households": 130,
+      "ep_rate_pct": 42.3,
+      "below_poverty_line": 10,
+      "core_housing_need": 10,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 50,
+      "older_housing_pct": 38.5,
+      "renters": 20,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Lot 11 and Area",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Lot 11 and Area",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 105,
+      "other_households": 130,
+      "total_households": 235,
+      "ep_rate_pct": 44.7,
+      "below_poverty_line": 15,
+      "core_housing_need": 20,
+      "major_repair": 10,
+      "major_repair_pct": 4.3,
+      "older_housing": 75,
+      "older_housing_pct": 31.9,
+      "renters": 10,
+      "seniors": 55
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Mount Stewart",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Mount Stewart",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 50,
+      "other_households": 65,
+      "total_households": 115,
+      "ep_rate_pct": 43.5,
+      "below_poverty_line": 15,
+      "core_housing_need": 10,
+      "major_repair": 30,
+      "major_repair_pct": 26.1,
+      "older_housing": 15,
+      "older_housing_pct": 13,
+      "renters": 10,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 8,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Murray Harbour",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Murray Harbour",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 60,
+      "other_households": 85,
+      "total_households": 145,
+      "ep_rate_pct": 41.4,
+      "below_poverty_line": 0,
+      "core_housing_need": 55,
+      "major_repair": 10,
+      "major_repair_pct": 6.9,
+      "older_housing": 40,
+      "older_housing_pct": 27.6,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "80–89%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Murray River",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Murray River",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 75,
+      "other_households": 65,
+      "total_households": 140,
+      "ep_rate_pct": 53.6,
+      "below_poverty_line": 15,
+      "core_housing_need": 20,
+      "major_repair": 10,
+      "major_repair_pct": 7.1,
+      "older_housing": 70,
+      "older_housing_pct": 50,
+      "renters": 25,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "60–69%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Northport",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Northport",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 40,
+      "other_households": 40,
+      "total_households": 80,
+      "ep_rate_pct": 50,
+      "below_poverty_line": 0,
+      "core_housing_need": 35,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 15,
+      "older_housing_pct": 18.8,
+      "renters": 0,
+      "seniors": 10
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Union Road",
+    "fsa": "C1A",
+    "fsa_in_energy_poverty_sheet": "C1A",
+    "municipality": "Union Road",
+    "province": "Prince Edward Island",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 45,
+      "other_households": 40,
+      "total_households": 85,
+      "ep_rate_pct": 52.9,
+      "below_poverty_line": 0,
+      "core_housing_need": 40,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 30,
+      "older_housing_pct": 35.3,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Sherbrooke",
+    "fsa": "B0J",
+    "fsa_in_energy_poverty_sheet": "C1N",
+    "municipality": "Sherbrooke",
+    "province": "Prince Edward Island",
+    "region_county": "Lunenburg / Guysborough",
+    "energy_poverty": {
+      "households_energy_poverty": 25,
+      "other_households": 60,
+      "total_households": 85,
+      "ep_rate_pct": 29.4,
+      "below_poverty_line": 0,
+      "core_housing_need": 15,
+      "major_repair": 10,
+      "major_repair_pct": 11.8,
+      "older_housing": 25,
+      "older_housing_pct": 29.4,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "80–89%",
+      "fsa_total_ders": 203,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.9,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Alexandra",
+    "fsa": null,
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Alexandra",
+    "province": "Prince Edward Island",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 35,
+      "other_households": 65,
+      "total_households": 100,
+      "ep_rate_pct": 35,
+      "below_poverty_line": 0,
+      "core_housing_need": 0,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 25,
+      "older_housing_pct": 25,
+      "renters": 0,
+      "seniors": 20
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 6.5,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Malpeque Bay",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Malpeque Bay",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 180,
+      "other_households": 340,
+      "total_households": 520,
+      "ep_rate_pct": 34.6,
+      "below_poverty_line": 20,
+      "core_housing_need": 15,
+      "major_repair": 20,
+      "major_repair_pct": 3.8,
+      "older_housing": 135,
+      "older_housing_pct": 26,
+      "renters": 15,
+      "seniors": 95
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.5,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Hunter River",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Hunter River",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 60,
+      "other_households": 115,
+      "total_households": 175,
+      "ep_rate_pct": 34.3,
+      "below_poverty_line": 10,
+      "core_housing_need": 10,
+      "major_repair": 45,
+      "major_repair_pct": 25.7,
+      "older_housing": 15,
+      "older_housing_pct": 8.6,
+      "renters": 0,
+      "seniors": 25
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 5,
+      "best_performance_band": "80–89%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.4,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Cardigan",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Cardigan",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 15,
+      "other_households": 30,
+      "total_households": 45,
+      "ep_rate_pct": 33.3,
+      "below_poverty_line": 0,
+      "core_housing_need": 0,
+      "major_repair": 15,
+      "major_repair_pct": 33.3,
+      "older_housing": 10,
+      "older_housing_pct": 22.2,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 7,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.3,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Crapaud",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Crapaud",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 40,
+      "other_households": 80,
+      "total_households": 120,
+      "ep_rate_pct": 33.3,
+      "below_poverty_line": 0,
+      "core_housing_need": 15,
+      "major_repair": 25,
+      "major_repair_pct": 20.8,
+      "older_housing": 10,
+      "older_housing_pct": 8.3,
+      "renters": 0,
+      "seniors": 20
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 6,
+      "best_performance_band": "80–89%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.3,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "St. Felix",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "St.Felix",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 40,
+      "other_households": 85,
+      "total_households": 125,
+      "ep_rate_pct": 32,
+      "below_poverty_line": 10,
+      "core_housing_need": 10,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 40,
+      "older_housing_pct": 32,
+      "renters": 0,
+      "seniors": 30
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6.2,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Miminegash",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Miminegash",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 25,
+      "other_households": 35,
+      "total_households": 60,
+      "ep_rate_pct": 41.7,
+      "below_poverty_line": 0,
+      "core_housing_need": 20,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 10,
+      "older_housing_pct": 16.7,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Morell",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Morell",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 35,
+      "other_households": 80,
+      "total_households": 115,
+      "ep_rate_pct": 30.4,
+      "below_poverty_line": 0,
+      "core_housing_need": 0,
+      "major_repair": 35,
+      "major_repair_pct": 30.4,
+      "older_housing": 20,
+      "older_housing_pct": 17.4,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 7,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "St. Louis",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "St.Louis",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 20,
+      "other_households": 15,
+      "total_households": 35,
+      "ep_rate_pct": 57.1,
+      "below_poverty_line": 0,
+      "core_housing_need": 20,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 10,
+      "older_housing_pct": 28.6,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "60–69%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "West River",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "West River",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 405,
+      "other_households": 935,
+      "total_households": 1340,
+      "ep_rate_pct": 30.2,
+      "below_poverty_line": 15,
+      "core_housing_need": 40,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 270,
+      "older_housing_pct": 20.1,
+      "renters": 15,
+      "seniors": 200
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Souris West",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Souris West",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 65,
+      "other_households": 100,
+      "total_households": 165,
+      "ep_rate_pct": 39.4,
+      "below_poverty_line": 0,
+      "core_housing_need": 20,
+      "major_repair": 10,
+      "major_repair_pct": 6.1,
+      "older_housing": 55,
+      "older_housing_pct": 33.3,
+      "renters": 0,
+      "seniors": 30
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 5,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.9,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Breadalbane",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Breadalbane",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 25,
+      "other_households": 45,
+      "total_households": 70,
+      "ep_rate_pct": 35.7,
+      "below_poverty_line": 0,
+      "core_housing_need": 0,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 20,
+      "older_housing_pct": 28.6,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 3,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Clyde River",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Clyde River",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 95,
+      "other_households": 170,
+      "total_households": 265,
+      "ep_rate_pct": 35.8,
+      "below_poverty_line": 0,
+      "core_housing_need": 15,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 50,
+      "older_housing_pct": 18.9,
+      "renters": 0,
+      "seniors": 60
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 3,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "North Shore",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "North Shore",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 240,
+      "other_households": 740,
+      "total_households": 980,
+      "ep_rate_pct": 24.5,
+      "below_poverty_line": 30,
+      "core_housing_need": 30,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 135,
+      "older_housing_pct": 13.8,
+      "renters": 25,
+      "seniors": 90
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.5,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Miltonvale Park",
+    "fsa": "B0T",
+    "fsa_in_energy_poverty_sheet": "C1E",
+    "municipality": "Miltonvale Park",
+    "province": "Prince Edward Island",
+    "region_county": "Queens / Shelburne",
+    "energy_poverty": {
+      "households_energy_poverty": 160,
+      "other_households": 325,
+      "total_households": 485,
+      "ep_rate_pct": 33,
+      "below_poverty_line": 40,
+      "core_housing_need": 20,
+      "major_repair": 10,
+      "major_repair_pct": 2.1,
+      "older_housing": 110,
+      "older_housing_pct": 22.7,
+      "renters": 25,
+      "seniors": 65
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 40,
+      "fsa_volume_tier": {
+        "label": "25–49",
+        "ordinal": 4
+      },
+      "fsa_gap_flag": {
+        "label": "Active",
+        "ordinal": 4
+      }
+    },
+    "need_score": 5.3,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Belfast",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Belfast",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 265,
+      "other_households": 410,
+      "total_households": 675,
+      "ep_rate_pct": 39.3,
+      "below_poverty_line": 55,
+      "core_housing_need": 35,
+      "major_repair": 30,
+      "major_repair_pct": 4.4,
+      "older_housing": 210,
+      "older_housing_pct": 31.1,
+      "renters": 20,
+      "seniors": 150
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 4,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.9,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Victoria",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Victoria",
+    "province": "Prince Edward Island",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 15,
+      "other_households": 40,
+      "total_households": 55,
+      "ep_rate_pct": 27.3,
+      "below_poverty_line": 0,
+      "core_housing_need": 15,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 15,
+      "older_housing_pct": 27.3,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.7,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Borden-Carleton",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Borden-Carleton",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 90,
+      "other_households": 265,
+      "total_households": 355,
+      "ep_rate_pct": 25.4,
+      "below_poverty_line": 15,
+      "core_housing_need": 15,
+      "major_repair": 25,
+      "major_repair_pct": 7,
+      "older_housing": 80,
+      "older_housing_pct": 22.5,
+      "renters": 0,
+      "seniors": 40
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 4,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.5,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Hampshire",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Hampshire",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 20,
+      "other_households": 115,
+      "total_households": 135,
+      "ep_rate_pct": 14.8,
+      "below_poverty_line": 0,
+      "core_housing_need": 15,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 10,
+      "older_housing_pct": 7.4,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.5,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Kingston",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Kingston",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 90,
+      "other_households": 305,
+      "total_households": 395,
+      "ep_rate_pct": 22.8,
+      "below_poverty_line": 10,
+      "core_housing_need": 0,
+      "major_repair": 75,
+      "major_repair_pct": 19,
+      "older_housing": 35,
+      "older_housing_pct": 8.9,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 10,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.3,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Kinkora",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Kinkora",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 50,
+      "other_households": 110,
+      "total_households": 160,
+      "ep_rate_pct": 31.2,
+      "below_poverty_line": 10,
+      "core_housing_need": 0,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 50,
+      "older_housing_pct": 31.2,
+      "renters": 0,
+      "seniors": 25
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 4,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.1,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Warren Grove",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "Warren Grove",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 40,
+      "other_households": 90,
+      "total_households": 130,
+      "ep_rate_pct": 30.8,
+      "below_poverty_line": 10,
+      "core_housing_need": 25,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 10,
+      "older_housing_pct": 7.7,
+      "renters": 0,
+      "seniors": 25
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 6,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.1,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Abram-Village",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Abram-Village",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 30,
+      "other_households": 135,
+      "total_households": 165,
+      "ep_rate_pct": 18.2,
+      "below_poverty_line": 0,
+      "core_housing_need": 0,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 30,
+      "older_housing_pct": 18.2,
+      "renters": 10,
+      "seniors": 25
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 3.8,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "North Wiltshire",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "North Wiltshire",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 30,
+      "other_households": 55,
+      "total_households": 85,
+      "ep_rate_pct": 35.3,
+      "below_poverty_line": 0,
+      "core_housing_need": 25,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 20,
+      "older_housing_pct": 23.5,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 14,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 3.5,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Tignish Shore",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Tignish Shore",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 10,
+      "other_households": 20,
+      "total_households": 30,
+      "ep_rate_pct": 33.3,
+      "below_poverty_line": 0,
+      "core_housing_need": 10,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 0,
+      "older_housing_pct": 0,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 19,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 3.3,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Tyne Valley",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Tyne Valley",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 20,
+      "other_households": 70,
+      "total_households": 90,
+      "ep_rate_pct": 22.2,
+      "below_poverty_line": 10,
+      "core_housing_need": 10,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 10,
+      "older_housing_pct": 11.1,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 7,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 3.2,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Wellington",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": "C0B",
+    "municipality": "Wellington",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 65,
+      "other_households": 155,
+      "total_households": 220,
+      "ep_rate_pct": 29.5,
+      "below_poverty_line": 15,
+      "core_housing_need": 40,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 15,
+      "older_housing_pct": 6.8,
+      "renters": 0,
+      "seniors": 45
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 17,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 3,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "St. Peters Bay",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": "C0A",
+    "municipality": "St.Peters Bay",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 10,
+      "other_households": 100,
+      "total_households": 110,
+      "ep_rate_pct": 9.1,
+      "below_poverty_line": 0,
+      "core_housing_need": 10,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 0,
+      "older_housing_pct": 0,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 2.9,
+    "need_tier": {
+      "label": "Lower",
+      "ordinal": 0
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Kensington",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Kensington",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 240,
+      "other_households": 625,
+      "total_households": 865,
+      "ep_rate_pct": 27.7,
+      "below_poverty_line": 40,
+      "core_housing_need": 35,
+      "major_repair": 40,
+      "major_repair_pct": 4.6,
+      "older_housing": 155,
+      "older_housing_pct": 17.9,
+      "renters": 50,
+      "seniors": 115
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 14,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 2.8,
+    "need_tier": {
+      "label": "Lower",
+      "ordinal": 0
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Cornwall",
+    "fsa": "C0A",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Cornwall",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (east)",
+    "energy_poverty": {
+      "households_energy_poverty": 555,
+      "other_households": 2090,
+      "total_households": 2645,
+      "ep_rate_pct": 21,
+      "below_poverty_line": 75,
+      "core_housing_need": 25,
+      "major_repair": 30,
+      "major_repair_pct": 1.1,
+      "older_housing": 280,
+      "older_housing_pct": 10.6,
+      "renters": 105,
+      "seniors": 175
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 26,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 495,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 2.1,
+    "need_tier": {
+      "label": "Lower",
+      "ordinal": 0
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Miscouche",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Miscouche",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 80,
+      "other_households": 305,
+      "total_households": 385,
+      "ep_rate_pct": 20.8,
+      "below_poverty_line": 15,
+      "core_housing_need": 10,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 65,
+      "older_housing_pct": 16.9,
+      "renters": 30,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 17,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 2.1,
+    "need_tier": {
+      "label": "Lower",
+      "ordinal": 0
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Alberton",
+    "fsa": "C0B",
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Alberton",
+    "province": "Prince Edward Island",
+    "region_county": "PEI (west/central)",
+    "energy_poverty": {
+      "households_energy_poverty": 100,
+      "other_households": 460,
+      "total_households": 560,
+      "ep_rate_pct": 17.9,
+      "below_poverty_line": 15,
+      "core_housing_need": 0,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 70,
+      "older_housing_pct": 12.5,
+      "renters": 30,
+      "seniors": 45
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 21,
+      "best_performance_band": "90–100%",
+      "fsa_total_ders": 348,
+      "fsa_volume_tier": {
+        "label": "100+",
+        "ordinal": 6
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 1.8,
+    "need_tier": {
+      "label": "Lower",
+      "ordinal": 0
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Musgrave Harbour",
+    "fsa": "A0G",
+    "fsa_in_energy_poverty_sheet": "A0G",
+    "municipality": "Musgrave Harbour",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Notre Dame / Green Bay",
+    "energy_poverty": {
+      "households_energy_poverty": 215,
+      "other_households": 200,
+      "total_households": 415,
+      "ep_rate_pct": 51.8,
+      "below_poverty_line": 25,
+      "core_housing_need": 40,
+      "major_repair": 40,
+      "major_repair_pct": 9.6,
+      "older_housing": 165,
+      "older_housing_pct": 39.8,
+      "renters": 0,
+      "seniors": 120
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 16,
+      "fsa_volume_tier": {
+        "label": "10–24",
+        "ordinal": 3
+      },
+      "fsa_gap_flag": {
+        "label": "Moderate",
+        "ordinal": 3
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Placentia",
+    "fsa": "A0B",
+    "fsa_in_energy_poverty_sheet": "A0B",
+    "municipality": "Placentia",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Placentia / St. Mary's Bay",
+    "energy_poverty": {
+      "households_energy_poverty": 610,
+      "other_households": 935,
+      "total_households": 1545,
+      "ep_rate_pct": 39.5,
+      "below_poverty_line": 75,
+      "core_housing_need": 45,
+      "major_repair": 55,
+      "major_repair_pct": 3.6,
+      "older_housing": 525,
+      "older_housing_pct": 34,
+      "renters": 65,
+      "seniors": 395
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": 9,
+      "fsa_volume_tier": {
+        "label": "5–9",
+        "ordinal": 2
+      },
+      "fsa_gap_flag": {
+        "label": "Low",
+        "ordinal": 2
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Port au Choix",
+    "fsa": "A0K",
+    "fsa_in_energy_poverty_sheet": "A0K",
+    "municipality": "Port au Choix",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Labrador / Northern Peninsula",
+    "energy_poverty": {
+      "households_energy_poverty": 170,
+      "other_households": 225,
+      "total_households": 395,
+      "ep_rate_pct": 43,
+      "below_poverty_line": 15,
+      "core_housing_need": 0,
+      "major_repair": 25,
+      "major_repair_pct": 6.3,
+      "older_housing": 135,
+      "older_housing_pct": 34.2,
+      "renters": 25,
+      "seniors": 105
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 8,
+      "fsa_volume_tier": {
+        "label": "5–9",
+        "ordinal": 2
+      },
+      "fsa_gap_flag": {
+        "label": "Low",
+        "ordinal": 2
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Robert's Arm",
+    "fsa": "A0J",
+    "fsa_in_energy_poverty_sheet": "A0J",
+    "municipality": "Robert's Arm",
+    "province": "Newfoundland & Labrador",
+    "region_county": "South Coast",
+    "energy_poverty": {
+      "households_energy_poverty": 155,
+      "other_households": 195,
+      "total_households": 350,
+      "ep_rate_pct": 44.3,
+      "below_poverty_line": 45,
+      "core_housing_need": 45,
+      "major_repair": 25,
+      "major_repair_pct": 7.1,
+      "older_housing": 125,
+      "older_housing_pct": 35.7,
+      "renters": 35,
+      "seniors": 85
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 2,
+      "fsa_volume_tier": {
+        "label": "1–4",
+        "ordinal": 1
+      },
+      "fsa_gap_flag": {
+        "label": "Very low",
+        "ordinal": 1
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Upper Island Cove",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Upper Island Cove",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 285,
+      "other_households": 295,
+      "total_households": 580,
+      "ep_rate_pct": 49.1,
+      "below_poverty_line": 35,
+      "core_housing_need": 20,
+      "major_repair": 30,
+      "major_repair_pct": 5.2,
+      "older_housing": 230,
+      "older_housing_pct": 39.7,
+      "renters": 30,
+      "seniors": 170
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 3,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 7,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Appleton",
+    "fsa": "A0G",
+    "fsa_in_energy_poverty_sheet": "A0G",
+    "municipality": "Appleton",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Notre Dame / Green Bay",
+    "energy_poverty": {
+      "households_energy_poverty": 95,
+      "other_households": 175,
+      "total_households": 270,
+      "ep_rate_pct": 35.2,
+      "below_poverty_line": 15,
+      "core_housing_need": 15,
+      "major_repair": 15,
+      "major_repair_pct": 5.6,
+      "older_housing": 65,
+      "older_housing_pct": 24.1,
+      "renters": 0,
+      "seniors": 55
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 16,
+      "fsa_volume_tier": {
+        "label": "10–24",
+        "ordinal": 3
+      },
+      "fsa_gap_flag": {
+        "label": "Moderate",
+        "ordinal": 3
+      }
+    },
+    "need_score": 6.5,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Bonavista",
+    "fsa": "A0C",
+    "fsa_in_energy_poverty_sheet": "A0C",
+    "municipality": "Bonavista",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Burin / Fortune Bay",
+    "energy_poverty": {
+      "households_energy_poverty": 735,
+      "other_households": 735,
+      "total_households": 1470,
+      "ep_rate_pct": 50,
+      "below_poverty_line": 105,
+      "core_housing_need": 75,
+      "major_repair": 50,
+      "major_repair_pct": 3.4,
+      "older_housing": 630,
+      "older_housing_pct": 42.9,
+      "renters": 130,
+      "seniors": 365
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 16,
+      "fsa_volume_tier": {
+        "label": "10–24",
+        "ordinal": 3
+      },
+      "fsa_gap_flag": {
+        "label": "Moderate",
+        "ordinal": 3
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Brigus",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Brigus",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 145,
+      "other_households": 185,
+      "total_households": 330,
+      "ep_rate_pct": 43.9,
+      "below_poverty_line": 25,
+      "core_housing_need": 0,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 95,
+      "older_housing_pct": 28.8,
+      "renters": 25,
+      "seniors": 90
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Cape Broyle",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Cape Broyle",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 120,
+      "other_households": 110,
+      "total_households": 230,
+      "ep_rate_pct": 52.2,
+      "below_poverty_line": 0,
+      "core_housing_need": 80,
+      "major_repair": 10,
+      "major_repair_pct": 4.3,
+      "older_housing": 55,
+      "older_housing_pct": 23.9,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Carmanville",
+    "fsa": "A0G",
+    "fsa_in_energy_poverty_sheet": "A0G",
+    "municipality": "Carmanville",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Notre Dame / Green Bay",
+    "energy_poverty": {
+      "households_energy_poverty": 145,
+      "other_households": 210,
+      "total_households": 355,
+      "ep_rate_pct": 40.8,
+      "below_poverty_line": 20,
+      "core_housing_need": 0,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 135,
+      "older_housing_pct": 38,
+      "renters": 10,
+      "seniors": 100
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 16,
+      "fsa_volume_tier": {
+        "label": "10–24",
+        "ordinal": 3
+      },
+      "fsa_gap_flag": {
+        "label": "Moderate",
+        "ordinal": 3
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Clarke's Beach",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Clarke's Beach",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 240,
+      "other_households": 360,
+      "total_households": 600,
+      "ep_rate_pct": 40,
+      "below_poverty_line": 60,
+      "core_housing_need": 40,
+      "major_repair": 10,
+      "major_repair_pct": 1.7,
+      "older_housing": 125,
+      "older_housing_pct": 20.8,
+      "renters": 65,
+      "seniors": 95
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Conception Harbour",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Conception Harbour",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 125,
+      "other_households": 165,
+      "total_households": 290,
+      "ep_rate_pct": 43.1,
+      "below_poverty_line": 20,
+      "core_housing_need": 15,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 90,
+      "older_housing_pct": 31,
+      "renters": 15,
+      "seniors": 50
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Cottlesville",
+    "fsa": "A0G",
+    "fsa_in_energy_poverty_sheet": "A0G",
+    "municipality": "Cottlesville",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Notre Dame / Green Bay",
+    "energy_poverty": {
+      "households_energy_poverty": 60,
+      "other_households": 55,
+      "total_households": 115,
+      "ep_rate_pct": 52.2,
+      "below_poverty_line": 10,
+      "core_housing_need": 10,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 50,
+      "older_housing_pct": 43.5,
+      "renters": 0,
+      "seniors": 30
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 16,
+      "fsa_volume_tier": {
+        "label": "10–24",
+        "ordinal": 3
+      },
+      "fsa_gap_flag": {
+        "label": "Moderate",
+        "ordinal": 3
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Harbour Grace",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Harbour Grace",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 575,
+      "other_households": 735,
+      "total_households": 1310,
+      "ep_rate_pct": 43.9,
+      "below_poverty_line": 125,
+      "core_housing_need": 80,
+      "major_repair": 50,
+      "major_repair_pct": 3.8,
+      "older_housing": 455,
+      "older_housing_pct": 34.7,
+      "renters": 110,
+      "seniors": 310
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 3,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Spaniard's Bay",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Spaniard's Bay",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 495,
+      "other_households": 615,
+      "total_households": 1110,
+      "ep_rate_pct": 44.6,
+      "below_poverty_line": 85,
+      "core_housing_need": 60,
+      "major_repair": 50,
+      "major_repair_pct": 4.5,
+      "older_housing": 365,
+      "older_housing_pct": 32.9,
+      "renters": 65,
+      "seniors": 280
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Stephenville Crossing",
+    "fsa": "A0N",
+    "fsa_in_energy_poverty_sheet": "A0N",
+    "municipality": "Stephenville Crossing",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Codroy Valley / Port aux Basques",
+    "energy_poverty": {
+      "households_energy_poverty": 315,
+      "other_households": 435,
+      "total_households": 750,
+      "ep_rate_pct": 42,
+      "below_poverty_line": 80,
+      "core_housing_need": 120,
+      "major_repair": 25,
+      "major_repair_pct": 3.3,
+      "older_housing": 245,
+      "older_housing_pct": 32.7,
+      "renters": 130,
+      "seniors": 125
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 2,
+      "fsa_volume_tier": {
+        "label": "1–4",
+        "ordinal": 1
+      },
+      "fsa_gap_flag": {
+        "label": "Very low",
+        "ordinal": 1
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Sunnyside",
+    "fsa": "A0B",
+    "fsa_in_energy_poverty_sheet": "A0B",
+    "municipality": "Sunnyside",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Placentia / St. Mary's Bay",
+    "energy_poverty": {
+      "households_energy_poverty": 85,
+      "other_households": 130,
+      "total_households": 215,
+      "ep_rate_pct": 39.5,
+      "below_poverty_line": 20,
+      "core_housing_need": 15,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 55,
+      "older_housing_pct": 25.6,
+      "renters": 0,
+      "seniors": 50
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 9,
+      "fsa_volume_tier": {
+        "label": "5–9",
+        "ordinal": 2
+      },
+      "fsa_gap_flag": {
+        "label": "Low",
+        "ordinal": 2
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Terrenceville",
+    "fsa": "A0E",
+    "fsa_in_energy_poverty_sheet": "A0E",
+    "municipality": "Terrenceville",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Trinity / Bonavista",
+    "energy_poverty": {
+      "households_energy_poverty": 100,
+      "other_households": 100,
+      "total_households": 200,
+      "ep_rate_pct": 50,
+      "below_poverty_line": 0,
+      "core_housing_need": 15,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 75,
+      "older_housing_pct": 37.5,
+      "renters": 0,
+      "seniors": 55
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 9,
+      "fsa_volume_tier": {
+        "label": "5–9",
+        "ordinal": 2
+      },
+      "fsa_gap_flag": {
+        "label": "Low",
+        "ordinal": 2
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Trout River",
+    "fsa": "A0K",
+    "fsa_in_energy_poverty_sheet": "A0K",
+    "municipality": "Trout River",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Labrador / Northern Peninsula",
+    "energy_poverty": {
+      "households_energy_poverty": 115,
+      "other_households": 100,
+      "total_households": 215,
+      "ep_rate_pct": 53.5,
+      "below_poverty_line": 15,
+      "core_housing_need": 20,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 90,
+      "older_housing_pct": 41.9,
+      "renters": 0,
+      "seniors": 75
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 8,
+      "fsa_volume_tier": {
+        "label": "5–9",
+        "ordinal": 2
+      },
+      "fsa_gap_flag": {
+        "label": "Low",
+        "ordinal": 2
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Victoria",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Victoria",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 320,
+      "other_households": 385,
+      "total_households": 705,
+      "ep_rate_pct": 45.4,
+      "below_poverty_line": 70,
+      "core_housing_need": 40,
+      "major_repair": 30,
+      "major_repair_pct": 4.3,
+      "older_housing": 265,
+      "older_housing_pct": 37.6,
+      "renters": 85,
+      "seniors": 165
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Bay Roberts",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Bay Roberts",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 965,
+      "other_households": 1525,
+      "total_households": 2490,
+      "ep_rate_pct": 38.8,
+      "below_poverty_line": 170,
+      "core_housing_need": 110,
+      "major_repair": 70,
+      "major_repair_pct": 2.8,
+      "older_housing": 690,
+      "older_housing_pct": 27.7,
+      "renters": 180,
+      "seniors": 480
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.9,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Leading Tickles",
+    "fsa": "A0H",
+    "fsa_in_energy_poverty_sheet": "A0H",
+    "municipality": "Leading Tickles",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Humber / Bay of Islands",
+    "energy_poverty": {
+      "households_energy_poverty": 60,
+      "other_households": 95,
+      "total_households": 155,
+      "ep_rate_pct": 38.7,
+      "below_poverty_line": 10,
+      "core_housing_need": 0,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 45,
+      "older_housing_pct": 29,
+      "renters": 0,
+      "seniors": 30
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 9,
+      "fsa_volume_tier": {
+        "label": "5–9",
+        "ordinal": 2
+      },
+      "fsa_gap_flag": {
+        "label": "Low",
+        "ordinal": 2
+      }
+    },
+    "need_score": 5.9,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Milltown",
+    "fsa": "A0H",
+    "fsa_in_energy_poverty_sheet": "A0H",
+    "municipality": "Milltown",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Humber / Bay of Islands",
+    "energy_poverty": {
+      "households_energy_poverty": 130,
+      "other_households": 215,
+      "total_households": 345,
+      "ep_rate_pct": 37.7,
+      "below_poverty_line": 15,
+      "core_housing_need": 0,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 115,
+      "older_housing_pct": 33.3,
+      "renters": 0,
+      "seniors": 80
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 9,
+      "fsa_volume_tier": {
+        "label": "5–9",
+        "ordinal": 2
+      },
+      "fsa_gap_flag": {
+        "label": "Low",
+        "ordinal": 2
+      }
+    },
+    "need_score": 5.8,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Old Perlican",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Old Perlican",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 100,
+      "other_households": 160,
+      "total_households": 260,
+      "ep_rate_pct": 38.5,
+      "below_poverty_line": 0,
+      "core_housing_need": 65,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 45,
+      "older_housing_pct": 17.3,
+      "renters": 0,
+      "seniors": 0
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.8,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Pouch Cove",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Pouch Cove",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 295,
+      "other_households": 525,
+      "total_households": 820,
+      "ep_rate_pct": 36,
+      "below_poverty_line": 30,
+      "core_housing_need": 40,
+      "major_repair": 20,
+      "major_repair_pct": 2.4,
+      "older_housing": 245,
+      "older_housing_pct": 29.9,
+      "renters": 25,
+      "seniors": 150
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 2,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5.6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Northern Arm",
+    "fsa": "A0H",
+    "fsa_in_energy_poverty_sheet": "A0H",
+    "municipality": "Northern Arm",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Humber / Bay of Islands",
+    "energy_poverty": {
+      "households_energy_poverty": 70,
+      "other_households": 130,
+      "total_households": 200,
+      "ep_rate_pct": 35,
+      "below_poverty_line": 15,
+      "core_housing_need": 10,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 45,
+      "older_housing_pct": 22.5,
+      "renters": 0,
+      "seniors": 35
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 9,
+      "fsa_volume_tier": {
+        "label": "5–9",
+        "ordinal": 2
+      },
+      "fsa_gap_flag": {
+        "label": "Low",
+        "ordinal": 2
+      }
+    },
+    "need_score": 5.5,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Holyrood",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Holyrood",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 300,
+      "other_households": 695,
+      "total_households": 995,
+      "ep_rate_pct": 30.2,
+      "below_poverty_line": 40,
+      "core_housing_need": 25,
+      "major_repair": 20,
+      "major_repair_pct": 2,
+      "older_housing": 195,
+      "older_housing_pct": 19.6,
+      "renters": 55,
+      "seniors": 145
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 3,
+      "best_performance_band": "70–79%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 5,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Witless Bay",
+    "fsa": "A0A",
+    "fsa_in_energy_poverty_sheet": "A0A",
+    "municipality": "Witless Bay",
+    "province": "Newfoundland & Labrador",
+    "region_county": "Avalon Peninsula (rural)",
+    "energy_poverty": {
+      "households_energy_poverty": 150,
+      "other_households": 465,
+      "total_households": 615,
+      "ep_rate_pct": 24.4,
+      "below_poverty_line": 10,
+      "core_housing_need": 15,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 95,
+      "older_housing_pct": 15.4,
+      "renters": 10,
+      "seniors": 70
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": true,
+      "der_records_here": 1,
+      "best_performance_band": "50–59%",
+      "fsa_total_ders": 56,
+      "fsa_volume_tier": {
+        "label": "50–99",
+        "ordinal": 5
+      },
+      "fsa_gap_flag": {
+        "label": "High",
+        "ordinal": 5
+      }
+    },
+    "need_score": 4.4,
+    "need_tier": {
+      "label": "Moderate",
+      "ordinal": 1
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Upper Miramichi",
+    "fsa": null,
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Upper Miramichi",
+    "province": "New Brunswick",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 425,
+      "other_households": 530,
+      "total_households": 955,
+      "ep_rate_pct": 44.5,
+      "below_poverty_line": 75,
+      "core_housing_need": 85,
+      "major_repair": 90,
+      "major_repair_pct": 9.4,
+      "older_housing": 390,
+      "older_housing_pct": 40.8,
+      "renters": 30,
+      "seniors": 230
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 8,
+    "need_tier": {
+      "label": "Critical",
+      "ordinal": 3
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Campobello Island",
+    "fsa": "E5E",
+    "fsa_in_energy_poverty_sheet": "E5E",
+    "municipality": "Campobello Island",
+    "province": "New Brunswick",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 165,
+      "other_households": 255,
+      "total_households": 420,
+      "ep_rate_pct": 39.3,
+      "below_poverty_line": 55,
+      "core_housing_need": 35,
+      "major_repair": 20,
+      "major_repair_pct": 4.8,
+      "older_housing": 140,
+      "older_housing_pct": 33.3,
+      "renters": 10,
+      "seniors": 85
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 6.9,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Kedgwick",
+    "fsa": "E8B",
+    "fsa_in_energy_poverty_sheet": "E8B",
+    "municipality": "Kedgwick",
+    "province": "New Brunswick",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 345,
+      "other_households": 595,
+      "total_households": 940,
+      "ep_rate_pct": 36.7,
+      "below_poverty_line": 85,
+      "core_housing_need": 60,
+      "major_repair": 25,
+      "major_repair_pct": 2.7,
+      "older_housing": 270,
+      "older_housing_pct": 28.7,
+      "renters": 40,
+      "seniors": 185
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 6.7,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Saint-André",
+    "fsa": "E3Y",
+    "fsa_in_energy_poverty_sheet": "E3Y",
+    "municipality": "Saint-André",
+    "province": "New Brunswick",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 270,
+      "other_households": 485,
+      "total_households": 755,
+      "ep_rate_pct": 35.8,
+      "below_poverty_line": 50,
+      "core_housing_need": 55,
+      "major_repair": 30,
+      "major_repair_pct": 4,
+      "older_housing": 235,
+      "older_housing_pct": 31.1,
+      "renters": 55,
+      "seniors": 130
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 6.6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Haut-Madawaska",
+    "fsa": null,
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Haut-Madawaska",
+    "province": "New Brunswick",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 495,
+      "other_households": 1165,
+      "total_households": 1660,
+      "ep_rate_pct": 29.8,
+      "below_poverty_line": 75,
+      "core_housing_need": 40,
+      "major_repair": 40,
+      "major_repair_pct": 2.4,
+      "older_housing": 445,
+      "older_housing_pct": 26.8,
+      "renters": 85,
+      "seniors": 235
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Beaubassin East",
+    "fsa": null,
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Beaubassin East",
+    "province": "New Brunswick",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 735,
+      "other_households": 2120,
+      "total_households": 2855,
+      "ep_rate_pct": 25.7,
+      "below_poverty_line": 125,
+      "core_housing_need": 55,
+      "major_repair": 70,
+      "major_repair_pct": 2.5,
+      "older_housing": 600,
+      "older_housing_pct": 21,
+      "renters": 60,
+      "seniors": 405
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 5.6,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Cocagne",
+    "fsa": "E4R",
+    "fsa_in_energy_poverty_sheet": "E4R",
+    "municipality": "Cocagne",
+    "province": "New Brunswick",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 295,
+      "other_households": 920,
+      "total_households": 1215,
+      "ep_rate_pct": 24.3,
+      "below_poverty_line": 35,
+      "core_housing_need": 10,
+      "major_repair": 0,
+      "major_repair_pct": 0,
+      "older_housing": 235,
+      "older_housing_pct": 19.3,
+      "renters": 20,
+      "seniors": 150
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 5.4,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  },
+  {
+    "community": "Hanwell",
+    "fsa": null,
+    "fsa_in_energy_poverty_sheet": null,
+    "municipality": "Hanwell",
+    "province": "New Brunswick",
+    "region_county": null,
+    "energy_poverty": {
+      "households_energy_poverty": 380,
+      "other_households": 1415,
+      "total_households": 1795,
+      "ep_rate_pct": 21.2,
+      "below_poverty_line": 70,
+      "core_housing_need": 55,
+      "major_repair": 35,
+      "major_repair_pct": 1.9,
+      "older_housing": 225,
+      "older_housing_pct": 12.5,
+      "renters": 10,
+      "seniors": 145
+    },
+    "retrofit_activity": {
+      "in_der_perf_map": false,
+      "der_records_here": 0,
+      "best_performance_band": null,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
+    },
+    "need_score": 5.1,
+    "need_tier": {
+      "label": "High",
+      "ordinal": 2
+    },
+    "saltbox_priority": null
+  }
+]

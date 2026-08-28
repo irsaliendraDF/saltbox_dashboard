@@ -1,0 +1,14 @@
+node_modules/
+dist/
+
+# The raw workbook export carries all 14 sheets, including internal-only ones.
+# This repo is public: the export never enters it. To regenerate the JSON,
+# place the export at data/raw/ locally and run: npm run build-data
+data/raw/
+
+# Client working notes, tracked outside the public repo.
+DATA-QUESTIONS.md
+
+# Local editor and OS noise
+.DS_Store
+*.local

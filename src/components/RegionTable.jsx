@@ -1,0 +1,102 @@
+import { useState } from "react";
+import {
+  Cell,
+  TierPill,
+  NEED_TIER_STYLES,
+  ACTIVITY_TIER_STYLES,
+  PROVINCE_SHORT,
+} from "../lib/format.jsx";
+
+// Column definitions. `get` pulls the sortable value; nulls always sort last.
+const COLUMNS = [
+  { key: "community", label: "Community", get: (r) => r.community, numeric: false },
+  { key: "province", label: "Prov.", get: (r) => r.province, numeric: false },
+  { key: "fsa", label: "FSA", get: (r) => r.fsa, numeric: false },
+  { key: "need_score", label: "Need score", get: (r) => r.need_score, numeric: true },
+  { key: "need_tier", label: "Need tier", get: (r) => r.need_tier?.ordinal ?? null, numeric: true },
+  { key: "ep_rate", label: "Energy poverty", get: (r) => r.energy_poverty.ep_rate_pct, numeric: true },
+  { key: "total_households", label: "Households", get: (r) => r.energy_poverty.total_households, numeric: true },
+  { key: "ep_households", label: "In energy poverty", get: (r) => r.energy_poverty.households_energy_poverty, numeric: true },
+  { key: "major_repair_pct", label: "Major repair", get: (r) => r.energy_poverty.major_repair_pct, numeric: true },
+  { key: "older_housing_pct", label: "Older housing", get: (r) => r.energy_poverty.older_housing_pct, numeric: true },
+  { key: "ders_here", label: "Retrofits here", get: (r) => r.retrofit_activity.der_records_here, numeric: true },
+  { key: "fsa_ders", label: "Retrofits in FSA", get: (r) => r.retrofit_activity.fsa_total_ders, numeric: true },
+  { key: "activity_tier", label: "FSA activity", get: (r) => r.retrofit_activity.fsa_volume_tier?.ordinal ?? null, numeric: true },
+];
+
+export default function RegionTable({ regions, onSelect }) {
+  const [sort, setSort] = useState({ key: "need_score", dir: -1 });
+
+  const col = COLUMNS.find((c) => c.key === sort.key);
+  const sorted = [...regions].sort((a, b) => {
+    const va = col.get(a);
+    const vb = col.get(b);
+    if (va === null && vb === null) return 0;
+    if (va === null) return 1; // nulls last regardless of direction
+    if (vb === null) return -1;
+    const cmp = col.numeric ? va - vb : String(va).localeCompare(String(vb));
+    return cmp * sort.dir;
+  });
+
+  const clickHeader = (key) =>
+    setSort((s) =>
+      s.key === key ? { key, dir: -s.dir } : { key, dir: COLUMNS.find((c) => c.key === key).numeric ? -1 : 1 }
+    );
+
+  return (
+    <div className="rounded-lg border border-slate-200 bg-white shadow-sm">
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[900px] text-sm">
+          <thead>
+            <tr className="border-b border-slate-200 text-left text-xs uppercase tracking-wide text-slate-500">
+              {COLUMNS.map((c) => (
+                <th
+                  key={c.key}
+                  onClick={() => clickHeader(c.key)}
+                  className="cursor-pointer select-none px-3 py-2.5 font-semibold hover:text-slate-800 whitespace-nowrap"
+                >
+                  {c.label}
+                  {sort.key === c.key && <span className="ml-1">{sort.dir === -1 ? "▾" : "▴"}</span>}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {sorted.map((r) => (
+              <tr
+                key={`${r.community}|${r.province}`}
+                onClick={() => onSelect(r)}
+                className="cursor-pointer border-b border-slate-100 last:border-0 hover:bg-slate-50"
+              >
+                <td className="px-3 py-2 font-medium text-slate-900 whitespace-nowrap">{r.community}</td>
+                <td className="px-3 py-2 text-slate-500">{PROVINCE_SHORT[r.province]}</td>
+                <td className="px-3 py-2 text-slate-500">
+                  <Cell value={r.fsa} pct={false} />
+                </td>
+                <td className="px-3 py-2 tabular-nums font-semibold text-slate-900">
+                  <Cell value={r.need_score} />
+                </td>
+                <td className="px-3 py-2">
+                  <TierPill label={r.need_tier?.label ?? null} styles={NEED_TIER_STYLES} />
+                </td>
+                <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.ep_rate_pct} pct /></td>
+                <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.total_households} /></td>
+                <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.households_energy_poverty} /></td>
+                <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.major_repair_pct} pct /></td>
+                <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.older_housing_pct} pct /></td>
+                <td className="px-3 py-2 tabular-nums"><Cell value={r.retrofit_activity.der_records_here} /></td>
+                <td className="px-3 py-2 tabular-nums"><Cell value={r.retrofit_activity.fsa_total_ders} /></td>
+                <td className="px-3 py-2">
+                  <TierPill
+                    label={r.retrofit_activity.fsa_volume_tier?.label ?? null}
+                    styles={ACTIVITY_TIER_STYLES}
+                  />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}

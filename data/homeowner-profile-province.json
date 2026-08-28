@@ -1,0 +1,398 @@
+[
+  {
+    "category": "Population",
+    "indicator": "Rural & small town population",
+    "sub_indicator": "2021",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 305812,
+      "New Brunswick": 290590,
+      "Prince Edward Island": 59978,
+      "Newfoundland & Labrador": 248066
+    }
+  },
+  {
+    "category": "Population",
+    "indicator": "Rural & small town population",
+    "sub_indicator": "2024 estimate",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 317496,
+      "New Brunswick": 301212,
+      "Prince Edward Island": 64284,
+      "Newfoundland & Labrador": 245885
+    }
+  },
+  {
+    "category": "Population",
+    "indicator": "Population change 2021–2024",
+    "sub_indicator": "%",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 3.7,
+      "New Brunswick": 3.6,
+      "Prince Edward Island": 6.9,
+      "Newfoundland & Labrador": 0.9
+    }
+  },
+  {
+    "category": "Age",
+    "indicator": "Age group",
+    "sub_indicator": "14 and younger",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 13,
+      "New Brunswick": 13,
+      "Prince Edward Island": 15,
+      "Newfoundland & Labrador": 12
+    }
+  },
+  {
+    "category": "Age",
+    "indicator": "Age group",
+    "sub_indicator": "15 to 34",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 19,
+      "New Brunswick": 9,
+      "Prince Edward Island": 21,
+      "Newfoundland & Labrador": 16
+    }
+  },
+  {
+    "category": "Age",
+    "indicator": "Age group",
+    "sub_indicator": "35 to 64",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 41,
+      "New Brunswick": 42,
+      "Prince Edward Island": 40,
+      "Newfoundland & Labrador": 43
+    }
+  },
+  {
+    "category": "Age",
+    "indicator": "Age group",
+    "sub_indicator": "65 and older",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 28,
+      "New Brunswick": 26,
+      "Prince Edward Island": 23,
+      "Newfoundland & Labrador": 28
+    }
+  },
+  {
+    "category": "Household size",
+    "indicator": "Household size",
+    "sub_indicator": "1 person",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 31,
+      "New Brunswick": 30,
+      "Prince Edward Island": 28,
+      "Newfoundland & Labrador": 27
+    }
+  },
+  {
+    "category": "Household size",
+    "indicator": "Household size",
+    "sub_indicator": "2 persons",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 42,
+      "New Brunswick": 41,
+      "Prince Edward Island": 40,
+      "Newfoundland & Labrador": 44
+    }
+  },
+  {
+    "category": "Household size",
+    "indicator": "Household size",
+    "sub_indicator": "3 persons",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 13,
+      "New Brunswick": 14,
+      "Prince Edward Island": 14,
+      "Newfoundland & Labrador": 15
+    }
+  },
+  {
+    "category": "Household size",
+    "indicator": "Household size",
+    "sub_indicator": "4 persons",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 9,
+      "New Brunswick": 10,
+      "Prince Edward Island": 11,
+      "Newfoundland & Labrador": 10
+    }
+  },
+  {
+    "category": "Household size",
+    "indicator": "Household size",
+    "sub_indicator": "5 or more persons",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 5,
+      "New Brunswick": 5,
+      "Prince Edward Island": 7,
+      "Newfoundland & Labrador": 4
+    }
+  },
+  {
+    "category": "Income",
+    "indicator": "After-tax household income",
+    "sub_indicator": "Under $25,000",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 14,
+      "New Brunswick": 13,
+      "Prince Edward Island": 10,
+      "Newfoundland & Labrador": 13
+    }
+  },
+  {
+    "category": "Income",
+    "indicator": "After-tax household income",
+    "sub_indicator": "$25,000 to $49,999",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 29,
+      "New Brunswick": 28,
+      "Prince Edward Island": 27,
+      "Newfoundland & Labrador": 29
+    }
+  },
+  {
+    "category": "Income",
+    "indicator": "After-tax household income",
+    "sub_indicator": "$50,000 to $79,999",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 28,
+      "New Brunswick": 28,
+      "Prince Edward Island": 27,
+      "Newfoundland & Labrador": 26
+    }
+  },
+  {
+    "category": "Income",
+    "indicator": "After-tax household income",
+    "sub_indicator": "$80,000 to $99,999",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 12,
+      "New Brunswick": 12,
+      "Prince Edward Island": 13,
+      "Newfoundland & Labrador": 12
+    }
+  },
+  {
+    "category": "Income",
+    "indicator": "After-tax household income",
+    "sub_indicator": "$100,000 and over",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 17,
+      "New Brunswick": 18,
+      "Prince Edward Island": 21,
+      "Newfoundland & Labrador": 20
+    }
+  },
+  {
+    "category": "Income",
+    "indicator": "Low-income (after-tax LIM)",
+    "sub_indicator": "% of rural households",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 17,
+      "New Brunswick": 15,
+      "Prince Edward Island": 13,
+      "Newfoundland & Labrador": 17
+    }
+  },
+  {
+    "category": "Tenure",
+    "indicator": "Ownership",
+    "sub_indicator": "Owner-occupied",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 78,
+      "New Brunswick": 79,
+      "Prince Edward Island": 82,
+      "Newfoundland & Labrador": 83
+    }
+  },
+  {
+    "category": "Tenure",
+    "indicator": "Ownership",
+    "sub_indicator": "Renter",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 22,
+      "New Brunswick": 19,
+      "Prince Edward Island": 17,
+      "Newfoundland & Labrador": 17
+    }
+  },
+  {
+    "category": "Tenure",
+    "indicator": "Ownership",
+    "sub_indicator": "Band/First Nation provided",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 1,
+      "New Brunswick": 1,
+      "Prince Edward Island": 0,
+      "Newfoundland & Labrador": 1
+    }
+  },
+  {
+    "category": "Dwelling condition",
+    "indicator": "Condition",
+    "sub_indicator": "Only regular maintenance / minor repairs needed",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 97,
+      "New Brunswick": 91,
+      "Prince Edward Island": 91,
+      "Newfoundland & Labrador": null
+    }
+  },
+  {
+    "category": "Dwelling condition",
+    "indicator": "Condition",
+    "sub_indicator": "Major repairs needed",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 3,
+      "New Brunswick": 9,
+      "Prince Edward Island": 9,
+      "Newfoundland & Labrador": null
+    }
+  },
+  {
+    "category": "Dwelling age",
+    "indicator": "Period of construction (national rural)",
+    "sub_indicator": "1960 or before",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 44590,
+      "New Brunswick": 30505,
+      "Prince Edward Island": 7020,
+      "Newfoundland & Labrador": 21185
+    }
+  },
+  {
+    "category": "Dwelling age",
+    "indicator": "Period of construction (national rural)",
+    "sub_indicator": "1961 to 1980",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 36615,
+      "New Brunswick": 38075,
+      "Prince Edward Island": 5800,
+      "Newfoundland & Labrador": 39045
+    }
+  },
+  {
+    "category": "Dwelling age",
+    "indicator": "Period of construction (national rural)",
+    "sub_indicator": "1981 to 1990",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 18260,
+      "New Brunswick": 19475,
+      "Prince Edward Island": 2975,
+      "Newfoundland & Labrador": 17285
+    }
+  },
+  {
+    "category": "Dwelling age",
+    "indicator": "Period of construction (national rural)",
+    "sub_indicator": "1991 to 2000",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 14760,
+      "New Brunswick": 16070,
+      "Prince Edward Island": 2830,
+      "Newfoundland & Labrador": 12095
+    }
+  },
+  {
+    "category": "Dwelling age",
+    "indicator": "Period of construction (national rural)",
+    "sub_indicator": "2001 to 2005",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 5920,
+      "New Brunswick": 6170,
+      "Prince Edward Island": 1290,
+      "Newfoundland & Labrador": 4330
+    }
+  },
+  {
+    "category": "Dwelling age",
+    "indicator": "Period of construction (national rural)",
+    "sub_indicator": "2006-2010",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 5855,
+      "New Brunswick": 6280,
+      "Prince Edward Island": 1275,
+      "Newfoundland & Labrador": 4910
+    }
+  },
+  {
+    "category": "Dwelling age",
+    "indicator": "Period of construction (national rural)",
+    "sub_indicator": "2011 to 2015",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 4540,
+      "New Brunswick": 4825,
+      "Prince Edward Island": 1195,
+      "Newfoundland & Labrador": 5615
+    }
+  },
+  {
+    "category": "Dwelling age",
+    "indicator": "Period of construction (national rural)",
+    "sub_indicator": "2016-2021",
+    "unit": "count",
+    "values": {
+      "Nova Scotia": 4635,
+      "New Brunswick": 4390,
+      "Prince Edward Island": 1295,
+      "Newfoundland & Labrador": 3680
+    }
+  },
+  {
+    "category": "Housing suitability",
+    "indicator": "Suitability (NOS)",
+    "sub_indicator": "Suitable",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 98,
+      "New Brunswick": 97,
+      "Prince Edward Island": 97,
+      "Newfoundland & Labrador": null
+    }
+  },
+  {
+    "category": "Housing suitability",
+    "indicator": "Suitability (NOS)",
+    "sub_indicator": "Not suitable",
+    "unit": "percent",
+    "values": {
+      "Nova Scotia": 2,
+      "New Brunswick": 2,
+      "Prince Edward Island": 2,
+      "Newfoundland & Labrador": null
+    }
+  }
+]
