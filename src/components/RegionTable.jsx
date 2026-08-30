@@ -3,7 +3,7 @@ import {
   Cell,
   TierPill,
   NEED_TIER_STYLES,
-  ACTIVITY_TIER_STYLES,
+  SIGNAL_STYLES,
   PROVINCE_SHORT,
 } from "../lib/format.jsx";
 
@@ -20,8 +20,8 @@ const COLUMNS = [
   { key: "major_repair_pct", label: "Major repair", get: (r) => r.energy_poverty.major_repair_pct, numeric: true },
   { key: "older_housing_pct", label: "Older housing", get: (r) => r.energy_poverty.older_housing_pct, numeric: true },
   { key: "ders_here", label: "Retrofits here", get: (r) => r.retrofit_activity.der_records_here, numeric: true },
-  { key: "fsa_ders", label: "Retrofits in FSA", get: (r) => r.retrofit_activity.fsa_total_ders, numeric: true },
-  { key: "activity_tier", label: "FSA activity", get: (r) => r.retrofit_activity.fsa_volume_tier?.ordinal ?? null, numeric: true },
+  { key: "fsa_ders", label: "Retrofits in area", get: (r) => r.retrofit_activity.fsa_total_ders, numeric: true },
+  { key: "signal", label: "Activity signal", get: (r) => r.retrofit_activity.fsa_gap_flag?.ordinal ?? null, numeric: true },
 ];
 
 export default function RegionTable({ regions, onSelect }) {
@@ -68,7 +68,17 @@ export default function RegionTable({ regions, onSelect }) {
                 onClick={() => onSelect(r)}
                 className="cursor-pointer border-b border-slate-100 last:border-0 hover:bg-slate-50"
               >
-                <td className="px-3 py-2 font-medium text-slate-900 whitespace-nowrap">{r.community}</td>
+                <td className="px-3 py-2 font-medium text-slate-900 whitespace-nowrap">
+                  {r.community}
+                  {r.saltbox_pilot && (
+                    <span
+                      className="ml-1.5 inline-block rounded-full border border-violet-200 bg-violet-100 px-1.5 py-0.5 text-[10px] font-semibold text-violet-800 align-middle"
+                      title="Saltbox pilot geography. Speak with Saltbox for more context on this area."
+                    >
+                      Pilot
+                    </span>
+                  )}
+                </td>
                 <td className="px-3 py-2 text-slate-500">{PROVINCE_SHORT[r.province]}</td>
                 <td className="px-3 py-2 text-slate-500">
                   <Cell value={r.fsa} pct={false} />
@@ -85,17 +95,35 @@ export default function RegionTable({ regions, onSelect }) {
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.major_repair_pct} pct /></td>
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.older_housing_pct} pct /></td>
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.retrofit_activity.der_records_here} /></td>
-                <td className="px-3 py-2 tabular-nums"><Cell value={r.retrofit_activity.fsa_total_ders} /></td>
+                <td
+                  className="px-3 py-2 tabular-nums"
+                  title={
+                    r.retrofit_activity.context_is_catchment
+                      ? `Surrounding rural area (${r.retrofit_activity.context_fsa})`
+                      : undefined
+                  }
+                >
+                  <Cell value={r.retrofit_activity.fsa_total_ders} />
+                  {r.retrofit_activity.context_is_catchment && (
+                    <span className="ml-1 text-xs text-slate-400">area</span>
+                  )}
+                </td>
                 <td className="px-3 py-2">
                   <TierPill
-                    label={r.retrofit_activity.fsa_volume_tier?.label ?? null}
-                    styles={ACTIVITY_TIER_STYLES}
+                    label={r.retrofit_activity.fsa_gap_flag?.label ?? null}
+                    styles={SIGNAL_STYLES}
                   />
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
+      </div>
+      <div className="border-t border-slate-100 px-3 py-2 text-xs text-slate-500">
+        Activity signal reads documented deep retrofit activity in the area. Red: very little is
+        reaching it, a possible underserved market or delivery gap. Yellow: limited. Green:
+        established. Blue: comparatively strong. A red signal does not automatically mean highest
+        need. "Pilot" marks the Saltbox pilot geography: speak with Saltbox for more context.
       </div>
     </div>
   );

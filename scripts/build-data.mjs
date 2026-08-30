@@ -100,6 +100,27 @@ const log = (line) => {
   console.log(line);
 };
 
+// ---------- corrections and additions from KJ's written answers, 2026-08-30 ----------
+//
+// Two-level geography (his Q7 and Q13 answers): a community keeps its own postal
+// code, and where it is genuinely connected to a surrounding rural code, that code
+// is carried separately as a catchment. Cross-province borrowings are removed.
+// clearCommunityDer: the community's own DER records in the Need Index were matched
+// against a wrong-province code, so they are unknown, not the sheet's value.
+const FSA_CORRECTIONS = new Map([
+  ["Antigonish|Nova Scotia", { fsa: "B2G", catchment: "B0H" }],
+  ["Wolfville|Nova Scotia", { fsa: "B4P", catchment: "B0P" }],
+  ["New Glasgow|Nova Scotia", { fsa: "B2H", catchment: null, clearCommunityDer: true }],
+  ["Sherbrooke|Prince Edward Island", { fsa: "C1N", catchment: null, clearCommunityDer: true }],
+  ["Miltonvale Park|Prince Edward Island", { fsa: "C1E", catchment: null, clearCommunityDer: true }],
+  ["Victoria|Prince Edward Island", { fsa: "C0A", catchment: null, clearCommunityDer: true }],
+]);
+
+// Saltbox pilot geography flag (his Q2 answer). Of the areas he named, only
+// West Hants exists as a community in this dataset; the rest are places inside
+// B0J and B0N or in rural HRM, which the four public sheets do not carry as rows.
+const PILOT_FLAG = new Set(["West Hants|Nova Scotia"]);
+
 // ---------- 1. Homeowner Profiles (province level) ----------
 
 {
@@ -115,6 +136,13 @@ const log = (line) => {
     if (String(r[0] ?? "").startsWith("SECTION")) continue;
     rowsIn++;
     if (str(r[0])) category = str(r[0]);
+    // KJ's Q12 answer, 2026-08-30: these are provincial rural counts and the
+    // sheet's "national rural" label is confusing. Renamed here; the sheet
+    // itself should be relabelled so a future export drops this override.
+    let indicator = str(r[1]);
+    if (indicator === "Period of construction (national rural)") {
+      indicator = "Rural dwellings by period of construction";
+    }
     const rawVals = [r[3], r[4], r[5], r[6]];
     // Unit heuristic: any % string, or every non-null value at or below 1, means a share.
     const isPct =
@@ -126,7 +154,7 @@ const log = (line) => {
     });
     out.push({
       category,
-      indicator: str(r[1]),
+      indicator,
       sub_indicator: str(r[2]),
       unit: isPct ? "percent" : "count",
       values,
@@ -199,11 +227,12 @@ let derRecords;
       gap_flag = { label, ordinal: GAP_FLAG_ORDER.indexOf(label) };
     }
     const tierLabel = str(r[6]);
+    // Saltbox Priority (column 3) dropped per KJ's Q6 answer, 2026-08-30:
+    // empty in all rows, out until it has values.
     table1.set(fsa(r[0]), {
       fsa: fsa(r[0]),
       province: str(r[1]) ?? province,
       region_county: str(r[2]),
-      saltbox_priority: str(r[3]),
       total_ders: num(r[4]),
       murbs: num(r[5]),
       volume_tier: tierLabel === null ? null : { label: tierLabel, ordinal: VOLUME_TIERS.indexOf(tierLabel) },
@@ -332,20 +361,32 @@ let niRecords, niSummary;
   const niFsaNotInDer = [];
 
   for (const n of niRecords) {
+    const key = `${n.community}|${n.province}`;
+    const corr = FSA_CORRECTIONS.get(key) ?? null;
     const ep = epByKey.get(nameKey(n.community) + "|" + n.province) ?? null;
     if (!ep) niNotInEp.push(`${n.community} (${n.province})`);
-    if (ep && ep.fsa && n.fsa && ep.fsa !== n.fsa) {
+    if (!corr && ep && ep.fsa && n.fsa && ep.fsa !== n.fsa) {
       fsaDisagreements.push(`${n.community} (${n.province}): need index says ${n.fsa}, energy poverty sheet says ${ep.fsa}`);
     }
-    const der = n.fsa ? derByFsa.get(n.fsa) ?? null : null;
-    if (n.fsa && !der) niFsaNotInDer.push(`${n.community} (${n.province}): FSA ${n.fsa}`);
+    const ownFsa = corr ? corr.fsa : n.fsa;
+    const catchment = corr ? corr.catchment : null;
+    // Retrofit context comes from the community's own code when the DER sheet
+    // covers it, otherwise from its rural catchment, clearly marked as such.
+    const contextFsa = ownFsa && derByFsa.has(ownFsa) ? ownFsa
+      : catchment && derByFsa.has(catchment) ? catchment
+      : null;
+    const der = contextFsa ? derByFsa.get(contextFsa) : null;
+    if (ownFsa && !contextFsa) niFsaNotInDer.push(`${n.community} (${n.province}): FSA ${ownFsa}`);
+    const clearDer = corr?.clearCommunityDer === true;
     spine.push({
       community: n.community,
-      fsa: n.fsa,
+      fsa: ownFsa,
+      fsa_catchment: catchment,
       fsa_in_energy_poverty_sheet: ep?.fsa ?? null,
       municipality: ep?.municipality ?? null,
       province: n.province,
       region_county: der?.region_county ?? null,
+      saltbox_pilot: PILOT_FLAG.has(key),
       energy_poverty: {
         households_energy_poverty: n.households_energy_poverty,
         other_households: n.other_households,
@@ -361,17 +402,22 @@ let niRecords, niSummary;
         seniors: n.seniors,
       },
       retrofit_activity: {
-        in_der_perf_map: n.in_der_perf_map,
-        der_records_here: n.der_activity,
-        best_performance_band: n.best_performance_band,
-        // FSA-level context, shared by every community in the same FSA:
+        // clearDer: the sheet's community-level records were matched against a
+        // wrong-province code, so the truth is unknown, not the sheet's value.
+        in_der_perf_map: clearDer ? false : n.in_der_perf_map,
+        der_records_here: clearDer ? null : n.der_activity,
+        best_performance_band: clearDer ? null : n.best_performance_band,
+        // Area-level context, shared by every community in the same code.
+        // context_fsa names where it came from; context_is_catchment marks it
+        // as surrounding-area data rather than the community's own code.
+        context_fsa: contextFsa,
+        context_is_catchment: contextFsa !== null && contextFsa !== ownFsa,
         fsa_total_ders: der?.total_ders ?? null,
         fsa_volume_tier: der?.volume_tier ?? null,
         fsa_gap_flag: der?.gap_flag ?? null,
       },
       need_score: n.need_score,
       need_tier: n.need_tier,
-      saltbox_priority: der?.saltbox_priority ?? null,
     });
   }
 
@@ -391,8 +437,9 @@ let niRecords, niSummary;
   fsaDisagreements.forEach((d) => log(`    ${d}`));
   log(`  need index FSAs absent from the DER sheet: ${niFsaNotInDer.length}${niFsaNotInDer.length ? " -> " + niFsaNotInDer.join("; ") : ""}`);
 
-  const priorities = derRecords.filter((d) => d.saltbox_priority !== null).length;
-  log(`Saltbox Priority column: ${priorities} of ${derRecords.length} DER rows carry a value`);
+  const catchments = spine.filter((s) => s.fsa_catchment !== null).length;
+  const contextFromCatchment = spine.filter((s) => s.retrofit_activity.context_is_catchment).length;
+  log(`Corrections applied (KJ answers 2026-08-30): ${FSA_CORRECTIONS.size} postal code fixes, ${catchments} rural catchments recorded, ${contextFromCatchment} communities drawing retrofit context from a catchment, ${spine.filter((s) => s.saltbox_pilot).length} pilot-flagged`);
 }
 
 writeFileSync("data/build-report.txt", report.join("\n") + "\n");

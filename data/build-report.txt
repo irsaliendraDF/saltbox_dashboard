@@ -11,12 +11,6 @@ Join coverage:
   need index matched to energy poverty sheet by name: 105 of 105
   need index communities with no energy poverty row: 0
   energy poverty communities missing from need index: 1 -> York (Prince Edward Island, C0A)
-  FSA disagreements between the two sheets: 6
-    Antigonish (Nova Scotia): need index says B0H, energy poverty sheet says B2G
-    Wolfville (Nova Scotia): need index says B0P, energy poverty sheet says B4P
-    New Glasgow (Nova Scotia): need index says C0A, energy poverty sheet says B2H
-    Sherbrooke (Prince Edward Island): need index says B0J, energy poverty sheet says C1N
-    Miltonvale Park (Prince Edward Island): need index says B0T, energy poverty sheet says C1E
-    Victoria (Prince Edward Island): need index says A0A, energy poverty sheet says C0A
-  need index FSAs absent from the DER sheet: 8 -> Hazelbrook (Prince Edward Island): FSA C1A; Brackley (Prince Edward Island): FSA C1E; Linkletter (Prince Edward Island): FSA C1N; Union Road (Prince Edward Island): FSA C1A; Campobello Island (New Brunswick): FSA E5E; Kedgwick (New Brunswick): FSA E8B; Saint-André (New Brunswick): FSA E3Y; Cocagne (New Brunswick): FSA E4R
-Saltbox Priority column: 0 of 41 DER rows carry a value
+  FSA disagreements between the two sheets: 0
+  need index FSAs absent from the DER sheet: 11 -> New Glasgow (Nova Scotia): FSA B2H; Hazelbrook (Prince Edward Island): FSA C1A; Brackley (Prince Edward Island): FSA C1E; Linkletter (Prince Edward Island): FSA C1N; Union Road (Prince Edward Island): FSA C1A; Sherbrooke (Prince Edward Island): FSA C1N; Miltonvale Park (Prince Edward Island): FSA C1E; Campobello Island (New Brunswick): FSA E5E; Kedgwick (New Brunswick): FSA E8B; Saint-André (New Brunswick): FSA E3Y; Cocagne (New Brunswick): FSA E4R
+Corrections applied (KJ answers 2026-08-30): 6 postal code fixes, 2 rural catchments recorded, 2 communities drawing retrofit context from a catchment, 1 pilot-flagged

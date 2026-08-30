@@ -29,7 +29,7 @@ Source sheet: `Homeowner Profiles`. Grain: **one record per indicator row**, val
 | `unit` | derived | `"percent"` or `"count"` | Detected per row: a `%` string anywhere, or every value at or below 1, means percent. The Nova Scotia column is mostly formatted strings while the other three provinces are bare decimals; both forms normalise identically |
 | `values` | the four province columns | object | Keys: `Nova Scotia`, `New Brunswick`, `Prince Edward Island`, `Newfoundland & Labrador`. Null where the sheet has no value (NL is missing dwelling condition and housing suitability) |
 
-Period of construction exists **only at this provincial level**. No sheet carries it per FSA (open question 5 in `DATA-QUESTIONS.md`).
+Period of construction exists **only at this provincial level**. No sheet carries it per FSA; KJ accepted the provincial ceiling in writing 2026-08-30. The sheet's "Period of construction (national rural)" label is overridden in the build to "Rural dwellings by period of construction" at his instruction: the counts are provincial rural figures and the old label was confusing. The sheet itself should be relabelled so the override can go.
 
 ## data/energy-poverty-fsa.json
 
@@ -57,11 +57,10 @@ Source sheet: `DER Activity by Postal Code`, which holds **two stacked tables**.
 |---|---|---|---|
 | `fsa` | T1: FSA | string | |
 | `province`, `region_county` | T1 | string | |
-| `saltbox_priority` | T1: Saltbox Priority | null | **Empty for all 41 rows in the workbook** (open question 8) |
-| `total_ders` | T1: Total DERs (2020–2023) | number | `0` is a real zero |
+| `total_ders` | T1: Total DERs (2020–2023) | number | `0` is a real zero. The sheet's Saltbox Priority column is not exported: empty in all 41 rows, dropped at KJ's written instruction 2026-08-30 until it has values |
 | `murbs` | T1: of which MURBs | number or null | Dash means unknown, not zero. MURB = multi-unit residential building |
 | `volume_tier` | T1: DER Volume Tier | object | `{label, ordinal}`. Labels and ordinals: `0`=0, `1–4`=1, `5–9`=2, `10–24`=3, `25–49`=4, `50–99`=5, `100+`=6. The sheet legend assigns emoji to these tiers; the emoji are dropped, the ordinal replaces them |
-| `gap_flag` | T1: Gap Flag | object or null | Cell holds an emoji plus a label; the label is kept, the emoji dropped. `{label, ordinal}`: `Zero activity`=0, `Very low`=1, `Low`=2, `Moderate`=3, `Active`=4, `High`=5. Higher ordinal means more retrofit activity. Note: the flag emoji in the cells do not follow the tier legend's emoji scale (open question 10) |
+| `gap_flag` | T1: Gap Flag | object or null | Cell holds an emoji plus a label; the label is kept, the emoji dropped. `{label, ordinal}`: `Zero activity`=0, `Very low`=1, `Low`=2, `Moderate`=3, `Active`=4, `High`=5. Higher ordinal means more retrofit activity. Reading confirmed in writing by KJ 2026-08-30: it grades documented deep retrofit activity, not need, and the UI shows it as "Activity signal" with red for zero or very low, yellow low, green moderate or active, blue high |
 | `performance` | table 2 | object or null | Null for the 16 FSAs with no performance-map presence (all of New Brunswick plus low-activity FSAs) |
 | `performance.bands` | T2 band columns | object | Keys `50–59%` through `90–100%` (percent energy savings per retrofit). Each `{count, communities}`; `communities` is the sheet's raw comma-separated list split to an array, spelling and case variants left as found |
 | `performance.total_sample` | T2: Total (sample) | number | |
@@ -92,24 +91,28 @@ Need Score formula, from the sheet's own note: EP rate (0 to 4 pts) + DER gap (0
 
 **Grain decision, and why it differs from the build plan.** The plan assumed one record per FSA. The workbook's finest common grain is the community: rural PEI has 50 communities inside just two FSAs (`C0A`, `C0B`), so an FSA-grain spine would collapse most of PEI into two rows and lose the Need Index entirely. The spine is therefore the 105 Need Index communities, each joined to its energy poverty row by normalised name and province (105 of 105 matched), with FSA-level DER activity attached as clearly-labelled shared context.
 
+**Two-level geography, per KJ's written answers 2026-08-30.** A community carries its own postal code (`fsa`) and, where genuinely connected, a surrounding rural code (`fsa_catchment`). Six postal codes are corrected in the build script relative to the Need Index sheet (`FSA_CORRECTIONS` in `build-data.mjs`): Antigonish B2G with catchment B0H, Wolfville B4P with catchment B0P, New Glasgow B2H, Sherbrooke PEI C1N, Miltonvale Park C1E, Victoria PEI C0A. The last four had cross-province codes in the sheet, so their community-level DER records are cleared to null: they were matched against the wrong region, which makes them unknown rather than the sheet's value.
+
 | Field | From | Notes |
 |---|---|---|
 | `community`, `province` | need index | |
-| `fsa` | need index | The need index's own FSA value |
-| `fsa_in_energy_poverty_sheet` | energy poverty sheet | Kept separately because the two sheets disagree for 6 communities; do not silently trust either (open question 9) |
+| `fsa` | need index, corrected | The community's own postal code |
+| `fsa_catchment` | KJ 2026-08-30 | Surrounding rural code where genuinely connected, else null |
+| `fsa_in_energy_poverty_sheet` | energy poverty sheet | Kept for transparency against the corrections |
 | `municipality` | energy poverty sheet | |
-| `region_county` | DER sheet, via `fsa` | |
+| `region_county` | DER sheet, via context FSA | |
+| `saltbox_pilot` | KJ 2026-08-30 | True for the Saltbox/HCi3 pilot geography (`PILOT_FLAG` in the script). The public flag prompts a funder to speak with Saltbox; no score is shown |
 | `energy_poverty.*` | need index | The 12 household measures |
-| `retrofit_activity.in_der_perf_map`, `.der_records_here`, `.best_performance_band` | need index | Community-level |
-| `retrofit_activity.fsa_total_ders`, `.fsa_volume_tier`, `.fsa_gap_flag` | DER sheet | **FSA-level context, shared by every community in the same FSA.** Null for the 8 communities whose FSA is not in the DER sheet and for communities with no FSA |
-| `need_score`, `need_tier` | need index | |
-| `saltbox_priority` | DER sheet | Currently always null (question 8) |
+| `retrofit_activity.in_der_perf_map`, `.der_records_here`, `.best_performance_band` | need index | Community-level; nulled for the four cross-province corrections |
+| `retrofit_activity.context_fsa`, `.context_is_catchment` | derived | Where the area-level fields come from: the community's own code when the DER sheet covers it, else its catchment. `context_is_catchment: true` means the numbers describe the surrounding rural area, and the UI labels them that way |
+| `retrofit_activity.fsa_total_ders`, `.fsa_volume_tier`, `.fsa_gap_flag` | DER sheet, via context FSA | **Area-level context, shared by every community with the same context code.** Null when neither the community's code nor a catchment is in the DER sheet |
+| `need_score`, `need_tier` | need index | Scores are the workbook's own and are not recomputed, including for the four communities whose DER inputs were contaminated |
 
 ### Join coverage, reported honestly
 
 - Need index to energy poverty sheet, by name and province: **105 of 105 matched**.
-- Energy poverty sheet community missing from the need index: **1**, York (Prince Edward Island, C0A). Not dropped silently; it is in `energy-poverty-fsa.json` and question 11.
-- FSA disagreements between the two sheets: **6** (listed in question 9).
-- Need index FSAs absent from the DER sheet: **8** (4 PEI urban-prefix FSAs, 4 New Brunswick FSAs; their `fsa_total_ders` is null, which is unknown, not zero).
+- Energy poverty sheet community missing from the need index: **1**, York (Prince Edward Island, C0A). KJ confirmed dropping it, 2026-08-30; it stays in `energy-poverty-fsa.json` only.
+- FSA disagreements between the two sheets: **0 remaining** after the six corrections above (question 9's history records the originals).
+- Communities whose own code and catchment are both absent from the DER sheet: **11** (their `fsa_total_ders` is null, which is unknown, not zero; KJ confirmed 2026-08-30 that no data exists for them).
 
 The build prints all of this on every run and writes it to `data/build-report.txt`.

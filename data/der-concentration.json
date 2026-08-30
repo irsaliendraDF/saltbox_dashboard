@@ -3,7 +3,6 @@
     "fsa": "A0A",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
-    "saltbox_priority": null,
     "total_ders": 56,
     "murbs": null,
     "volume_tier": {
@@ -78,7 +77,6 @@
     "fsa": "A0B",
     "province": "Newfoundland & Labrador",
     "region_county": "Placentia / St. Mary's Bay",
-    "saltbox_priority": null,
     "total_ders": 9,
     "murbs": null,
     "volume_tier": {
@@ -127,7 +125,6 @@
     "fsa": "A0C",
     "province": "Newfoundland & Labrador",
     "region_county": "Burin / Fortune Bay",
-    "saltbox_priority": null,
     "total_ders": 16,
     "murbs": null,
     "volume_tier": {
@@ -181,7 +178,6 @@
     "fsa": "A0E",
     "province": "Newfoundland & Labrador",
     "region_county": "Trinity / Bonavista",
-    "saltbox_priority": null,
     "total_ders": 9,
     "murbs": null,
     "volume_tier": {
@@ -230,7 +226,6 @@
     "fsa": "A0G",
     "province": "Newfoundland & Labrador",
     "region_county": "Notre Dame / Green Bay",
-    "saltbox_priority": null,
     "total_ders": 16,
     "murbs": null,
     "volume_tier": {
@@ -285,7 +280,6 @@
     "fsa": "A0H",
     "province": "Newfoundland & Labrador",
     "region_county": "Humber / Bay of Islands",
-    "saltbox_priority": null,
     "total_ders": 9,
     "murbs": null,
     "volume_tier": {
@@ -335,7 +329,6 @@
     "fsa": "A0J",
     "province": "Newfoundland & Labrador",
     "region_county": "South Coast",
-    "saltbox_priority": null,
     "total_ders": 2,
     "murbs": null,
     "volume_tier": {
@@ -382,7 +375,6 @@
     "fsa": "A0K",
     "province": "Newfoundland & Labrador",
     "region_county": "Labrador / Northern Peninsula",
-    "saltbox_priority": null,
     "total_ders": 8,
     "murbs": null,
     "volume_tier": {
@@ -433,7 +425,6 @@
     "fsa": "A0L",
     "province": "Newfoundland & Labrador",
     "region_county": "Bonne Bay / White Bay",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -450,7 +441,6 @@
     "fsa": "A0M",
     "province": "Newfoundland & Labrador",
     "region_county": "Corner Brook (rural)",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -467,7 +457,6 @@
     "fsa": "A0N",
     "province": "Newfoundland & Labrador",
     "region_county": "Codroy Valley / Port aux Basques",
-    "saltbox_priority": null,
     "total_ders": 2,
     "murbs": null,
     "volume_tier": {
@@ -516,7 +505,6 @@
     "fsa": "A0P",
     "province": "Newfoundland & Labrador",
     "region_county": "Labrador City region",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -533,7 +521,6 @@
     "fsa": "A0R",
     "province": "Newfoundland & Labrador",
     "region_county": "Labrador (remote)",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -550,7 +537,6 @@
     "fsa": "B0C",
     "province": "Nova Scotia",
     "region_county": "Cape Breton (rural north)",
-    "saltbox_priority": null,
     "total_ders": 2,
     "murbs": null,
     "volume_tier": {
@@ -593,7 +579,6 @@
     "fsa": "B0E",
     "province": "Nova Scotia",
     "region_county": "Richmond / Inverness / Cape Breton (south)",
-    "saltbox_priority": null,
     "total_ders": 65,
     "murbs": null,
     "volume_tier": {
@@ -670,7 +655,6 @@
     "fsa": "B0H",
     "province": "Nova Scotia",
     "region_county": "Antigonish / Guysborough",
-    "saltbox_priority": null,
     "total_ders": 24,
     "murbs": 1,
     "volume_tier": {
@@ -730,7 +714,6 @@
     "fsa": "B0J",
     "province": "Nova Scotia",
     "region_county": "Lunenburg / Guysborough",
-    "saltbox_priority": null,
     "total_ders": 203,
     "murbs": 5,
     "volume_tier": {
@@ -854,7 +837,6 @@
     "fsa": "B0K",
     "province": "Nova Scotia",
     "region_county": "Pictou",
-    "saltbox_priority": null,
     "total_ders": 117,
     "murbs": null,
     "volume_tier": {
@@ -947,7 +929,6 @@
     "fsa": "B0L",
     "province": "Nova Scotia",
     "region_county": "Cumberland",
-    "saltbox_priority": null,
     "total_ders": 4,
     "murbs": null,
     "volume_tier": {
@@ -994,7 +975,6 @@
     "fsa": "B0M",
     "province": "Nova Scotia",
     "region_county": "Cumberland / Colchester",
-    "saltbox_priority": null,
     "total_ders": 73,
     "murbs": null,
     "volume_tier": {
@@ -1066,7 +1046,6 @@
     "fsa": "B0N",
     "province": "Nova Scotia",
     "region_county": "Colchester / Kings / Hants",
-    "saltbox_priority": null,
     "total_ders": 156,
     "murbs": 4,
     "volume_tier": {
@@ -1185,7 +1164,6 @@
     "fsa": "B0P",
     "province": "Nova Scotia",
     "region_county": "Kings / Annapolis",
-    "saltbox_priority": null,
     "total_ders": 159,
     "murbs": 1,
     "volume_tier": {
@@ -1304,7 +1282,6 @@
     "fsa": "B0R",
     "province": "Nova Scotia",
     "region_county": "Lunenburg",
-    "saltbox_priority": null,
     "total_ders": 29,
     "murbs": null,
     "volume_tier": {
@@ -1365,7 +1342,6 @@
     "fsa": "B0S",
     "province": "Nova Scotia",
     "region_county": "Annapolis",
-    "saltbox_priority": null,
     "total_ders": 92,
     "murbs": 1,
     "volume_tier": {
@@ -1447,7 +1423,6 @@
     "fsa": "B0T",
     "province": "Nova Scotia",
     "region_county": "Queens / Shelburne",
-    "saltbox_priority": null,
     "total_ders": 40,
     "murbs": null,
     "volume_tier": {
@@ -1508,7 +1483,6 @@
     "fsa": "B0V",
     "province": "Nova Scotia",
     "region_county": "Digby / Annapolis",
-    "saltbox_priority": null,
     "total_ders": 20,
     "murbs": null,
     "volume_tier": {
@@ -1559,7 +1533,6 @@
     "fsa": "B0W",
     "province": "Nova Scotia",
     "region_county": "Shelburne / Yarmouth",
-    "saltbox_priority": null,
     "total_ders": 86,
     "murbs": 1,
     "volume_tier": {
@@ -1638,7 +1611,6 @@
     "fsa": "C0A",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
-    "saltbox_priority": null,
     "total_ders": 495,
     "murbs": 6,
     "volume_tier": {
@@ -1889,7 +1861,6 @@
     "fsa": "C0B",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
-    "saltbox_priority": null,
     "total_ders": 348,
     "murbs": 3,
     "volume_tier": {
@@ -2081,7 +2052,6 @@
     "fsa": "E0A",
     "province": "New Brunswick",
     "region_county": "Saint John / Kings (rural)",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2098,7 +2068,6 @@
     "fsa": "E0B",
     "province": "New Brunswick",
     "region_county": "Charlotte County",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2115,7 +2084,6 @@
     "fsa": "E0C",
     "province": "New Brunswick",
     "region_county": "Queens / Sunbury",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2132,7 +2100,6 @@
     "fsa": "E0E",
     "province": "New Brunswick",
     "region_county": "Kings County (rural)",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2149,7 +2116,6 @@
     "fsa": "E0G",
     "province": "New Brunswick",
     "region_county": "Albert / Westmorland",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2166,7 +2132,6 @@
     "fsa": "E0H",
     "province": "New Brunswick",
     "region_county": "Westmorland / Kent",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2183,7 +2148,6 @@
     "fsa": "E0J",
     "province": "New Brunswick",
     "region_county": "Kent / Northumberland",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2200,7 +2164,6 @@
     "fsa": "E0K",
     "province": "New Brunswick",
     "region_county": "Northumberland (rural)",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2217,7 +2180,6 @@
     "fsa": "E0L",
     "province": "New Brunswick",
     "region_county": "Gloucester (south)",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2234,7 +2196,6 @@
     "fsa": "E0M",
     "province": "New Brunswick",
     "region_county": "Gloucester (north)",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2251,7 +2212,6 @@
     "fsa": "E0N",
     "province": "New Brunswick",
     "region_county": "Victoria / Madawaska",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {
@@ -2268,7 +2228,6 @@
     "fsa": "E0P",
     "province": "New Brunswick",
     "region_county": "Restigouche",
-    "saltbox_priority": null,
     "total_ders": 0,
     "murbs": null,
     "volume_tier": {

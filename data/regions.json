@@ -2,10 +2,12 @@
   {
     "community": "Oxford",
     "fsa": "B0M",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0M",
     "municipality": "Oxford",
     "province": "Nova Scotia",
     "region_county": "Cumberland / Colchester",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 200,
       "other_households": 330,
@@ -24,6 +26,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "B0M",
+      "context_is_catchment": false,
       "fsa_total_ders": 73,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -38,16 +42,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Shelburne",
     "fsa": "B0T",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0T",
     "municipality": "Shelburne",
     "province": "Nova Scotia",
     "region_county": "Queens / Shelburne",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 340,
       "other_households": 450,
@@ -66,6 +71,8 @@
       "in_der_perf_map": true,
       "der_records_here": 3,
       "best_performance_band": "70–79%",
+      "context_fsa": "B0T",
+      "context_is_catchment": false,
       "fsa_total_ders": 40,
       "fsa_volume_tier": {
         "label": "25–49",
@@ -80,16 +87,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Clark's Harbour",
     "fsa": "B0W",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0W",
     "municipality": "Clark's Harbour",
     "province": "Nova Scotia",
     "region_county": "Shelburne / Yarmouth",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 140,
       "other_households": 220,
@@ -108,6 +116,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "B0W",
+      "context_is_catchment": false,
       "fsa_total_ders": 86,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -122,16 +132,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Pictou",
     "fsa": "B0K",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0K",
     "municipality": "Pictou",
     "province": "Nova Scotia",
     "region_county": "Pictou",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 3605,
       "other_households": 5545,
@@ -150,6 +161,8 @@
       "in_der_perf_map": true,
       "der_records_here": 3,
       "best_performance_band": "90–100%",
+      "context_fsa": "B0K",
+      "context_is_catchment": false,
       "fsa_total_ders": 117,
       "fsa_volume_tier": {
         "label": "100+",
@@ -164,16 +177,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Trenton",
     "fsa": "B0K",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0K",
     "municipality": "Trenton",
     "province": "Nova Scotia",
     "region_county": "Pictou",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 415,
       "other_households": 680,
@@ -192,6 +206,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "B0K",
+      "context_is_catchment": false,
       "fsa_total_ders": 117,
       "fsa_volume_tier": {
         "label": "100+",
@@ -206,16 +222,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Stellarton",
     "fsa": "B0K",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0K",
     "municipality": "Stellarton",
     "province": "Nova Scotia",
     "region_county": "Pictou",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 585,
       "other_households": 1300,
@@ -234,6 +251,8 @@
       "in_der_perf_map": true,
       "der_records_here": 3,
       "best_performance_band": "70–79%",
+      "context_fsa": "B0K",
+      "context_is_catchment": false,
       "fsa_total_ders": 117,
       "fsa_volume_tier": {
         "label": "100+",
@@ -248,16 +267,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Richmond",
     "fsa": null,
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Richmond",
     "province": "Nova Scotia",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 1555,
       "other_households": 2405,
@@ -276,6 +296,8 @@
       "in_der_perf_map": true,
       "der_records_here": 5,
       "best_performance_band": "80–89%",
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -284,16 +306,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Annapolis Royal",
     "fsa": "B0S",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0S",
     "municipality": "Annapolis-Royal",
     "province": "Nova Scotia",
     "region_county": "Annapolis",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 90,
       "other_households": 235,
@@ -312,6 +335,8 @@
       "in_der_perf_map": true,
       "der_records_here": 3,
       "best_performance_band": "90–100%",
+      "context_fsa": "B0S",
+      "context_is_catchment": false,
       "fsa_total_ders": 92,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -326,16 +351,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Westville",
     "fsa": "B0K",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0K",
     "municipality": "Westville",
     "province": "Nova Scotia",
     "region_county": "Pictou",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 560,
       "other_households": 1005,
@@ -354,6 +380,8 @@
       "in_der_perf_map": true,
       "der_records_here": 6,
       "best_performance_band": "90–100%",
+      "context_fsa": "B0K",
+      "context_is_catchment": false,
       "fsa_total_ders": 117,
       "fsa_volume_tier": {
         "label": "100+",
@@ -368,16 +396,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "West Hants",
     "fsa": "B0N",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "West Hants",
     "province": "Nova Scotia",
     "region_county": "Colchester / Kings / Hants",
+    "saltbox_pilot": true,
     "energy_poverty": {
       "households_energy_poverty": 2820,
       "other_households": 5550,
@@ -396,6 +425,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "B0N",
+      "context_is_catchment": false,
       "fsa_total_ders": 156,
       "fsa_volume_tier": {
         "label": "100+",
@@ -410,16 +441,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Middleton",
     "fsa": "B0S",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0S",
     "municipality": "Middleton",
     "province": "Nova Scotia",
     "region_county": "Annapolis",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 255,
       "other_households": 665,
@@ -438,6 +470,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "60–69%",
+      "context_fsa": "B0S",
+      "context_is_catchment": false,
       "fsa_total_ders": 92,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -452,16 +486,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Digby",
     "fsa": "B0V",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0V",
     "municipality": "Digby",
     "province": "Nova Scotia",
     "region_county": "Digby / Annapolis",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 275,
       "other_households": 755,
@@ -480,6 +515,8 @@
       "in_der_perf_map": true,
       "der_records_here": 2,
       "best_performance_band": "50–59%",
+      "context_fsa": "B0V",
+      "context_is_catchment": false,
       "fsa_total_ders": 20,
       "fsa_volume_tier": {
         "label": "10–24",
@@ -494,16 +531,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Lunenburg",
     "fsa": "B0J",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0J",
     "municipality": "Lunenburg",
     "province": "Nova Scotia",
     "region_county": "Lunenburg / Guysborough",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 390,
       "other_households": 700,
@@ -522,6 +560,8 @@
       "in_der_perf_map": true,
       "der_records_here": 9,
       "best_performance_band": "90–100%",
+      "context_fsa": "B0J",
+      "context_is_catchment": false,
       "fsa_total_ders": 203,
       "fsa_volume_tier": {
         "label": "100+",
@@ -536,16 +576,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Mahone Bay",
     "fsa": "B0J",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0J",
     "municipality": "Mahone Bay",
     "province": "Nova Scotia",
     "region_county": "Lunenburg / Guysborough",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 180,
       "other_households": 340,
@@ -564,6 +605,8 @@
       "in_der_perf_map": true,
       "der_records_here": 11,
       "best_performance_band": "90–100%",
+      "context_fsa": "B0J",
+      "context_is_catchment": false,
       "fsa_total_ders": 203,
       "fsa_volume_tier": {
         "label": "100+",
@@ -578,16 +621,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Antigonish",
-    "fsa": "B0H",
+    "fsa": "B2G",
+    "fsa_catchment": "B0H",
     "fsa_in_energy_poverty_sheet": "B2G",
     "municipality": "Antigonish",
     "province": "Nova Scotia",
     "region_county": "Antigonish / Guysborough",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 410,
       "other_households": 1795,
@@ -606,6 +650,8 @@
       "in_der_perf_map": true,
       "der_records_here": 2,
       "best_performance_band": "60–69%",
+      "context_fsa": "B0H",
+      "context_is_catchment": true,
       "fsa_total_ders": 24,
       "fsa_volume_tier": {
         "label": "10–24",
@@ -620,16 +666,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Stewiacke",
     "fsa": "B0N",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0N",
     "municipality": "Stewiacke",
     "province": "Nova Scotia",
     "region_county": "Colchester / Kings / Hants",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 210,
       "other_households": 505,
@@ -648,6 +695,8 @@
       "in_der_perf_map": true,
       "der_records_here": 4,
       "best_performance_band": "70–79%",
+      "context_fsa": "B0N",
+      "context_is_catchment": false,
       "fsa_total_ders": 156,
       "fsa_volume_tier": {
         "label": "100+",
@@ -662,16 +711,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Berwick",
     "fsa": "B0P",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B0P",
     "municipality": "Berwick",
     "province": "Nova Scotia",
     "region_county": "Kings / Annapolis",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 275,
       "other_households": 770,
@@ -690,6 +740,8 @@
       "in_der_perf_map": true,
       "der_records_here": 4,
       "best_performance_band": "70–79%",
+      "context_fsa": "B0P",
+      "context_is_catchment": false,
       "fsa_total_ders": 159,
       "fsa_volume_tier": {
         "label": "100+",
@@ -704,16 +756,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Wolfville",
-    "fsa": "B0P",
+    "fsa": "B4P",
+    "fsa_catchment": "B0P",
     "fsa_in_energy_poverty_sheet": "B4P",
     "municipality": "Wolfville",
     "province": "Nova Scotia",
     "region_county": "Kings / Annapolis",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 395,
       "other_households": 2045,
@@ -732,6 +785,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "B0P",
+      "context_is_catchment": true,
       "fsa_total_ders": 159,
       "fsa_volume_tier": {
         "label": "100+",
@@ -746,16 +801,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "New Glasgow",
-    "fsa": "C0A",
+    "fsa": "B2H",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "B2H",
     "municipality": "New Glasgow",
     "province": "Nova Scotia",
-    "region_county": "PEI (east)",
+    "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 1355,
       "other_households": 3090,
@@ -771,33 +827,30 @@
       "seniors": 685
     },
     "retrofit_activity": {
-      "in_der_perf_map": true,
-      "der_records_here": 12,
-      "best_performance_band": "90–100%",
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
-      "fsa_gap_flag": {
-        "label": "High",
-        "ordinal": 5
-      }
+      "in_der_perf_map": false,
+      "der_records_here": null,
+      "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
     },
     "need_score": 3,
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Bedeque and Area",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Bedeque & Area",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 70,
       "other_households": 50,
@@ -816,6 +869,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -830,16 +885,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Hazelbrook",
     "fsa": "C1A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C1A",
     "municipality": "Hazelbrook",
     "province": "Prince Edward Island",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 40,
       "other_households": 45,
@@ -858,6 +914,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -866,16 +924,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Brackley",
     "fsa": "C1E",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C1E",
     "municipality": "Brackley",
     "province": "Prince Edward Island",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 85,
       "other_households": 155,
@@ -894,6 +953,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -902,16 +963,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Annandale-Little Pond-Howe Bay",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Annandale-Little Pond- Howe Bay",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 30,
       "other_households": 60,
@@ -930,6 +992,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -944,16 +1008,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "St. Nicholas",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "St.Nicholas",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 25,
       "other_households": 55,
@@ -972,6 +1037,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -986,16 +1053,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Central Kings",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Central Kings",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 70,
       "other_households": 100,
@@ -1014,6 +1082,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1028,16 +1098,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "North Rustico",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "North Rustico",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 125,
       "other_households": 195,
@@ -1056,6 +1127,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "60–69%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1070,16 +1143,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Central Prince",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Central Prince",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 160,
       "other_households": 300,
@@ -1098,6 +1172,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1112,16 +1188,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Eastern Kings",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Eastern Kings",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 105,
       "other_households": 155,
@@ -1140,6 +1217,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1154,16 +1233,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Greenmount-Montrose",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Greenmount-Montrose",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 35,
       "other_households": 80,
@@ -1182,6 +1262,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "80–89%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1196,16 +1278,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Linkletter",
     "fsa": "C1N",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C1N",
     "municipality": "Linkletter",
     "province": "Prince Edward Island",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 55,
       "other_households": 75,
@@ -1224,6 +1307,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -1232,16 +1317,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Lot 11 and Area",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Lot 11 and Area",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 105,
       "other_households": 130,
@@ -1260,6 +1346,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1274,16 +1362,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Mount Stewart",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Mount Stewart",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 50,
       "other_households": 65,
@@ -1302,6 +1391,8 @@
       "in_der_perf_map": true,
       "der_records_here": 8,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1316,16 +1407,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Murray Harbour",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Murray Harbour",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 60,
       "other_households": 85,
@@ -1344,6 +1436,8 @@
       "in_der_perf_map": true,
       "der_records_here": 2,
       "best_performance_band": "80–89%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1358,16 +1452,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Murray River",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Murray River",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 75,
       "other_households": 65,
@@ -1386,6 +1481,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "60–69%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1400,16 +1497,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Northport",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Northport",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 40,
       "other_households": 40,
@@ -1428,6 +1526,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1442,16 +1542,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Union Road",
     "fsa": "C1A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C1A",
     "municipality": "Union Road",
     "province": "Prince Edward Island",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 45,
       "other_households": 40,
@@ -1470,6 +1571,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -1478,16 +1581,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Sherbrooke",
-    "fsa": "B0J",
+    "fsa": "C1N",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C1N",
     "municipality": "Sherbrooke",
     "province": "Prince Edward Island",
-    "region_county": "Lunenburg / Guysborough",
+    "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 25,
       "other_households": 60,
@@ -1503,33 +1607,30 @@
       "seniors": 0
     },
     "retrofit_activity": {
-      "in_der_perf_map": true,
-      "der_records_here": 2,
-      "best_performance_band": "80–89%",
-      "fsa_total_ders": 203,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
-      "fsa_gap_flag": {
-        "label": "High",
-        "ordinal": 5
-      }
+      "in_der_perf_map": false,
+      "der_records_here": null,
+      "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
     },
     "need_score": 6.9,
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Alexandra",
     "fsa": null,
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Alexandra",
     "province": "Prince Edward Island",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 35,
       "other_households": 65,
@@ -1548,6 +1649,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -1556,16 +1659,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Malpeque Bay",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Malpeque Bay",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 180,
       "other_households": 340,
@@ -1584,6 +1688,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1598,16 +1704,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Hunter River",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Hunter River",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 60,
       "other_households": 115,
@@ -1626,6 +1733,8 @@
       "in_der_perf_map": true,
       "der_records_here": 5,
       "best_performance_band": "80–89%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1640,16 +1749,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Cardigan",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Cardigan",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 15,
       "other_households": 30,
@@ -1668,6 +1778,8 @@
       "in_der_perf_map": true,
       "der_records_here": 7,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1682,16 +1794,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Crapaud",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Crapaud",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 40,
       "other_households": 80,
@@ -1710,6 +1823,8 @@
       "in_der_perf_map": true,
       "der_records_here": 6,
       "best_performance_band": "80–89%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1724,16 +1839,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "St. Felix",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "St.Felix",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 40,
       "other_households": 85,
@@ -1752,6 +1868,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1766,16 +1884,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Miminegash",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Miminegash",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 25,
       "other_households": 35,
@@ -1794,6 +1913,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1808,16 +1929,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Morell",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Morell",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 35,
       "other_households": 80,
@@ -1836,6 +1958,8 @@
       "in_der_perf_map": true,
       "der_records_here": 7,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1850,16 +1974,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "St. Louis",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "St.Louis",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 20,
       "other_households": 15,
@@ -1878,6 +2003,8 @@
       "in_der_perf_map": true,
       "der_records_here": 2,
       "best_performance_band": "60–69%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1892,16 +2019,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "West River",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "West River",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 405,
       "other_households": 935,
@@ -1920,6 +2048,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1934,16 +2064,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Souris West",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Souris West",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 65,
       "other_households": 100,
@@ -1962,6 +2093,8 @@
       "in_der_perf_map": true,
       "der_records_here": 5,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -1976,16 +2109,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Breadalbane",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Breadalbane",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 25,
       "other_households": 45,
@@ -2004,6 +2138,8 @@
       "in_der_perf_map": true,
       "der_records_here": 3,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2018,16 +2154,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Clyde River",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Clyde River",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 95,
       "other_households": 170,
@@ -2046,6 +2183,8 @@
       "in_der_perf_map": true,
       "der_records_here": 3,
       "best_performance_band": "70–79%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2060,16 +2199,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "North Shore",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "North Shore",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 240,
       "other_households": 740,
@@ -2088,6 +2228,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2102,16 +2244,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Miltonvale Park",
-    "fsa": "B0T",
+    "fsa": "C1E",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C1E",
     "municipality": "Miltonvale Park",
     "province": "Prince Edward Island",
-    "region_county": "Queens / Shelburne",
+    "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 160,
       "other_households": 325,
@@ -2127,33 +2270,30 @@
       "seniors": 65
     },
     "retrofit_activity": {
-      "in_der_perf_map": true,
-      "der_records_here": 1,
-      "best_performance_band": "70–79%",
-      "fsa_total_ders": 40,
-      "fsa_volume_tier": {
-        "label": "25–49",
-        "ordinal": 4
-      },
-      "fsa_gap_flag": {
-        "label": "Active",
-        "ordinal": 4
-      }
+      "in_der_perf_map": false,
+      "der_records_here": null,
+      "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
+      "fsa_total_ders": null,
+      "fsa_volume_tier": null,
+      "fsa_gap_flag": null
     },
     "need_score": 5.3,
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Belfast",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Belfast",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 265,
       "other_households": 410,
@@ -2172,6 +2312,8 @@
       "in_der_perf_map": true,
       "der_records_here": 4,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2186,16 +2328,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Victoria",
-    "fsa": "A0A",
+    "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Victoria",
     "province": "Prince Edward Island",
-    "region_county": "Avalon Peninsula (rural)",
+    "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 15,
       "other_households": 40,
@@ -2211,13 +2354,15 @@
       "seniors": 0
     },
     "retrofit_activity": {
-      "in_der_perf_map": true,
-      "der_records_here": 1,
-      "best_performance_band": "50–59%",
-      "fsa_total_ders": 56,
+      "in_der_perf_map": false,
+      "der_records_here": null,
+      "best_performance_band": null,
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
+      "fsa_total_ders": 495,
       "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
+        "label": "100+",
+        "ordinal": 6
       },
       "fsa_gap_flag": {
         "label": "High",
@@ -2228,16 +2373,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Borden-Carleton",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Borden-Carleton",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 90,
       "other_households": 265,
@@ -2256,6 +2402,8 @@
       "in_der_perf_map": true,
       "der_records_here": 4,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2270,16 +2418,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Hampshire",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Hampshire",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 20,
       "other_households": 115,
@@ -2298,6 +2447,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2312,16 +2463,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Kingston",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Kingston",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 90,
       "other_households": 305,
@@ -2340,6 +2492,8 @@
       "in_der_perf_map": true,
       "der_records_here": 10,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2354,16 +2508,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Kinkora",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Kinkora",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 50,
       "other_households": 110,
@@ -2382,6 +2537,8 @@
       "in_der_perf_map": true,
       "der_records_here": 4,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2396,16 +2553,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Warren Grove",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "Warren Grove",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 40,
       "other_households": 90,
@@ -2424,6 +2582,8 @@
       "in_der_perf_map": true,
       "der_records_here": 6,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2438,16 +2598,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Abram-Village",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Abram-Village",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 30,
       "other_households": 135,
@@ -2466,6 +2627,8 @@
       "in_der_perf_map": true,
       "der_records_here": 2,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2480,16 +2643,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "North Wiltshire",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "North Wiltshire",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 30,
       "other_households": 55,
@@ -2508,6 +2672,8 @@
       "in_der_perf_map": true,
       "der_records_here": 14,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2522,16 +2688,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Tignish Shore",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Tignish Shore",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 10,
       "other_households": 20,
@@ -2550,6 +2717,8 @@
       "in_der_perf_map": true,
       "der_records_here": 19,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2564,16 +2733,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Tyne Valley",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Tyne Valley",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 20,
       "other_households": 70,
@@ -2592,6 +2762,8 @@
       "in_der_perf_map": true,
       "der_records_here": 7,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2606,16 +2778,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Wellington",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0B",
     "municipality": "Wellington",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 65,
       "other_households": 155,
@@ -2634,6 +2807,8 @@
       "in_der_perf_map": true,
       "der_records_here": 17,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2648,16 +2823,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "St. Peters Bay",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "C0A",
     "municipality": "St.Peters Bay",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 10,
       "other_households": 100,
@@ -2676,6 +2852,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2690,16 +2868,17 @@
     "need_tier": {
       "label": "Lower",
       "ordinal": 0
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Kensington",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Kensington",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 240,
       "other_households": 625,
@@ -2718,6 +2897,8 @@
       "in_der_perf_map": true,
       "der_records_here": 14,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2732,16 +2913,17 @@
     "need_tier": {
       "label": "Lower",
       "ordinal": 0
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Cornwall",
     "fsa": "C0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Cornwall",
     "province": "Prince Edward Island",
     "region_county": "PEI (east)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 555,
       "other_households": 2090,
@@ -2760,6 +2942,8 @@
       "in_der_perf_map": true,
       "der_records_here": 26,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 495,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2774,16 +2958,17 @@
     "need_tier": {
       "label": "Lower",
       "ordinal": 0
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Miscouche",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Miscouche",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 80,
       "other_households": 305,
@@ -2802,6 +2987,8 @@
       "in_der_perf_map": true,
       "der_records_here": 17,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2816,16 +3003,17 @@
     "need_tier": {
       "label": "Lower",
       "ordinal": 0
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Alberton",
     "fsa": "C0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Alberton",
     "province": "Prince Edward Island",
     "region_county": "PEI (west/central)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 100,
       "other_households": 460,
@@ -2844,6 +3032,8 @@
       "in_der_perf_map": true,
       "der_records_here": 21,
       "best_performance_band": "90–100%",
+      "context_fsa": "C0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 348,
       "fsa_volume_tier": {
         "label": "100+",
@@ -2858,16 +3048,17 @@
     "need_tier": {
       "label": "Lower",
       "ordinal": 0
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Musgrave Harbour",
     "fsa": "A0G",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0G",
     "municipality": "Musgrave Harbour",
     "province": "Newfoundland & Labrador",
     "region_county": "Notre Dame / Green Bay",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 215,
       "other_households": 200,
@@ -2886,6 +3077,8 @@
       "in_der_perf_map": true,
       "der_records_here": 2,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0G",
+      "context_is_catchment": false,
       "fsa_total_ders": 16,
       "fsa_volume_tier": {
         "label": "10–24",
@@ -2900,16 +3093,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Placentia",
     "fsa": "A0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0B",
     "municipality": "Placentia",
     "province": "Newfoundland & Labrador",
     "region_county": "Placentia / St. Mary's Bay",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 610,
       "other_households": 935,
@@ -2928,6 +3122,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": "A0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 9,
       "fsa_volume_tier": {
         "label": "5–9",
@@ -2942,16 +3138,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Port au Choix",
     "fsa": "A0K",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0K",
     "municipality": "Port au Choix",
     "province": "Newfoundland & Labrador",
     "region_county": "Labrador / Northern Peninsula",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 170,
       "other_households": 225,
@@ -2970,6 +3167,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0K",
+      "context_is_catchment": false,
       "fsa_total_ders": 8,
       "fsa_volume_tier": {
         "label": "5–9",
@@ -2984,16 +3183,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Robert's Arm",
     "fsa": "A0J",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0J",
     "municipality": "Robert's Arm",
     "province": "Newfoundland & Labrador",
     "region_county": "South Coast",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 155,
       "other_households": 195,
@@ -3012,6 +3212,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0J",
+      "context_is_catchment": false,
       "fsa_total_ders": 2,
       "fsa_volume_tier": {
         "label": "1–4",
@@ -3026,16 +3228,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Upper Island Cove",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Upper Island Cove",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 285,
       "other_households": 295,
@@ -3054,6 +3257,8 @@
       "in_der_perf_map": true,
       "der_records_here": 3,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3068,16 +3273,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Appleton",
     "fsa": "A0G",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0G",
     "municipality": "Appleton",
     "province": "Newfoundland & Labrador",
     "region_county": "Notre Dame / Green Bay",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 95,
       "other_households": 175,
@@ -3096,6 +3302,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0G",
+      "context_is_catchment": false,
       "fsa_total_ders": 16,
       "fsa_volume_tier": {
         "label": "10–24",
@@ -3110,16 +3318,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Bonavista",
     "fsa": "A0C",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0C",
     "municipality": "Bonavista",
     "province": "Newfoundland & Labrador",
     "region_county": "Burin / Fortune Bay",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 735,
       "other_households": 735,
@@ -3138,6 +3347,8 @@
       "in_der_perf_map": true,
       "der_records_here": 2,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0C",
+      "context_is_catchment": false,
       "fsa_total_ders": 16,
       "fsa_volume_tier": {
         "label": "10–24",
@@ -3152,16 +3363,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Brigus",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Brigus",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 145,
       "other_households": 185,
@@ -3180,6 +3392,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3194,16 +3408,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Cape Broyle",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Cape Broyle",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 120,
       "other_households": 110,
@@ -3222,6 +3437,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3236,16 +3453,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Carmanville",
     "fsa": "A0G",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0G",
     "municipality": "Carmanville",
     "province": "Newfoundland & Labrador",
     "region_county": "Notre Dame / Green Bay",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 145,
       "other_households": 210,
@@ -3264,6 +3482,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0G",
+      "context_is_catchment": false,
       "fsa_total_ders": 16,
       "fsa_volume_tier": {
         "label": "10–24",
@@ -3278,16 +3498,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Clarke's Beach",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Clarke's Beach",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 240,
       "other_households": 360,
@@ -3306,6 +3527,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3320,16 +3543,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Conception Harbour",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Conception Harbour",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 125,
       "other_households": 165,
@@ -3348,6 +3572,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3362,16 +3588,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Cottlesville",
     "fsa": "A0G",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0G",
     "municipality": "Cottlesville",
     "province": "Newfoundland & Labrador",
     "region_county": "Notre Dame / Green Bay",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 60,
       "other_households": 55,
@@ -3390,6 +3617,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0G",
+      "context_is_catchment": false,
       "fsa_total_ders": 16,
       "fsa_volume_tier": {
         "label": "10–24",
@@ -3404,16 +3633,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Harbour Grace",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Harbour Grace",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 575,
       "other_households": 735,
@@ -3432,6 +3662,8 @@
       "in_der_perf_map": true,
       "der_records_here": 3,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3446,16 +3678,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Spaniard's Bay",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Spaniard's Bay",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 495,
       "other_households": 615,
@@ -3474,6 +3707,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3488,16 +3723,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Stephenville Crossing",
     "fsa": "A0N",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0N",
     "municipality": "Stephenville Crossing",
     "province": "Newfoundland & Labrador",
     "region_county": "Codroy Valley / Port aux Basques",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 315,
       "other_households": 435,
@@ -3516,6 +3752,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0N",
+      "context_is_catchment": false,
       "fsa_total_ders": 2,
       "fsa_volume_tier": {
         "label": "1–4",
@@ -3530,16 +3768,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Sunnyside",
     "fsa": "A0B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0B",
     "municipality": "Sunnyside",
     "province": "Newfoundland & Labrador",
     "region_county": "Placentia / St. Mary's Bay",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 85,
       "other_households": 130,
@@ -3558,6 +3797,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0B",
+      "context_is_catchment": false,
       "fsa_total_ders": 9,
       "fsa_volume_tier": {
         "label": "5–9",
@@ -3572,16 +3813,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Terrenceville",
     "fsa": "A0E",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0E",
     "municipality": "Terrenceville",
     "province": "Newfoundland & Labrador",
     "region_county": "Trinity / Bonavista",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 100,
       "other_households": 100,
@@ -3600,6 +3842,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0E",
+      "context_is_catchment": false,
       "fsa_total_ders": 9,
       "fsa_volume_tier": {
         "label": "5–9",
@@ -3614,16 +3858,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Trout River",
     "fsa": "A0K",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0K",
     "municipality": "Trout River",
     "province": "Newfoundland & Labrador",
     "region_county": "Labrador / Northern Peninsula",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 115,
       "other_households": 100,
@@ -3642,6 +3887,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0K",
+      "context_is_catchment": false,
       "fsa_total_ders": 8,
       "fsa_volume_tier": {
         "label": "5–9",
@@ -3656,16 +3903,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Victoria",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Victoria",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 320,
       "other_households": 385,
@@ -3684,6 +3932,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3698,16 +3948,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Bay Roberts",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Bay Roberts",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 965,
       "other_households": 1525,
@@ -3726,6 +3977,8 @@
       "in_der_perf_map": true,
       "der_records_here": 2,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3740,16 +3993,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Leading Tickles",
     "fsa": "A0H",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0H",
     "municipality": "Leading Tickles",
     "province": "Newfoundland & Labrador",
     "region_county": "Humber / Bay of Islands",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 60,
       "other_households": 95,
@@ -3768,6 +4022,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0H",
+      "context_is_catchment": false,
       "fsa_total_ders": 9,
       "fsa_volume_tier": {
         "label": "5–9",
@@ -3782,16 +4038,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Milltown",
     "fsa": "A0H",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0H",
     "municipality": "Milltown",
     "province": "Newfoundland & Labrador",
     "region_county": "Humber / Bay of Islands",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 130,
       "other_households": 215,
@@ -3810,6 +4067,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0H",
+      "context_is_catchment": false,
       "fsa_total_ders": 9,
       "fsa_volume_tier": {
         "label": "5–9",
@@ -3824,16 +4083,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Old Perlican",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Old Perlican",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 100,
       "other_households": 160,
@@ -3852,6 +4112,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3866,16 +4128,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Pouch Cove",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Pouch Cove",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 295,
       "other_households": 525,
@@ -3894,6 +4157,8 @@
       "in_der_perf_map": true,
       "der_records_here": 2,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3908,16 +4173,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Northern Arm",
     "fsa": "A0H",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0H",
     "municipality": "Northern Arm",
     "province": "Newfoundland & Labrador",
     "region_county": "Humber / Bay of Islands",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 70,
       "other_households": 130,
@@ -3936,6 +4202,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0H",
+      "context_is_catchment": false,
       "fsa_total_ders": 9,
       "fsa_volume_tier": {
         "label": "5–9",
@@ -3950,16 +4218,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Holyrood",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Holyrood",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 300,
       "other_households": 695,
@@ -3978,6 +4247,8 @@
       "in_der_perf_map": true,
       "der_records_here": 3,
       "best_performance_band": "70–79%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -3992,16 +4263,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Witless Bay",
     "fsa": "A0A",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "A0A",
     "municipality": "Witless Bay",
     "province": "Newfoundland & Labrador",
     "region_county": "Avalon Peninsula (rural)",
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 150,
       "other_households": 465,
@@ -4020,6 +4292,8 @@
       "in_der_perf_map": true,
       "der_records_here": 1,
       "best_performance_band": "50–59%",
+      "context_fsa": "A0A",
+      "context_is_catchment": false,
       "fsa_total_ders": 56,
       "fsa_volume_tier": {
         "label": "50–99",
@@ -4034,16 +4308,17 @@
     "need_tier": {
       "label": "Moderate",
       "ordinal": 1
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Upper Miramichi",
     "fsa": null,
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Upper Miramichi",
     "province": "New Brunswick",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 425,
       "other_households": 530,
@@ -4062,6 +4337,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -4070,16 +4347,17 @@
     "need_tier": {
       "label": "Critical",
       "ordinal": 3
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Campobello Island",
     "fsa": "E5E",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "E5E",
     "municipality": "Campobello Island",
     "province": "New Brunswick",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 165,
       "other_households": 255,
@@ -4098,6 +4376,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -4106,16 +4386,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Kedgwick",
     "fsa": "E8B",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "E8B",
     "municipality": "Kedgwick",
     "province": "New Brunswick",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 345,
       "other_households": 595,
@@ -4134,6 +4415,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -4142,16 +4425,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Saint-André",
     "fsa": "E3Y",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "E3Y",
     "municipality": "Saint-André",
     "province": "New Brunswick",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 270,
       "other_households": 485,
@@ -4170,6 +4454,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -4178,16 +4464,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Haut-Madawaska",
     "fsa": null,
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Haut-Madawaska",
     "province": "New Brunswick",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 495,
       "other_households": 1165,
@@ -4206,6 +4493,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -4214,16 +4503,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Beaubassin East",
     "fsa": null,
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Beaubassin East",
     "province": "New Brunswick",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 735,
       "other_households": 2120,
@@ -4242,6 +4532,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -4250,16 +4542,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Cocagne",
     "fsa": "E4R",
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": "E4R",
     "municipality": "Cocagne",
     "province": "New Brunswick",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 295,
       "other_households": 920,
@@ -4278,6 +4571,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -4286,16 +4581,17 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   },
   {
     "community": "Hanwell",
     "fsa": null,
+    "fsa_catchment": null,
     "fsa_in_energy_poverty_sheet": null,
     "municipality": "Hanwell",
     "province": "New Brunswick",
     "region_county": null,
+    "saltbox_pilot": false,
     "energy_poverty": {
       "households_energy_poverty": 380,
       "other_households": 1415,
@@ -4314,6 +4610,8 @@
       "in_der_perf_map": false,
       "der_records_here": 0,
       "best_performance_band": null,
+      "context_fsa": null,
+      "context_is_catchment": false,
       "fsa_total_ders": null,
       "fsa_volume_tier": null,
       "fsa_gap_flag": null
@@ -4322,7 +4620,6 @@
     "need_tier": {
       "label": "High",
       "ordinal": 2
-    },
-    "saltbox_priority": null
+    }
   }
 ]

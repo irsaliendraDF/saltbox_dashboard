@@ -277,7 +277,7 @@
   },
   {
     "category": "Dwelling age",
-    "indicator": "Period of construction (national rural)",
+    "indicator": "Rural dwellings by period of construction",
     "sub_indicator": "1960 or before",
     "unit": "count",
     "values": {
@@ -289,7 +289,7 @@
   },
   {
     "category": "Dwelling age",
-    "indicator": "Period of construction (national rural)",
+    "indicator": "Rural dwellings by period of construction",
     "sub_indicator": "1961 to 1980",
     "unit": "count",
     "values": {
@@ -301,7 +301,7 @@
   },
   {
     "category": "Dwelling age",
-    "indicator": "Period of construction (national rural)",
+    "indicator": "Rural dwellings by period of construction",
     "sub_indicator": "1981 to 1990",
     "unit": "count",
     "values": {
@@ -313,7 +313,7 @@
   },
   {
     "category": "Dwelling age",
-    "indicator": "Period of construction (national rural)",
+    "indicator": "Rural dwellings by period of construction",
     "sub_indicator": "1991 to 2000",
     "unit": "count",
     "values": {
@@ -325,7 +325,7 @@
   },
   {
     "category": "Dwelling age",
-    "indicator": "Period of construction (national rural)",
+    "indicator": "Rural dwellings by period of construction",
     "sub_indicator": "2001 to 2005",
     "unit": "count",
     "values": {
@@ -337,7 +337,7 @@
   },
   {
     "category": "Dwelling age",
-    "indicator": "Period of construction (national rural)",
+    "indicator": "Rural dwellings by period of construction",
     "sub_indicator": "2006-2010",
     "unit": "count",
     "values": {
@@ -349,7 +349,7 @@
   },
   {
     "category": "Dwelling age",
-    "indicator": "Period of construction (national rural)",
+    "indicator": "Rural dwellings by period of construction",
     "sub_indicator": "2011 to 2015",
     "unit": "count",
     "values": {
@@ -361,7 +361,7 @@
   },
   {
     "category": "Dwelling age",
-    "indicator": "Period of construction (national rural)",
+    "indicator": "Rural dwellings by period of construction",
     "sub_indicator": "2016-2021",
     "unit": "count",
     "values": {

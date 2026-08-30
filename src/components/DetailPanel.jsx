@@ -4,7 +4,7 @@ import {
   Cell,
   TierPill,
   NEED_TIER_STYLES,
-  ACTIVITY_TIER_STYLES,
+  SIGNAL_STYLES,
   fmtPct,
   fmtNum,
 } from "../lib/format.jsx";
@@ -63,8 +63,14 @@ export default function DetailPanel({ region, onClose }) {
                 : ""}
               {region.province}
               {region.fsa ? ` · FSA ${region.fsa}` : " · postal area not recorded"}
+              {region.fsa_catchment ? ` · rural catchment ${region.fsa_catchment}` : ""}
               {region.region_county ? ` · ${region.region_county}` : ""}
             </p>
+            {region.saltbox_pilot && (
+              <p className="mt-1 rounded-md bg-violet-50 px-2 py-1 text-xs text-violet-800">
+                Saltbox pilot geography. Speak with Saltbox for more context on this area.
+              </p>
+            )}
           </div>
           <button
             type="button"
@@ -92,14 +98,27 @@ export default function DetailPanel({ region, onClose }) {
         <Section title="Retrofit activity">
           <Row label="Deep retrofits recorded here (2020–2023)" value={ra.der_records_here} />
           <Row label="Best performance band here" value={ra.best_performance_band} />
-          <Row label={`Deep retrofits in ${region.fsa ?? "its postal area"} overall`} value={ra.fsa_total_ders} />
+          <Row
+            label={
+              ra.context_is_catchment
+                ? `Deep retrofits in surrounding rural area (${ra.context_fsa})`
+                : `Deep retrofits in ${ra.context_fsa ?? region.fsa ?? "its postal area"} overall`
+            }
+            value={ra.fsa_total_ders}
+          />
           <div className="flex items-baseline justify-between gap-4 py-1">
-            <span className="text-sm text-slate-500">FSA activity tier</span>
-            <TierPill label={ra.fsa_volume_tier?.label ?? null} styles={ACTIVITY_TIER_STYLES} />
+            <span className="text-sm text-slate-500">Activity signal</span>
+            <TierPill label={ra.fsa_gap_flag?.label ?? null} styles={SIGNAL_STYLES} />
           </div>
+          {ra.context_is_catchment && (
+            <p className="mt-1 text-xs text-slate-400">
+              Activity shown is for the surrounding rural area, not recorded for this community's
+              own postal code ({region.fsa}).
+            </p>
+          )}
           {!region.fsa && (
             <p className="mt-1 text-xs text-slate-400">
-              No postal area is recorded for this community, so postal-area retrofit context is not
+              No postal area is recorded for this community, so area retrofit context is not
               available.
             </p>
           )}

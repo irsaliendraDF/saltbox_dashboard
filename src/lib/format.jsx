@@ -40,6 +40,18 @@ export const ACTIVITY_TIER_STYLES = {
   "100+": "bg-purple-100 text-purple-800 border-purple-200",
 };
 
+// KJ's Q10 reading, 2026-08-30: the signal grades documented retrofit activity.
+// Red is very little activity reaching the area, yellow limited, green
+// established, blue comparatively strong. Red does not mean highest need.
+export const SIGNAL_STYLES = {
+  "Zero activity": "bg-red-100 text-red-800 border-red-200",
+  "Very low": "bg-red-50 text-red-700 border-red-200",
+  Low: "bg-yellow-100 text-yellow-800 border-yellow-200",
+  Moderate: "bg-emerald-100 text-emerald-800 border-emerald-200",
+  Active: "bg-emerald-100 text-emerald-800 border-emerald-200",
+  High: "bg-blue-100 text-blue-800 border-blue-200",
+};
+
 export function TierPill({ label, styles }) {
   if (label === null || label === undefined) {
     return (
