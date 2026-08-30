@@ -14,6 +14,8 @@ import {
 } from "recharts";
 import { PROVINCES, PROVINCE_COLORS, PROVINCE_SHORT, fmtPct } from "../lib/format.jsx";
 
+const SIGNAL_ORDER = ["Zero activity", "Very low", "Low", "Moderate", "Active", "High"];
+
 function ScatterTip({ active, payload }) {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
@@ -23,7 +25,7 @@ function ScatterTip({ active, payload }) {
         {d.community} ({PROVINCE_SHORT[d.province]})
       </div>
       <div className="text-slate-600">Need score {d.need_score}</div>
-      <div className="text-slate-600">Deep retrofits recorded: {d.ders}</div>
+      <div className="text-slate-600">Activity signal: {d.signalLabel}</div>
       <div className="text-slate-600">Energy poverty {fmtPct(d.ep) ?? "not recorded"}</div>
     </div>
   );
@@ -46,13 +48,16 @@ function BarTip({ active, payload }) {
 }
 
 export default function ChartsPanel({ regions }) {
+  // Actual retrofit counts are internal, so the x-axis is the activity signal.
+  // A small deterministic jitter spreads communities sharing a (signal, score) spot.
   const scatterData = regions
-    .filter((r) => r.need_score !== null && r.retrofit_activity.der_records_here !== null)
-    .map((r) => ({
+    .filter((r) => r.need_score !== null && r.retrofit_activity.fsa_gap_flag !== null)
+    .map((r, i) => ({
       community: r.community,
       province: r.province,
       need_score: r.need_score,
-      ders: r.retrofit_activity.der_records_here,
+      signal: r.retrofit_activity.fsa_gap_flag.ordinal + ((i % 7) - 3) * 0.06,
+      signalLabel: r.retrofit_activity.fsa_gap_flag.label,
       ep: r.energy_poverty.ep_rate_pct,
     }));
 
@@ -71,9 +76,10 @@ export default function ChartsPanel({ regions }) {
   return (
     <div className="grid gap-4 lg:grid-cols-2">
       <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-        <h2 className="text-sm font-semibold text-slate-900">Need vs retrofit activity</h2>
+        <h2 className="text-sm font-semibold text-slate-900">Need vs activity signal</h2>
         <p className="mb-2 text-xs text-slate-500">
-          One point per community. Top left is the market validation story: high need, little activity yet.
+          One point per community. Top left is the market validation story: high need, little
+          documented activity yet.
         </p>
         {scatterData.length === 0 ? (
           <p className="py-16 text-center text-sm text-slate-400">No communities to chart.</p>
@@ -83,10 +89,13 @@ export default function ChartsPanel({ regions }) {
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
               <XAxis
                 type="number"
-                dataKey="ders"
-                name="Deep retrofits recorded"
-                tick={{ fontSize: 11 }}
-                label={{ value: "Deep retrofits recorded (2020–2023)", position: "insideBottom", offset: -4, fontSize: 11 }}
+                dataKey="signal"
+                name="Activity signal"
+                domain={[-0.5, 5.5]}
+                ticks={[0, 1, 2, 3, 4, 5]}
+                tickFormatter={(v) => SIGNAL_ORDER[v] ?? ""}
+                tick={{ fontSize: 10 }}
+                label={{ value: "Documented retrofit activity (2020–2023)", position: "insideBottom", offset: -4, fontSize: 11 }}
                 height={40}
               />
               <YAxis

@@ -10,13 +10,13 @@ import DetailPanel from "./components/DetailPanel.jsx";
 const epValues = regions.map((r) => r.energy_poverty.ep_rate_pct).filter((v) => v !== null);
 const EP_BOUNDS = [Math.floor(Math.min(...epValues)), Math.ceil(Math.max(...epValues))];
 
-// Activity tier options in ordinal order, plus "none" for communities whose
+// Activity signal options in ordinal order, plus "none" for communities whose
 // postal area has no recorded activity data (unknown, distinct from zero).
 const ACTIVITY_TIER_OPTIONS = [
   ...[...new Map(
     regions
-      .filter((r) => r.retrofit_activity.fsa_volume_tier)
-      .map((r) => [r.retrofit_activity.fsa_volume_tier.ordinal, r.retrofit_activity.fsa_volume_tier.label])
+      .filter((r) => r.retrofit_activity.fsa_gap_flag)
+      .map((r) => [r.retrofit_activity.fsa_gap_flag.ordinal, r.retrofit_activity.fsa_gap_flag.label])
   ).entries()]
     .sort((a, b) => a[0] - b[0])
     .map(([, label]) => label),
@@ -42,7 +42,7 @@ export default function App() {
       if (filters.provinces.size && !filters.provinces.has(r.province)) return false;
       if (filters.needTiers.size && !filters.needTiers.has(r.need_tier?.label)) return false;
       if (filters.activityTiers.size) {
-        const tier = r.retrofit_activity.fsa_volume_tier?.label ?? "none";
+        const tier = r.retrofit_activity.fsa_gap_flag?.label ?? "none";
         if (!filters.activityTiers.has(tier)) return false;
       }
       const ep = r.energy_poverty.ep_rate_pct;

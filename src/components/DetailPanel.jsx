@@ -96,20 +96,19 @@ export default function DetailPanel({ region, onClose }) {
         </Section>
 
         <Section title="Retrofit activity">
-          <Row label="Deep retrofits recorded here (2020–2023)" value={ra.der_records_here} />
-          <Row label="Best performance band here" value={ra.best_performance_band} />
-          <Row
-            label={
-              ra.context_is_catchment
-                ? `Deep retrofits in surrounding rural area (${ra.context_fsa})`
-                : `Deep retrofits in ${ra.context_fsa ?? region.fsa ?? "its postal area"} overall`
-            }
-            value={ra.fsa_total_ders}
-          />
           <div className="flex items-baseline justify-between gap-4 py-1">
-            <span className="text-sm text-slate-500">Activity signal</span>
+            <span className="text-sm text-slate-500">
+              {ra.context_is_catchment
+                ? `Activity signal, surrounding rural area (${ra.context_fsa})`
+                : "Activity signal"}
+            </span>
             <TierPill label={ra.fsa_gap_flag?.label ?? null} styles={SIGNAL_STYLES} />
           </div>
+          <Row
+            label="In the retrofit performance map"
+            value={ra.in_der_perf_map ? "Yes" : "No"}
+          />
+          <Row label="Best performance band recorded here" value={ra.best_performance_band} />
           {ra.context_is_catchment && (
             <p className="mt-1 text-xs text-slate-400">
               Activity shown is for the surrounding rural area, not recorded for this community's

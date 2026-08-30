@@ -14,10 +14,11 @@ export default function SummaryTiles({ regions }) {
     (sum, r) => sum + (r.energy_poverty.households_energy_poverty ?? 0),
     0
   );
-  const retrofits = regions.reduce(
-    (sum, r) => sum + (r.retrofit_activity.der_records_here ?? 0),
-    0
-  );
+  // Actual retrofit counts are internal; the public tile reads the signal.
+  const lowActivity = regions.filter((r) => {
+    const label = r.retrofit_activity.fsa_gap_flag?.label;
+    return label === "Zero activity" || label === "Very low";
+  }).length;
   const critical = regions.filter((r) => r.need_tier?.label === "Critical").length;
 
   return (
@@ -25,9 +26,9 @@ export default function SummaryTiles({ regions }) {
       <Tile label="Communities shown" value={communities.toLocaleString("en-CA")} />
       <Tile label="Households in energy poverty" value={epHouseholds.toLocaleString("en-CA")} />
       <Tile
-        label="Deep retrofits recorded"
-        value={retrofits.toLocaleString("en-CA")}
-        sub="2020–2023, in these communities"
+        label="Little or no documented retrofit activity"
+        value={lowActivity.toLocaleString("en-CA")}
+        sub="2020–2023 activity signal"
       />
       <Tile label="Communities in Critical need" value={critical.toLocaleString("en-CA")} />
     </div>

@@ -19,8 +19,6 @@ const COLUMNS = [
   { key: "ep_households", label: "In energy poverty", get: (r) => r.energy_poverty.households_energy_poverty, numeric: true },
   { key: "major_repair_pct", label: "Major repair", get: (r) => r.energy_poverty.major_repair_pct, numeric: true },
   { key: "older_housing_pct", label: "Older housing", get: (r) => r.energy_poverty.older_housing_pct, numeric: true },
-  { key: "ders_here", label: "Retrofits here", get: (r) => r.retrofit_activity.der_records_here, numeric: true },
-  { key: "fsa_ders", label: "Retrofits in area", get: (r) => r.retrofit_activity.fsa_total_ders, numeric: true },
   { key: "signal", label: "Activity signal", get: (r) => r.retrofit_activity.fsa_gap_flag?.ordinal ?? null, numeric: true },
 ];
 
@@ -94,25 +92,21 @@ export default function RegionTable({ regions, onSelect }) {
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.households_energy_poverty} /></td>
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.major_repair_pct} pct /></td>
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.older_housing_pct} pct /></td>
-                <td className="px-3 py-2 tabular-nums"><Cell value={r.retrofit_activity.der_records_here} /></td>
                 <td
-                  className="px-3 py-2 tabular-nums"
+                  className="px-3 py-2"
                   title={
                     r.retrofit_activity.context_is_catchment
-                      ? `Surrounding rural area (${r.retrofit_activity.context_fsa})`
+                      ? `Signal for the surrounding rural area (${r.retrofit_activity.context_fsa})`
                       : undefined
                   }
                 >
-                  <Cell value={r.retrofit_activity.fsa_total_ders} />
-                  {r.retrofit_activity.context_is_catchment && (
-                    <span className="ml-1 text-xs text-slate-400">area</span>
-                  )}
-                </td>
-                <td className="px-3 py-2">
                   <TierPill
                     label={r.retrofit_activity.fsa_gap_flag?.label ?? null}
                     styles={SIGNAL_STYLES}
                   />
+                  {r.retrofit_activity.context_is_catchment && (
+                    <span className="ml-1 text-xs text-slate-400">area</span>
+                  )}
                 </td>
               </tr>
             ))}

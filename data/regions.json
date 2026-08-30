@@ -24,15 +24,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "B0M",
       "context_is_catchment": false,
-      "fsa_total_ders": 73,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -69,15 +63,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 3,
       "best_performance_band": "70–79%",
       "context_fsa": "B0T",
       "context_is_catchment": false,
-      "fsa_total_ders": 40,
-      "fsa_volume_tier": {
-        "label": "25–49",
-        "ordinal": 4
-      },
       "fsa_gap_flag": {
         "label": "Active",
         "ordinal": 4
@@ -114,15 +102,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "B0W",
       "context_is_catchment": false,
-      "fsa_total_ders": 86,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -159,15 +141,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 3,
       "best_performance_band": "90–100%",
       "context_fsa": "B0K",
       "context_is_catchment": false,
-      "fsa_total_ders": 117,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -204,15 +180,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "B0K",
       "context_is_catchment": false,
-      "fsa_total_ders": 117,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -249,15 +219,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 3,
       "best_performance_band": "70–79%",
       "context_fsa": "B0K",
       "context_is_catchment": false,
-      "fsa_total_ders": 117,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -294,12 +258,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 5,
       "best_performance_band": "80–89%",
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 5.9,
@@ -333,15 +294,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 3,
       "best_performance_band": "90–100%",
       "context_fsa": "B0S",
       "context_is_catchment": false,
-      "fsa_total_ders": 92,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -378,15 +333,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 6,
       "best_performance_band": "90–100%",
       "context_fsa": "B0K",
       "context_is_catchment": false,
-      "fsa_total_ders": 117,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -423,15 +372,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "B0N",
       "context_is_catchment": false,
-      "fsa_total_ders": 156,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -468,15 +411,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "60–69%",
       "context_fsa": "B0S",
       "context_is_catchment": false,
-      "fsa_total_ders": 92,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -513,15 +450,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 2,
       "best_performance_band": "50–59%",
       "context_fsa": "B0V",
       "context_is_catchment": false,
-      "fsa_total_ders": 20,
-      "fsa_volume_tier": {
-        "label": "10–24",
-        "ordinal": 3
-      },
       "fsa_gap_flag": {
         "label": "Moderate",
         "ordinal": 3
@@ -558,15 +489,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 9,
       "best_performance_band": "90–100%",
       "context_fsa": "B0J",
       "context_is_catchment": false,
-      "fsa_total_ders": 203,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -603,15 +528,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 11,
       "best_performance_band": "90–100%",
       "context_fsa": "B0J",
       "context_is_catchment": false,
-      "fsa_total_ders": 203,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -648,15 +567,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 2,
       "best_performance_band": "60–69%",
       "context_fsa": "B0H",
       "context_is_catchment": true,
-      "fsa_total_ders": 24,
-      "fsa_volume_tier": {
-        "label": "10–24",
-        "ordinal": 3
-      },
       "fsa_gap_flag": {
         "label": "Moderate",
         "ordinal": 3
@@ -693,15 +606,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 4,
       "best_performance_band": "70–79%",
       "context_fsa": "B0N",
       "context_is_catchment": false,
-      "fsa_total_ders": 156,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -738,15 +645,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 4,
       "best_performance_band": "70–79%",
       "context_fsa": "B0P",
       "context_is_catchment": false,
-      "fsa_total_ders": 159,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -783,15 +684,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "B0P",
       "context_is_catchment": true,
-      "fsa_total_ders": 159,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -828,12 +723,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": null,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 3,
@@ -867,15 +759,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -912,12 +798,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 9,
@@ -951,12 +834,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 8.5,
@@ -990,15 +870,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1035,15 +909,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1080,15 +948,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1125,15 +987,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "60–69%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1170,15 +1026,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1215,15 +1065,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1260,15 +1104,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "80–89%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1305,12 +1143,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 7,
@@ -1344,15 +1179,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1389,15 +1218,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 8,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1434,15 +1257,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 2,
       "best_performance_band": "80–89%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1479,15 +1296,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "60–69%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1524,15 +1335,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1569,12 +1374,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 7,
@@ -1608,12 +1410,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": null,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 6.9,
@@ -1647,12 +1446,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 6.5,
@@ -1686,15 +1482,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1731,15 +1521,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 5,
       "best_performance_band": "80–89%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1776,15 +1560,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 7,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1821,15 +1599,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 6,
       "best_performance_band": "80–89%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1866,15 +1638,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1911,15 +1677,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -1956,15 +1716,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 7,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2001,15 +1755,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 2,
       "best_performance_band": "60–69%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2046,15 +1794,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2091,15 +1833,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 5,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2136,15 +1872,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 3,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2181,15 +1911,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 3,
       "best_performance_band": "70–79%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2226,15 +1950,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2271,12 +1989,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": null,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 5.3,
@@ -2310,15 +2025,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 4,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2355,15 +2064,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": null,
       "best_performance_band": null,
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2400,15 +2103,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 4,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2445,15 +2142,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2490,15 +2181,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 10,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2535,15 +2220,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 4,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2580,15 +2259,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 6,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2625,15 +2298,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 2,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2670,15 +2337,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 14,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2715,15 +2376,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 19,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2760,15 +2415,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 7,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2805,15 +2454,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 17,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2850,15 +2493,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2895,15 +2532,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 14,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2940,15 +2571,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 26,
       "best_performance_band": "90–100%",
       "context_fsa": "C0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 495,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -2985,15 +2610,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 17,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3030,15 +2649,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 21,
       "best_performance_band": "90–100%",
       "context_fsa": "C0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 348,
-      "fsa_volume_tier": {
-        "label": "100+",
-        "ordinal": 6
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3075,15 +2688,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 2,
       "best_performance_band": "50–59%",
       "context_fsa": "A0G",
       "context_is_catchment": false,
-      "fsa_total_ders": 16,
-      "fsa_volume_tier": {
-        "label": "10–24",
-        "ordinal": 3
-      },
       "fsa_gap_flag": {
         "label": "Moderate",
         "ordinal": 3
@@ -3120,15 +2727,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": "A0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 9,
-      "fsa_volume_tier": {
-        "label": "5–9",
-        "ordinal": 2
-      },
       "fsa_gap_flag": {
         "label": "Low",
         "ordinal": 2
@@ -3165,15 +2766,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0K",
       "context_is_catchment": false,
-      "fsa_total_ders": 8,
-      "fsa_volume_tier": {
-        "label": "5–9",
-        "ordinal": 2
-      },
       "fsa_gap_flag": {
         "label": "Low",
         "ordinal": 2
@@ -3210,15 +2805,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "A0J",
       "context_is_catchment": false,
-      "fsa_total_ders": 2,
-      "fsa_volume_tier": {
-        "label": "1–4",
-        "ordinal": 1
-      },
       "fsa_gap_flag": {
         "label": "Very low",
         "ordinal": 1
@@ -3255,15 +2844,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 3,
       "best_performance_band": "70–79%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3300,15 +2883,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0G",
       "context_is_catchment": false,
-      "fsa_total_ders": 16,
-      "fsa_volume_tier": {
-        "label": "10–24",
-        "ordinal": 3
-      },
       "fsa_gap_flag": {
         "label": "Moderate",
         "ordinal": 3
@@ -3345,15 +2922,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 2,
       "best_performance_band": "50–59%",
       "context_fsa": "A0C",
       "context_is_catchment": false,
-      "fsa_total_ders": 16,
-      "fsa_volume_tier": {
-        "label": "10–24",
-        "ordinal": 3
-      },
       "fsa_gap_flag": {
         "label": "Moderate",
         "ordinal": 3
@@ -3390,15 +2961,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3435,15 +3000,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3480,15 +3039,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0G",
       "context_is_catchment": false,
-      "fsa_total_ders": 16,
-      "fsa_volume_tier": {
-        "label": "10–24",
-        "ordinal": 3
-      },
       "fsa_gap_flag": {
         "label": "Moderate",
         "ordinal": 3
@@ -3525,15 +3078,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3570,15 +3117,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3615,15 +3156,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "A0G",
       "context_is_catchment": false,
-      "fsa_total_ders": 16,
-      "fsa_volume_tier": {
-        "label": "10–24",
-        "ordinal": 3
-      },
       "fsa_gap_flag": {
         "label": "Moderate",
         "ordinal": 3
@@ -3660,15 +3195,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 3,
       "best_performance_band": "70–79%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3705,15 +3234,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3750,15 +3273,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0N",
       "context_is_catchment": false,
-      "fsa_total_ders": 2,
-      "fsa_volume_tier": {
-        "label": "1–4",
-        "ordinal": 1
-      },
       "fsa_gap_flag": {
         "label": "Very low",
         "ordinal": 1
@@ -3795,15 +3312,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0B",
       "context_is_catchment": false,
-      "fsa_total_ders": 9,
-      "fsa_volume_tier": {
-        "label": "5–9",
-        "ordinal": 2
-      },
       "fsa_gap_flag": {
         "label": "Low",
         "ordinal": 2
@@ -3840,15 +3351,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0E",
       "context_is_catchment": false,
-      "fsa_total_ders": 9,
-      "fsa_volume_tier": {
-        "label": "5–9",
-        "ordinal": 2
-      },
       "fsa_gap_flag": {
         "label": "Low",
         "ordinal": 2
@@ -3885,15 +3390,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "A0K",
       "context_is_catchment": false,
-      "fsa_total_ders": 8,
-      "fsa_volume_tier": {
-        "label": "5–9",
-        "ordinal": 2
-      },
       "fsa_gap_flag": {
         "label": "Low",
         "ordinal": 2
@@ -3930,15 +3429,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -3975,15 +3468,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 2,
       "best_performance_band": "70–79%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -4020,15 +3507,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0H",
       "context_is_catchment": false,
-      "fsa_total_ders": 9,
-      "fsa_volume_tier": {
-        "label": "5–9",
-        "ordinal": 2
-      },
       "fsa_gap_flag": {
         "label": "Low",
         "ordinal": 2
@@ -4065,15 +3546,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0H",
       "context_is_catchment": false,
-      "fsa_total_ders": 9,
-      "fsa_volume_tier": {
-        "label": "5–9",
-        "ordinal": 2
-      },
       "fsa_gap_flag": {
         "label": "Low",
         "ordinal": 2
@@ -4110,15 +3585,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "70–79%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -4155,15 +3624,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 2,
       "best_performance_band": "70–79%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -4200,15 +3663,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0H",
       "context_is_catchment": false,
-      "fsa_total_ders": 9,
-      "fsa_volume_tier": {
-        "label": "5–9",
-        "ordinal": 2
-      },
       "fsa_gap_flag": {
         "label": "Low",
         "ordinal": 2
@@ -4245,15 +3702,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 3,
       "best_performance_band": "70–79%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -4290,15 +3741,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": true,
-      "der_records_here": 1,
       "best_performance_band": "50–59%",
       "context_fsa": "A0A",
       "context_is_catchment": false,
-      "fsa_total_ders": 56,
-      "fsa_volume_tier": {
-        "label": "50–99",
-        "ordinal": 5
-      },
       "fsa_gap_flag": {
         "label": "High",
         "ordinal": 5
@@ -4335,12 +3780,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 8,
@@ -4374,12 +3816,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 6.9,
@@ -4413,12 +3852,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 6.7,
@@ -4452,12 +3888,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 6.6,
@@ -4491,12 +3924,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 6,
@@ -4530,12 +3960,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 5.6,
@@ -4569,12 +3996,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 5.4,
@@ -4608,12 +4032,9 @@
     },
     "retrofit_activity": {
       "in_der_perf_map": false,
-      "der_records_here": 0,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
-      "fsa_total_ders": null,
-      "fsa_volume_tier": null,
       "fsa_gap_flag": null
     },
     "need_score": 5.1,

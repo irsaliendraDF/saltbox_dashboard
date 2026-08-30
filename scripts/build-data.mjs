@@ -401,19 +401,20 @@ let niRecords, niSummary;
         renters: n.renters,
         seniors: n.seniors,
       },
+      // Irene's ruling on KJ's Q4/Q10 answers, 2026-08-30: actual DER counts
+      // remain internal; the public dashboard carries only the general retrofit
+      // picture (the Activity signal and performance band). regions.json ships
+      // in the public bundle, so no count fields appear here at all.
       retrofit_activity: {
         // clearDer: the sheet's community-level records were matched against a
         // wrong-province code, so the truth is unknown, not the sheet's value.
         in_der_perf_map: clearDer ? false : n.in_der_perf_map,
-        der_records_here: clearDer ? null : n.der_activity,
         best_performance_band: clearDer ? null : n.best_performance_band,
         // Area-level context, shared by every community in the same code.
         // context_fsa names where it came from; context_is_catchment marks it
         // as surrounding-area data rather than the community's own code.
         context_fsa: contextFsa,
         context_is_catchment: contextFsa !== null && contextFsa !== ownFsa,
-        fsa_total_ders: der?.total_ders ?? null,
-        fsa_volume_tier: der?.volume_tier ?? null,
         fsa_gap_flag: der?.gap_flag ?? null,
       },
       need_score: n.need_score,

@@ -9,6 +9,12 @@ data/raw/
 # Client working notes, tracked outside the public repo.
 DATA-QUESTIONS.md
 
+# Actual DER counts remain internal (Irene's ruling on KJ's Q4/Q10 answers,
+# 2026-08-30). These two snapshots carry the counts, so they stay local;
+# the dashboard imports only regions.json and the homeowner profile.
+data/der-concentration.json
+data/community-need-index.json
+
 # Local editor and OS noise
 .DS_Store
 *.local
