@@ -408,7 +408,8 @@ let niRecords, niSummary;
       retrofit_activity: {
         // clearDer: the sheet's community-level records were matched against a
         // wrong-province code, so the truth is unknown, not the sheet's value.
-        in_der_perf_map: clearDer ? false : n.in_der_perf_map,
+        // null, never false: "we do not know" is not "no retrofits happened here".
+        in_der_perf_map: clearDer ? null : n.in_der_perf_map,
         best_performance_band: clearDer ? null : n.best_performance_band,
         // Area-level context, shared by every community in the same code.
         // context_fsa names where it came from; context_is_catchment marks it

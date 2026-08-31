@@ -722,7 +722,7 @@
       "seniors": 685
     },
     "retrofit_activity": {
-      "in_der_perf_map": false,
+      "in_der_perf_map": null,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
@@ -1409,7 +1409,7 @@
       "seniors": 0
     },
     "retrofit_activity": {
-      "in_der_perf_map": false,
+      "in_der_perf_map": null,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
@@ -1988,7 +1988,7 @@
       "seniors": 65
     },
     "retrofit_activity": {
-      "in_der_perf_map": false,
+      "in_der_perf_map": null,
       "best_performance_band": null,
       "context_fsa": null,
       "context_is_catchment": false,
@@ -2063,7 +2063,7 @@
       "seniors": 0
     },
     "retrofit_activity": {
-      "in_der_perf_map": false,
+      "in_der_perf_map": null,
       "best_performance_band": null,
       "context_fsa": "C0A",
       "context_is_catchment": false,

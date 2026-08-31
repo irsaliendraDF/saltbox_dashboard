@@ -14,11 +14,13 @@ export default function SummaryTiles({ regions }) {
     (sum, r) => sum + (r.energy_poverty.households_energy_poverty ?? 0),
     0
   );
-  // Actual retrofit counts are internal; the public tile reads the signal.
-  const lowActivity = regions.filter((r) => {
-    const label = r.retrofit_activity.fsa_gap_flag?.label;
-    return label === "Zero activity" || label === "Very low";
-  }).length;
+  // Community level, not area level. The area signal describes a whole postal
+  // area, so a community with no retrofits of its own can sit inside a busy one.
+  // This tile counts communities where nothing is documented as having reached
+  // them, which is the delivery gap a funder is looking for.
+  const noneDocumented = regions.filter(
+    (r) => r.retrofit_activity.in_der_perf_map === false
+  ).length;
   const critical = regions.filter((r) => r.need_tier?.label === "Critical").length;
 
   return (
@@ -26,9 +28,9 @@ export default function SummaryTiles({ regions }) {
       <Tile label="Communities shown" value={communities.toLocaleString("en-CA")} />
       <Tile label="Households in energy poverty" value={epHouseholds.toLocaleString("en-CA")} />
       <Tile
-        label="Little or no documented retrofit activity"
-        value={lowActivity.toLocaleString("en-CA")}
-        sub="2020–2023 activity signal"
+        label="No retrofits documented in the community"
+        value={noneDocumented.toLocaleString("en-CA")}
+        sub="2020–2023, whatever the surrounding area shows"
       />
       <Tile label="Communities in Critical need" value={critical.toLocaleString("en-CA")} />
     </div>

@@ -16,6 +16,21 @@ import { PROVINCES, PROVINCE_COLORS, PROVINCE_SHORT, fmtPct } from "../lib/forma
 
 const SIGNAL_ORDER = ["Zero activity", "Very low", "Low", "Moderate", "Active", "High"];
 
+// A filled dot means retrofits are documented in the community itself. A hollow
+// ring means none are, whatever the surrounding area shows. Hollow rings high on
+// the need axis are the investment argument, and they would be invisible if the
+// x position (an area-level signal) were the only thing drawn.
+function DotShape(props) {
+  const { cx, cy, fill, payload } = props;
+  if (cx === null || cy === null || cx === undefined || cy === undefined) return null;
+  if (payload.documented === true) {
+    return <circle cx={cx} cy={cy} r={5} fill={fill} fillOpacity={0.75} />;
+  }
+  return (
+    <circle cx={cx} cy={cy} r={5} fill="#fff" stroke={fill} strokeWidth={2} />
+  );
+}
+
 function ScatterTip({ active, payload }) {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
@@ -25,7 +40,14 @@ function ScatterTip({ active, payload }) {
         {d.community} ({PROVINCE_SHORT[d.province]})
       </div>
       <div className="text-slate-600">Need score {d.need_score}</div>
-      <div className="text-slate-600">Activity signal: {d.signalLabel}</div>
+      <div className="text-slate-600">
+        {d.documented === true
+          ? "Retrofits documented in this community"
+          : d.documented === false
+          ? "No retrofits documented in this community"
+          : "Community activity not recorded"}
+      </div>
+      <div className="text-slate-600">Surrounding area signal: {d.signalLabel}</div>
       <div className="text-slate-600">Energy poverty {fmtPct(d.ep) ?? "not recorded"}</div>
     </div>
   );
@@ -58,8 +80,16 @@ export default function ChartsPanel({ regions }) {
       need_score: r.need_score,
       signal: r.retrofit_activity.fsa_gap_flag.ordinal + ((i % 7) - 3) * 0.06,
       signalLabel: r.retrofit_activity.fsa_gap_flag.label,
+      documented: r.retrofit_activity.in_der_perf_map,
       ep: r.energy_poverty.ep_rate_pct,
     }));
+
+  // Communities whose area has no activity data cannot be placed on this axis
+  // without implying a value they do not have. They are named below the chart
+  // rather than dropped silently, and they are all still in the table.
+  const notPlotted = regions.filter(
+    (r) => r.need_score !== null && r.retrofit_activity.fsa_gap_flag === null
+  ).length;
 
   const barData = regions
     .filter((r) => r.energy_poverty.ep_rate_pct !== null)
@@ -78,11 +108,16 @@ export default function ChartsPanel({ regions }) {
       <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
         <h2 className="text-sm font-semibold text-slate-900">Need vs activity signal</h2>
         <p className="mb-2 text-xs text-slate-500">
-          One point per community. Top left is the market validation story: high need, little
-          documented activity yet.
+          One point per community, placed by the activity signal for its surrounding area.
+          <span className="font-medium text-slate-700"> Hollow rings have no retrofits documented
+          in the community itself</span>, so a high ring on the right means the work is happening
+          nearby but not reaching that community. That is the investment argument.
         </p>
         {scatterData.length === 0 ? (
-          <p className="py-16 text-center text-sm text-slate-400">No communities to chart.</p>
+          <p className="py-16 text-center text-sm text-slate-400">
+            No communities in this filter have area activity data to chart.
+            {notPlotted > 0 && ` ${notPlotted} are listed in the table above.`}
+          </p>
         ) : (
           <ResponsiveContainer width="100%" height={320}>
             <ScatterChart margin={{ top: 8, right: 16, bottom: 8, left: -8 }}>
@@ -95,7 +130,7 @@ export default function ChartsPanel({ regions }) {
                 ticks={[0, 1, 2, 3, 4, 5]}
                 tickFormatter={(v) => SIGNAL_ORDER[v] ?? ""}
                 tick={{ fontSize: 10 }}
-                label={{ value: "Documented retrofit activity (2020–2023)", position: "insideBottom", offset: -4, fontSize: 11 }}
+                label={{ value: "Documented retrofit activity in the surrounding area (2020–2023)", position: "insideBottom", offset: -4, fontSize: 10 }}
                 height={40}
               />
               <YAxis
@@ -115,11 +150,18 @@ export default function ChartsPanel({ regions }) {
                   name={PROVINCE_SHORT[p]}
                   data={scatterData.filter((d) => d.province === p)}
                   fill={PROVINCE_COLORS[p]}
-                  fillOpacity={0.75}
+                  shape={DotShape}
                 />
               ))}
             </ScatterChart>
           </ResponsiveContainer>
+        )}
+        {notPlotted > 0 && (
+          <p className="mt-1 text-xs text-slate-400">
+            {notPlotted} {notPlotted === 1 ? "community is" : "communities are"} not plotted: no
+            retrofit activity data exists for their postal area, which is not the same as none
+            happening. They are in the table above.
+          </p>
         )}
       </div>
 

@@ -19,8 +19,46 @@ const COLUMNS = [
   { key: "ep_households", label: "In energy poverty", get: (r) => r.energy_poverty.households_energy_poverty, numeric: true },
   { key: "major_repair_pct", label: "Major repair", get: (r) => r.energy_poverty.major_repair_pct, numeric: true },
   { key: "older_housing_pct", label: "Older housing", get: (r) => r.energy_poverty.older_housing_pct, numeric: true },
+  // Community level. Distinct from the area signal below, and the distinction
+  // matters: a community with nothing documented can sit inside a busy area.
+  {
+    key: "documented_here",
+    label: "Documented here",
+    get: (r) => {
+      const v = r.retrofit_activity.in_der_perf_map;
+      return v === null ? null : v ? 1 : 0;
+    },
+    numeric: true,
+    // "None" is the interesting end of this column, so the first click surfaces
+    // the gaps rather than burying them under 73 documented communities.
+    initialDir: 1,
+  },
   { key: "signal", label: "Activity signal", get: (r) => r.retrofit_activity.fsa_gap_flag?.ordinal ?? null, numeric: true },
 ];
+
+// "None" is a finding, not a blank: it means no deep retrofit is recorded as
+// having reached this community. Unknown stays a dash.
+function DocumentedHere({ activity }) {
+  if (activity.in_der_perf_map === null) {
+    return (
+      <span className="text-slate-400 cursor-help" title="not recorded">
+        –
+      </span>
+    );
+  }
+  if (activity.in_der_perf_map === false) {
+    return (
+      <span className="inline-block rounded-full border border-red-200 bg-red-50 px-2 py-0.5 text-xs font-medium text-red-700 whitespace-nowrap">
+        None
+      </span>
+    );
+  }
+  return (
+    <span className="text-slate-700 whitespace-nowrap">
+      {activity.best_performance_band ?? "Yes"}
+    </span>
+  );
+}
 
 export default function RegionTable({ regions, onSelect }) {
   const [sort, setSort] = useState({ key: "need_score", dir: -1 });
@@ -37,9 +75,11 @@ export default function RegionTable({ regions, onSelect }) {
   });
 
   const clickHeader = (key) =>
-    setSort((s) =>
-      s.key === key ? { key, dir: -s.dir } : { key, dir: COLUMNS.find((c) => c.key === key).numeric ? -1 : 1 }
-    );
+    setSort((s) => {
+      if (s.key === key) return { key, dir: -s.dir };
+      const c = COLUMNS.find((x) => x.key === key);
+      return { key, dir: c.initialDir ?? (c.numeric ? -1 : 1) };
+    });
 
   return (
     <div className="rounded-lg border border-slate-200 bg-white shadow-sm">
@@ -92,6 +132,9 @@ export default function RegionTable({ regions, onSelect }) {
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.households_energy_poverty} /></td>
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.major_repair_pct} pct /></td>
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.older_housing_pct} pct /></td>
+                <td className="px-3 py-2">
+                  <DocumentedHere activity={r.retrofit_activity} />
+                </td>
                 <td
                   className="px-3 py-2"
                   title={

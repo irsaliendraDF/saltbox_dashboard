@@ -105,8 +105,14 @@ export default function DetailPanel({ region, onClose }) {
             <TierPill label={ra.fsa_gap_flag?.label ?? null} styles={SIGNAL_STYLES} />
           </div>
           <Row
-            label="In the retrofit performance map"
-            value={ra.in_der_perf_map ? "Yes" : "No"}
+            label="Retrofits documented in this community"
+            value={
+              ra.in_der_perf_map === null
+                ? null
+                : ra.in_der_perf_map
+                ? "Yes"
+                : "None recorded"
+            }
           />
           <Row label="Best performance band recorded here" value={ra.best_performance_band} />
           {ra.context_is_catchment && (
