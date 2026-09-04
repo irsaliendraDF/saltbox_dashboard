@@ -5,6 +5,7 @@ import SummaryTiles from "./components/SummaryTiles.jsx";
 import RegionTable from "./components/RegionTable.jsx";
 import ChartsPanel from "./components/ChartsPanel.jsx";
 import DetailPanel from "./components/DetailPanel.jsx";
+import NovaScotiaMap from "./components/NovaScotiaMap.jsx";
 
 // Bounds for the energy poverty slider, from the data itself.
 const epValues = regions.map((r) => r.energy_poverty.ep_rate_pct).filter((v) => v !== null);
@@ -35,6 +36,9 @@ const INITIAL_FILTERS = {
 export default function App() {
   const [filters, setFilters] = useState(INITIAL_FILTERS);
   const [selected, setSelected] = useState(null);
+  // Map first, per KJ 2026-09-04: he wanted to see the geography before the
+  // numbers, with the hard-coded stats a tab behind it.
+  const [tab, setTab] = useState("map");
 
   const filtered = useMemo(() => {
     const q = filters.search.trim().toLowerCase();
@@ -78,6 +82,26 @@ export default function App() {
           </p>
         </header>
 
+        <div className="flex gap-1 border-b border-slate-200">
+          {[
+            ["map", "Map"],
+            ["data", "Data"],
+          ].map(([key, label]) => (
+            <button
+              key={key}
+              type="button"
+              onClick={() => setTab(key)}
+              className={`-mb-px border-b-2 px-4 py-2 text-sm font-medium transition-colors ${
+                tab === key
+                  ? "border-slate-800 text-slate-900"
+                  : "border-transparent text-slate-500 hover:text-slate-700"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
         {filtered.length === 0 ? (
           <div className="rounded-lg border border-slate-200 bg-white p-10 text-center shadow-sm">
             <p className="text-slate-600">No communities match the current filters.</p>
@@ -89,6 +113,11 @@ export default function App() {
               Reset filters
             </button>
           </div>
+        ) : tab === "map" ? (
+          <>
+            <SummaryTiles regions={filtered} />
+            <NovaScotiaMap regions={filtered} onSelectCommunity={setSelected} />
+          </>
         ) : (
           <>
             <SummaryTiles regions={filtered} />
@@ -99,8 +128,8 @@ export default function App() {
 
         <footer className="pb-6 pt-2 text-xs text-slate-400">
           Sources: Efficiency Canada Community-Level Energy Poverty Map · NRCan EnerGuide / Green
-          Communities Canada 2020–2023 · Statistics Canada 2021 census. A dash means not recorded,
-          which is not the same as zero.
+          Communities Canada 2020–2023 · Statistics Canada 2021 census. Postal area boundaries:
+          Statistics Canada 2021 Census. A dash means not recorded, which is not the same as zero.
         </footer>
       </main>
 

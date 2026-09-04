@@ -18,3 +18,7 @@ data/community-need-index.json
 # Local editor and OS noise
 .DS_Store
 *.local
+
+# StatCan boundary source: 21.7 MB zip in, 55 KB of Nova Scotia paths out.
+# Only the trimmed output ships. Re-run: python scripts/build-geo.py
+data/geo-src/

@@ -52,6 +52,16 @@ export const SIGNAL_STYLES = {
   High: "bg-blue-100 text-blue-800 border-blue-200",
 };
 
+// SVG needs real colours, not Tailwind classes. Same palette as NEED_TIER_STYLES.
+export const NEED_TIER_FILL = {
+  Critical: "#ef4444",
+  High: "#f97316",
+  Moderate: "#fbbf24",
+  Lower: "#34d399",
+};
+
+export const NO_DATA_FILL = "#e2e8f0";
+
 export function TierPill({ label, styles }) {
   if (label === null || label === undefined) {
     return (
