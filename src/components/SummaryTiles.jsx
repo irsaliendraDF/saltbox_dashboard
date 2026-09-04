@@ -1,9 +1,11 @@
+// Deliberately compact: these sit above the map, which is the primary view,
+// so they orient rather than dominate.
 function Tile({ label, value, sub }) {
   return (
-    <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-      <div className="text-2xl font-semibold text-slate-900 tabular-nums">{value}</div>
-      <div className="mt-1 text-sm text-slate-500">{label}</div>
-      {sub && <div className="mt-0.5 text-xs text-slate-400">{sub}</div>}
+    <div className="rounded-md border border-slate-200 bg-white px-3 py-2 shadow-sm">
+      <div className="text-lg font-semibold leading-tight text-slate-900 tabular-nums">{value}</div>
+      <div className="text-xs leading-snug text-slate-500">{label}</div>
+      {sub && <div className="text-[11px] leading-snug text-slate-400">{sub}</div>}
     </div>
   );
 }
@@ -24,13 +26,13 @@ export default function SummaryTiles({ regions }) {
   const critical = regions.filter((r) => r.need_tier?.label === "Critical").length;
 
   return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+    <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
       <Tile label="Communities shown" value={communities.toLocaleString("en-CA")} />
       <Tile label="Households in energy poverty" value={epHouseholds.toLocaleString("en-CA")} />
       <Tile
         label="No retrofits documented in the community"
         value={noneDocumented.toLocaleString("en-CA")}
-        sub="2020–2023, whatever the surrounding area shows"
+        sub="2020–2023"
       />
       <Tile label="Communities in Critical need" value={critical.toLocaleString("en-CA")} />
     </div>
