@@ -5,6 +5,7 @@ import {
   TierPill,
   NEED_TIER_STYLES,
   SIGNAL_STYLES,
+  GAP_STYLES,
   fmtPct,
   fmtNum,
 } from "../lib/format.jsx";
@@ -82,16 +83,71 @@ export default function DetailPanel({ region, onClose }) {
           </button>
         </header>
 
-        <Section title="Need">
+        <Section title="Service gap">
           <div className="mb-2 flex items-center gap-3">
             <span className="text-3xl font-semibold text-slate-900 tabular-nums">
-              <Cell value={region.need_score} />
+              <Cell value={region.service_gap} />
             </span>
-            <TierPill label={region.need_tier?.label ?? null} styles={NEED_TIER_STYLES} />
+            <TierPill label={region.gap_band?.label ?? null} styles={GAP_STYLES} />
           </div>
           <p className="text-xs text-slate-500">
-            Need score out of 10: energy poverty rate, retrofit gap, major repair rate and older
-            housing rate combined. Methodology lives in the Saltbox workbook.
+            How much need is going unserved: underlying need scaled by how little retrofit activity
+            is documented as reaching this community.
+          </p>
+
+          {region.components && region.activity && (
+            <div className="mt-3 rounded-md border border-slate-200 bg-slate-50 p-3">
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                What is driving it
+              </h4>
+              <div className="space-y-1">
+                <Row
+                  label={`Energy poverty (of ${region.components.max_energy_poverty})`}
+                  value={region.components.energy_poverty}
+                />
+                <Row
+                  label={`Major repair (of ${region.components.max_major_repair})`}
+                  value={region.components.major_repair}
+                />
+                <Row
+                  label={`Older housing (of ${region.components.max_older_housing})`}
+                  value={region.components.older_housing}
+                />
+                <div className="flex items-baseline justify-between gap-4 border-t border-slate-200 pt-1">
+                  <span className="text-sm font-medium text-slate-600">Need without activity</span>
+                  <span className="text-sm font-semibold tabular-nums">
+                    <Cell value={region.underlying_need} /> / 10
+                  </span>
+                </div>
+                <div className="flex items-baseline justify-between gap-4">
+                  <span className="text-sm text-slate-500">Retrofit activity here</span>
+                  <span className="text-sm font-medium text-slate-900">
+                    {region.activity.label}
+                  </span>
+                </div>
+              </div>
+              <p className="mt-2 text-[11px] leading-snug text-slate-500">
+                {region.activity.gap_points === 3
+                  ? "Nothing is documented as reaching this community, so the whole of its need is unserved."
+                  : region.activity.gap_points === 0
+                  ? "Retrofit delivery is already active here, so the unserved share is small."
+                  : `Some delivery is reaching it, so ${region.activity.gap_points} of 3 gap points remain.`}
+              </p>
+            </div>
+          )}
+
+          <div className="mt-3 flex items-baseline justify-between gap-3 border-t border-slate-100 pt-2">
+            <span className="text-xs text-slate-500">Saltbox workbook Need Index</span>
+            <span className="flex items-center gap-2">
+              <span className="text-sm font-medium tabular-nums">
+                <Cell value={region.need_score} />
+              </span>
+              <TierPill label={region.need_tier?.label ?? null} styles={NEED_TIER_STYLES} />
+            </span>
+          </div>
+          <p className="mt-1 text-[11px] leading-snug text-slate-400">
+            The workbook score already folds a retrofit gap into it, which is why it can differ from
+            need without activity above.
           </p>
         </Section>
 

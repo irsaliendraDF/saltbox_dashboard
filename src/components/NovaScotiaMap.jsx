@@ -1,21 +1,28 @@
 import { useMemo, useState } from "react";
 import geo from "../../data/ns-fsa-geo.json";
 import {
-  NEED_TIER_FILL,
-  NO_DATA_FILL,
+  GAP_FILL,
+  GAP_STYLES,
+  NO_COMMUNITY_FILL,
+  OUT_OF_FRAME_FILL,
   TierPill,
   NEED_TIER_STYLES,
-  SIGNAL_STYLES,
   fmtNum,
 } from "../lib/format.jsx";
 
-const TIER_ORDER = ["Lower", "Moderate", "High", "Critical"];
+const GAP_ORDER = ["Served", "Low", "Moderate", "High", "Severe"];
 
-// The map is drawn per postal area; the data is per community. So each area is
-// summarised from the communities inside it, and shaded by the highest need tier
-// it contains, because a funder is looking for where the worst need is rather
-// than for an average that hides it. Areas with no community in the current
-// filter are drawn as no data, never as zero.
+// The Saltbox analysis covers RURAL postal areas only. The workbook's Need Index
+// methodology states the retrofit data was "filtered to rural Atlantic Canada
+// FSAs (A0, B0, C0, E0)", which is the codes whose second character is 0.
+// Nova Scotia has 77 postal areas and only 14 sit inside that frame, so the rest
+// are drawn as out of study area rather than as absence of need. KJ 2026-09-08.
+const inStudyFrame = (fsa) => /^[A-Z]0/.test(fsa);
+
+// The map is drawn per postal area; the analysis is per community, and a postal
+// area can hold several communities with different gaps. So each area is
+// summarised from its communities and shaded by the LARGEST gap it contains,
+// with the community count always shown so the grain is never implied to be 1:1.
 function summarise(regions) {
   const byFsa = new Map();
   for (const r of regions) {
@@ -25,24 +32,46 @@ function summarise(regions) {
   }
   const out = new Map();
   for (const [fsa, list] of byFsa) {
-    const tiers = list.map((r) => r.need_tier?.label).filter(Boolean);
-    const worst = TIER_ORDER.filter((t) => tiers.includes(t)).pop() ?? null;
-    const scores = list.map((r) => r.need_score).filter((v) => v !== null);
+    const gaps = list.map((r) => r.service_gap).filter((v) => v !== null);
+    const bands = list.map((r) => r.gap_band?.label).filter(Boolean);
+    const worstBand = GAP_ORDER.filter((b) => bands.includes(b)).pop() ?? null;
     out.set(fsa, {
       fsa,
       communities: list,
-      worstTier: worst,
-      topScore: scores.length ? Math.max(...scores) : null,
+      topGap: gaps.length ? Math.max(...gaps) : null,
+      worstBand,
+      // Every community here lacks an activity record, so the area's gap is
+      // genuinely unknown rather than zero.
+      allUnknown: list.every((r) => r.activity === null),
       epHouseholds: list.reduce(
         (s, r) => s + (r.energy_poverty.households_energy_poverty ?? 0),
         0
       ),
-      noneDocumented: list.filter((r) => r.retrofit_activity.in_der_perf_map === false).length,
-      signal: list[0]?.retrofit_activity.fsa_gap_flag ?? null,
+      noneReached: list.filter((r) => r.activity?.label === "None documented").length,
       pilot: list.some((r) => r.saltbox_pilot),
     });
   }
   return out;
+}
+
+function Swatch({ color, hatched, children }) {
+  return (
+    <span className="inline-flex items-center gap-1">
+      <span
+        className="inline-block h-3 w-3 rounded-sm border border-slate-300"
+        style={
+          hatched
+            ? {
+                backgroundImage:
+                  "repeating-linear-gradient(45deg,#cbd5e1 0 2px,transparent 2px 4px)",
+                backgroundColor: OUT_OF_FRAME_FILL,
+              }
+            : { backgroundColor: color }
+        }
+      />
+      {children}
+    </span>
+  );
 }
 
 export default function NovaScotiaMap({ regions, onSelectCommunity }) {
@@ -50,7 +79,11 @@ export default function NovaScotiaMap({ regions, onSelectCommunity }) {
   const [hover, setHover] = useState(null);
   const [picked, setPicked] = useState(null);
 
-  const withData = geo.features.filter((f) => summary.has(f.fsa)).length;
+  const framed = geo.features.filter((f) => inStudyFrame(f.fsa));
+  const withData = framed.filter((f) => summary.has(f.fsa)).length;
+  const outsideWithData = geo.features.filter(
+    (f) => !inStudyFrame(f.fsa) && summary.has(f.fsa)
+  ).length;
   const nsCount = regions.filter((r) => r.province === "Nova Scotia").length;
   const active = picked && summary.get(picked) ? summary.get(picked) : null;
   const shown = hover && summary.get(hover) ? summary.get(hover) : active;
@@ -59,71 +92,89 @@ export default function NovaScotiaMap({ regions, onSelectCommunity }) {
     <div className="grid gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
       <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <h2 className="text-sm font-semibold text-slate-900">Nova Scotia by postal area</h2>
+          <h2 className="text-sm font-semibold text-slate-900">
+            Nova Scotia service gap by postal area
+          </h2>
           <span className="text-xs text-slate-500">
-            {withData} of {geo.features.length} postal areas carry data in this filter
+            {withData + outsideWithData} postal areas hold the {nsCount} communities in this filter
           </span>
         </div>
         <p className="mb-2 text-xs text-slate-500">
-          Shaded by the highest need tier among the communities inside each area. Click an area to
-          see them. Grey means no community in the current filter, which is not the same as no need.
+          Shaded by the <span className="font-medium text-slate-700">largest service gap</span>{" "}
+          among the communities inside each area, so the deepest colour is the biggest underserved
+          opportunity. A postal area is not a community: several communities can share one, and the
+          panel lists them.
         </p>
 
         <svg
           viewBox={geo.viewBox}
           className="h-auto w-full"
           role="img"
-          aria-label="Map of Nova Scotia postal areas shaded by need tier"
+          aria-label="Map of Nova Scotia postal areas shaded by service gap"
         >
           {geo.features.map((f) => {
             const s = summary.get(f.fsa);
+            const framedArea = inStudyFrame(f.fsa);
             const isActive = picked === f.fsa;
             const isHover = hover === f.fsa;
+
+            let fill = OUT_OF_FRAME_FILL;
+            if (s && s.allUnknown) fill = "url(#unknownHatch)";
+            else if (s) fill = GAP_FILL[s.worstBand] ?? NO_COMMUNITY_FILL;
+            else if (framedArea) fill = NO_COMMUNITY_FILL;
+
+            let label;
+            if (s && s.allUnknown) {
+              label = `${f.fsa}: ${s.communities.length} community, retrofit activity not recorded`;
+            } else if (s) {
+              label = `${f.fsa}: ${s.communities.length} ${
+                s.communities.length === 1 ? "community" : "communities"
+              }, largest service gap ${s.topGap} (${s.worstBand})`;
+            } else if (framedArea) {
+              label = `${f.fsa}: rural study area, no community in this filter`;
+            } else {
+              label = `${f.fsa}: outside the rural study area, not assessed`;
+            }
+
             return (
               <path
                 key={f.fsa}
                 d={f.d}
-                fill={s?.worstTier ? NEED_TIER_FILL[s.worstTier] : NO_DATA_FILL}
-                fillOpacity={s ? (isHover || isActive ? 1 : 0.85) : 0.55}
+                fill={fill}
+                fillOpacity={s ? (isHover || isActive ? 1 : 0.9) : framedArea ? 0.7 : 0.5}
                 stroke={isActive ? "#0f172a" : "#ffffff"}
-                strokeWidth={isActive ? 3 : 1}
+                strokeWidth={isActive ? 3 : framedArea ? 1 : 0.5}
                 className={s ? "cursor-pointer" : ""}
                 onMouseEnter={() => s && setHover(f.fsa)}
                 onMouseLeave={() => setHover(null)}
                 onClick={() => s && setPicked(picked === f.fsa ? null : f.fsa)}
               >
-                <title>
-                  {s
-                    ? `${f.fsa}: ${s.communities.length} ${
-                        s.communities.length === 1 ? "community" : "communities"
-                      }, worst need ${s.worstTier}`
-                    : `${f.fsa}: no community in this filter`}
-                </title>
+                <title>{label}</title>
               </path>
             );
           })}
+          <defs>
+            <pattern id="unknownHatch" width="6" height="6" patternUnits="userSpaceOnUse">
+              <rect width="6" height="6" fill="#ffffff" />
+              <path d="M0,6 l6,-6" stroke="#94a3b8" strokeWidth="1.5" />
+            </pattern>
+          </defs>
         </svg>
 
-        <div className="mt-2 flex flex-wrap items-center gap-3 text-xs text-slate-500">
-          <span className="font-medium text-slate-600">Highest need in area:</span>
-          {TIER_ORDER.slice()
-            .reverse()
-            .map((t) => (
-              <span key={t} className="inline-flex items-center gap-1">
-                <span
-                  className="inline-block h-3 w-3 rounded-sm"
-                  style={{ backgroundColor: NEED_TIER_FILL[t] }}
-                />
-                {t}
-              </span>
+        <div className="mt-2 space-y-1 text-xs text-slate-500">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="font-medium text-slate-600">Largest service gap in area:</span>
+            {GAP_ORDER.slice().reverse().map((b) => (
+              <Swatch key={b} color={GAP_FILL[b]}>
+                {b}
+              </Swatch>
             ))}
-          <span className="inline-flex items-center gap-1">
-            <span
-              className="inline-block h-3 w-3 rounded-sm"
-              style={{ backgroundColor: NO_DATA_FILL }}
-            />
-            No community in filter
-          </span>
+          </div>
+          <div className="flex flex-wrap items-center gap-3">
+            <Swatch hatched>Activity not recorded, so the gap is unknown, not zero</Swatch>
+            <Swatch color={NO_COMMUNITY_FILL}>Rural study area, no community in this filter</Swatch>
+            <Swatch color={OUT_OF_FRAME_FILL}>Outside the rural study area, not assessed</Swatch>
+          </div>
         </div>
       </div>
 
@@ -147,17 +198,19 @@ export default function NovaScotiaMap({ regions, onSelectCommunity }) {
               )}
             </div>
             <p className="text-xs text-slate-500">
-              {shown.communities[0]?.region_county ?? "Nova Scotia"}
+              {shown.communities[0]?.region_county ?? "Nova Scotia"} ·{" "}
+              {shown.communities.length}{" "}
+              {shown.communities.length === 1 ? "community" : "communities"}
             </p>
 
             <dl className="mt-3 space-y-1.5 border-t border-slate-100 pt-3">
               <div className="flex items-baseline justify-between gap-3">
-                <dt className="text-sm text-slate-500">Highest need here</dt>
+                <dt className="text-sm text-slate-500">Largest service gap</dt>
                 <dd className="flex items-center gap-2">
                   <span className="text-sm font-semibold tabular-nums">
-                    {shown.topScore ?? "–"}
+                    {shown.topGap ?? "–"}
                   </span>
-                  <TierPill label={shown.worstTier} styles={NEED_TIER_STYLES} />
+                  <TierPill label={shown.worstBand} styles={GAP_STYLES} />
                 </dd>
               </div>
               <div className="flex items-baseline justify-between gap-3">
@@ -165,25 +218,19 @@ export default function NovaScotiaMap({ regions, onSelectCommunity }) {
                 <dd className="text-sm font-medium tabular-nums">{fmtNum(shown.epHouseholds)}</dd>
               </div>
               <div className="flex items-baseline justify-between gap-3">
-                <dt className="text-sm text-slate-500">No retrofits documented</dt>
+                <dt className="text-sm text-slate-500">Nothing documented reaching them</dt>
                 <dd className="text-sm font-medium tabular-nums">
-                  {shown.noneDocumented} of {shown.communities.length}
-                </dd>
-              </div>
-              <div className="flex items-baseline justify-between gap-3">
-                <dt className="text-sm text-slate-500">Activity signal</dt>
-                <dd>
-                  <TierPill label={shown.signal?.label ?? null} styles={SIGNAL_STYLES} />
+                  {shown.noneReached} of {shown.communities.length}
                 </dd>
               </div>
             </dl>
 
             <h4 className="mt-4 text-xs font-semibold uppercase tracking-wide text-slate-500">
-              Communities
+              Communities, largest gap first
             </h4>
             <ul className="mt-1 divide-y divide-slate-100">
               {[...shown.communities]
-                .sort((a, b) => (b.need_score ?? -1) - (a.need_score ?? -1))
+                .sort((a, b) => (b.service_gap ?? -1) - (a.service_gap ?? -1))
                 .map((c) => (
                   <li key={`${c.community}|${c.province}`}>
                     <button
@@ -191,17 +238,27 @@ export default function NovaScotiaMap({ regions, onSelectCommunity }) {
                       onClick={() => onSelectCommunity(c)}
                       className="flex w-full items-center justify-between gap-2 py-1.5 text-left hover:text-slate-900"
                     >
-                      <span className="text-sm text-slate-700">{c.community}</span>
-                      <span className="flex items-center gap-2">
-                        <span className="text-sm tabular-nums text-slate-500">
-                          {c.need_score ?? "–"}
+                      <span className="min-w-0">
+                        <span className="block truncate text-sm text-slate-700">{c.community}</span>
+                        <span className="block text-[11px] text-slate-400">
+                          need {c.underlying_need ?? "–"} · {c.activity?.label ?? "activity not recorded"}
                         </span>
-                        <TierPill label={c.need_tier?.label ?? null} styles={NEED_TIER_STYLES} />
+                      </span>
+                      <span className="flex shrink-0 items-center gap-2">
+                        <span className="text-sm font-semibold tabular-nums text-slate-700">
+                          {c.service_gap ?? "–"}
+                        </span>
+                        <TierPill label={c.gap_band?.label ?? null} styles={GAP_STYLES} />
                       </span>
                     </button>
                   </li>
                 ))}
             </ul>
+
+            <p className="mt-3 border-t border-slate-100 pt-2 text-[11px] text-slate-400">
+              Need tier shown elsewhere is the Saltbox workbook score, which already folds a
+              retrofit gap into it. Service gap here keeps the two apart.
+            </p>
           </>
         )}
       </div>

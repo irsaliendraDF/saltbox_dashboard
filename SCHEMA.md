@@ -138,3 +138,33 @@ The source is projected in NAD83 / Statistics Canada Lambert, which is centred o
 | `simplify_tolerance_m`, `min_ring_area_km2` | number | Douglas-Peucker tolerance and the island threshold, both recorded so the output is reproducible |
 
 **Only 12 of the 77 areas carry community data.** The map draws the other 65 as no data rather than as zero, the same convention the rest of the dashboard uses.
+
+## Need, and the gap between need and market activity
+
+Added 2026-09-08 from KJ's feedback: the dashboard showed need better than it showed the gap between need and activity, and he asked for the two to be kept apart.
+
+**The workbook's Need Score is not pure need.** Its own methodology sheet (`Need Index — Methodology`, Section 3) defines it as four sub-scores: energy poverty rate 0 to 4, **DER activity gap 0 to 3**, major repair 0 to 2, older housing 0 to 1. So 3 of its 10 points are already a retrofit-gap measure, which is why a community can rank highest on "need" precisely because nothing has reached it.
+
+**Recomputing those four sub-scores reproduces all 105 published Need Scores exactly**, zero mismatches. That check is what licences the split below; without it the decomposition would be a guess.
+
+| Field | Type | Notes |
+|---|---|---|
+| `need_score`, `need_tier` | number, object | The workbook composite, unchanged, so nothing his stakeholders have already seen is invalidated |
+| `underlying_need` | number 0 to 10 | Energy poverty + major repair + older housing only, rescaled from 0 to 7. Need with activity removed |
+| `activity` | object or null | `{label, gap_points}` using the workbook's own bands: 0 retrofits = "None documented" (3 gap points), 1 to 3 = "Very low" (2), 4 to 9 = "Low" (1), 10+ = "Active" (0). **Bands, never the raw count**, per Irene's ruling 2026-08-30 that the actual numbers stay internal while retrofits in general are funder-facing. Null where activity is genuinely unknown |
+| `service_gap` | number 0 to 10 | `underlying_need × (gap_points / 3)`. High need with nothing reaching it scores highest; high need already being served scores low; low need scores low either way |
+| `gap_band` | object or null | `{label, ordinal}`: Severe 7+, High 5 to 6.9, Moderate 3 to 4.9, Low above 0, Served 0 |
+| `components` | object or null | The three need sub-scores and their maxima, so the detail panel can show what drives the gap |
+
+**Worked contrast, and the one to show KJ.** Bedeque and Area and Mount Stewart have identical underlying need, 8.6. Bedeque has nothing documented reaching it, so its service gap is 8.6, the highest in the dataset. Mount Stewart has had retrofits reach it, so its gap falls to 2.9. The workbook score alone does not separate them clearly; the service gap does.
+
+## The map, and what it does and does not cover
+
+**The study area is rural only.** The methodology sheet states the retrofit data was "filtered to rural Atlantic Canada FSAs (A0, B0, C0, E0)", which is postal codes whose second character is `0`. **Nova Scotia has 77 postal areas and only 14 sit inside that frame.** The map therefore draws three distinct states rather than two, because KJ asked 2026-09-08 that it never imply "not recorded" means no activity:
+
+- **Shaded by service gap** where communities are present
+- **Hatched** where communities are present but retrofit activity is not recorded, so the gap is unknown rather than zero
+- **Plain grey** for rural study-area codes with no community in the current filter
+- **Faintest** for the 60 or so urban codes that were never part of the analysis at all
+
+**A postal area is not a community.** `B0K` alone holds Pictou, Trenton, Stellarton and Westville. Areas are shaded by the largest service gap they contain, the community count is always shown, and the panel lists every community with its own gap. This is the grain mismatch KJ raised and it is disclosed rather than hidden.

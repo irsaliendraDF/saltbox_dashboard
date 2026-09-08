@@ -4,6 +4,7 @@ import {
   TierPill,
   NEED_TIER_STYLES,
   SIGNAL_STYLES,
+  GAP_STYLES,
   PROVINCE_SHORT,
 } from "../lib/format.jsx";
 
@@ -12,56 +13,23 @@ const COLUMNS = [
   { key: "community", label: "Community", get: (r) => r.community, numeric: false },
   { key: "province", label: "Prov.", get: (r) => r.province, numeric: false },
   { key: "fsa", label: "FSA", get: (r) => r.fsa, numeric: false },
-  { key: "need_score", label: "Need score", get: (r) => r.need_score, numeric: true },
+  // Service Gap leads: need relative to activity reaching the community.
+  { key: "service_gap", label: "Service gap", get: (r) => r.service_gap, numeric: true },
+  { key: "gap_band", label: "Gap band", get: (r) => r.gap_band?.ordinal ?? null, numeric: true },
+  { key: "underlying_need", label: "Need (no activity)", get: (r) => r.underlying_need, numeric: true },
+  { key: "activity", label: "Activity here", get: (r) => (r.activity ? 3 - r.activity.gap_points : null), numeric: true },
+  { key: "need_score", label: "Workbook score", get: (r) => r.need_score, numeric: true },
   { key: "need_tier", label: "Need tier", get: (r) => r.need_tier?.ordinal ?? null, numeric: true },
   { key: "ep_rate", label: "Energy poverty", get: (r) => r.energy_poverty.ep_rate_pct, numeric: true },
   { key: "total_households", label: "Households", get: (r) => r.energy_poverty.total_households, numeric: true },
   { key: "ep_households", label: "In energy poverty", get: (r) => r.energy_poverty.households_energy_poverty, numeric: true },
   { key: "major_repair_pct", label: "Major repair", get: (r) => r.energy_poverty.major_repair_pct, numeric: true },
   { key: "older_housing_pct", label: "Older housing", get: (r) => r.energy_poverty.older_housing_pct, numeric: true },
-  // Community level. Distinct from the area signal below, and the distinction
-  // matters: a community with nothing documented can sit inside a busy area.
-  {
-    key: "documented_here",
-    label: "Documented here",
-    get: (r) => {
-      const v = r.retrofit_activity.in_der_perf_map;
-      return v === null ? null : v ? 1 : 0;
-    },
-    numeric: true,
-    // "None" is the interesting end of this column, so the first click surfaces
-    // the gaps rather than burying them under 73 documented communities.
-    initialDir: 1,
-  },
   { key: "signal", label: "Activity signal", get: (r) => r.retrofit_activity.fsa_gap_flag?.ordinal ?? null, numeric: true },
 ];
 
-// "None" is a finding, not a blank: it means no deep retrofit is recorded as
-// having reached this community. Unknown stays a dash.
-function DocumentedHere({ activity }) {
-  if (activity.in_der_perf_map === null) {
-    return (
-      <span className="text-slate-400 cursor-help" title="not recorded">
-        –
-      </span>
-    );
-  }
-  if (activity.in_der_perf_map === false) {
-    return (
-      <span className="inline-block rounded-full border border-red-200 bg-red-50 px-2 py-0.5 text-xs font-medium text-red-700 whitespace-nowrap">
-        None
-      </span>
-    );
-  }
-  return (
-    <span className="text-slate-700 whitespace-nowrap">
-      {activity.best_performance_band ?? "Yes"}
-    </span>
-  );
-}
-
 export default function RegionTable({ regions, onSelect }) {
-  const [sort, setSort] = useState({ key: "need_score", dir: -1 });
+  const [sort, setSort] = useState({ key: "service_gap", dir: -1 });
 
   const col = COLUMNS.find((c) => c.key === sort.key);
   const sorted = [...regions].sort((a, b) => {
@@ -122,6 +90,20 @@ export default function RegionTable({ regions, onSelect }) {
                   <Cell value={r.fsa} pct={false} />
                 </td>
                 <td className="px-3 py-2 tabular-nums font-semibold text-slate-900">
+                  <Cell value={r.service_gap} />
+                </td>
+                <td className="px-3 py-2">
+                  <TierPill label={r.gap_band?.label ?? null} styles={GAP_STYLES} />
+                </td>
+                <td className="px-3 py-2 tabular-nums text-slate-700">
+                  <Cell value={r.underlying_need} />
+                </td>
+                <td className="px-3 py-2 whitespace-nowrap text-slate-600">
+                  {r.activity ? r.activity.label : (
+                    <span className="text-slate-400 cursor-help" title="not recorded">–</span>
+                  )}
+                </td>
+                <td className="px-3 py-2 tabular-nums text-slate-500">
                   <Cell value={r.need_score} />
                 </td>
                 <td className="px-3 py-2">
@@ -132,9 +114,6 @@ export default function RegionTable({ regions, onSelect }) {
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.households_energy_poverty} /></td>
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.major_repair_pct} pct /></td>
                 <td className="px-3 py-2 tabular-nums"><Cell value={r.energy_poverty.older_housing_pct} pct /></td>
-                <td className="px-3 py-2">
-                  <DocumentedHere activity={r.retrofit_activity} />
-                </td>
                 <td
                   className="px-3 py-2"
                   title={
@@ -157,6 +136,12 @@ export default function RegionTable({ regions, onSelect }) {
         </table>
       </div>
       <div className="border-t border-slate-100 px-3 py-2 text-xs text-slate-500">
+        <strong className="font-semibold text-slate-700">Service gap</strong> is underlying need
+        scaled by how little retrofit activity is documented as reaching the community, so
+        high-need communities that nothing has reached rank highest. <strong className="font-semibold text-slate-700">Need
+        (no activity)</strong> is energy poverty, major repair and older housing only.{" "}
+        <strong className="font-semibold text-slate-700">Workbook score</strong> is the Saltbox Need
+        Index as published, which already folds a retrofit gap into it.
         Activity signal reads documented deep retrofit activity in the area. Red: very little is
         reaching it, a possible underserved market or delivery gap. Yellow: limited. Green:
         established. Blue: comparatively strong. A red signal does not automatically mean highest

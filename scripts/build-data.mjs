@@ -342,6 +342,76 @@ let niRecords, niSummary;
   }
 }
 
+// ---------- Need, gap, and the split between them ----------
+//
+// KJ's feedback 2026-09-08: the dashboard shows need better than it shows the
+// gap between need and market activity, and he wants the two kept apart.
+//
+// The workbook's own Need Score is NOT pure need. Its methodology sheet
+// ("Need Index — Methodology", Section 3) defines it as four sub-scores:
+//   EP rate 0-4  +  DER activity gap 0-3  +  major repair 0-2  +  older housing 0-1
+// So 3 of its 10 points are already a retrofit-gap measure. Recomputing those
+// four sub-scores reproduces all 105 published Need Scores exactly, which is
+// what licences the split below.
+//
+// underlying_need: the three need components only, rescaled 0-7 to 0-10.
+// service_gap:     underlying need scaled by how much activity is absent.
+// The workbook's own DER bands are reused rather than invented, so the number
+// is defensible to KJ's stakeholders from his own methodology sheet.
+
+const epSubScore = (epRatePct) => (epRatePct === null ? null : Math.min(epRatePct / 10, 4));
+const repairSubScore = (pct) => (pct === null ? null : pct >= 10 ? 2 : pct >= 5 ? 1 : 0);
+const olderSubScore = (pct) => (pct === null ? null : pct >= 60 ? 1 : 0);
+
+// Workbook Section 3, sub-score 2. Bands, never the raw count: actual DER
+// counts stay internal per Irene's ruling 2026-08-30.
+const ACTIVITY_BANDS = [
+  { max: 0, gap: 3, label: "None documented" },
+  { max: 3, gap: 2, label: "Very low" },
+  { max: 9, gap: 1, label: "Low" },
+  { max: Infinity, gap: 0, label: "Active" },
+];
+const activityBand = (ders) =>
+  ders === null ? null : ACTIVITY_BANDS.find((b) => ders <= b.max);
+
+const GAP_BANDS = [
+  { min: 7, label: "Severe", ordinal: 4 },
+  { min: 5, label: "High", ordinal: 3 },
+  { min: 3, label: "Moderate", ordinal: 2 },
+  { min: 0.0001, label: "Low", ordinal: 1 },
+  { min: -1, label: "Served", ordinal: 0 },
+];
+const gapBand = (v) => (v === null ? null : GAP_BANDS.find((b) => v >= b.min));
+
+const round1dp = (v) => (v === null ? null : Math.round(v * 10) / 10);
+
+function needAndGap(n, derHere) {
+  const ep = epSubScore(n.ep_rate_pct);
+  const rep = repairSubScore(n.major_repair_pct);
+  const old = olderSubScore(n.older_housing_pct);
+  if (ep === null || rep === null || old === null) {
+    return { underlying_need: null, service_gap: null, gap_band: null, activity: null, components: null };
+  }
+  const underlying = ((ep + rep + old) * 10) / 7;
+  const band = activityBand(derHere);
+  const gap = band === null ? null : underlying * (band.gap / 3);
+  return {
+    underlying_need: round1dp(underlying),
+    service_gap: round1dp(gap),
+    gap_band: band === null ? null : gapBand(gap),
+    activity: band === null ? null : { label: band.label, gap_points: band.gap },
+    // Shown in the detail panel so a funder can see what drives the gap.
+    components: {
+      energy_poverty: round1dp(ep),
+      major_repair: rep,
+      older_housing: old,
+      max_energy_poverty: 4,
+      max_major_repair: 2,
+      max_older_housing: 1,
+    },
+  };
+}
+
 // ---------- 5. regions.json, the joined spine ----------
 //
 // Grain decision, made from the data rather than the plan: the workbook's finest
@@ -420,6 +490,7 @@ let niRecords, niSummary;
       },
       need_score: n.need_score,
       need_tier: n.need_tier,
+      ...needAndGap(n, clearDer ? null : n.der_activity),
     });
   }
 

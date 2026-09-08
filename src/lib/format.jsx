@@ -62,6 +62,30 @@ export const NEED_TIER_FILL = {
 
 export const NO_DATA_FILL = "#e2e8f0";
 
+// Service Gap: need relative to the retrofit activity reaching the community.
+// KJ 2026-09-08 wants this, not need alone, to drive priority. Severe reads
+// hottest because a severe gap is the investment argument.
+export const GAP_STYLES = {
+  Severe: "bg-rose-100 text-rose-900 border-rose-300",
+  High: "bg-orange-100 text-orange-800 border-orange-200",
+  Moderate: "bg-amber-100 text-amber-800 border-amber-200",
+  Low: "bg-sky-100 text-sky-800 border-sky-200",
+  Served: "bg-slate-100 text-slate-600 border-slate-200",
+};
+
+export const GAP_FILL = {
+  Severe: "#be123c",
+  High: "#f97316",
+  Moderate: "#fbbf24",
+  Low: "#7dd3fc",
+  Served: "#cbd5e1",
+};
+
+// Three greys, three different meanings. Kept apart deliberately: KJ 2026-09-08
+// asked that the map never imply "not recorded" means no retrofit activity.
+export const NO_COMMUNITY_FILL = "#e2e8f0";   // in the study area, nothing in this filter
+export const OUT_OF_FRAME_FILL = "#f8fafc";   // urban, never part of the rural analysis
+
 export function TierPill({ label, styles }) {
   if (label === null || label === undefined) {
     return (

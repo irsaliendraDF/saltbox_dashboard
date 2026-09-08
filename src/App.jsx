@@ -121,8 +121,8 @@ export default function App() {
         ) : (
           <>
             <SummaryTiles regions={filtered} />
-            <RegionTable regions={filtered} onSelect={setSelected} />
             <ChartsPanel regions={filtered} />
+            <RegionTable regions={filtered} onSelect={setSelected} />
           </>
         )}
 
