@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import homeownerProfiles from "../../data/homeowner-profile-province.json";
+import geo from "../../data/ns-fsa-geo.json";
 import {
   Cell,
   TierPill,
@@ -9,6 +10,11 @@ import {
   fmtPct,
   fmtNum,
 } from "../lib/format.jsx";
+
+// Nova Scotia communities carry their official county (NRCan), which replaces the
+// workbook's postal-area region label in the header. Several of those labels name
+// the wrong counties; feedback 2026-09-10 said the regions did not match the real map.
+const nsPoints = new Map(geo.points.map((p) => [p.community, p]));
 
 function Row({ label, value, pct = false }) {
   return (
@@ -40,6 +46,8 @@ export default function DetailPanel({ region, onClose }) {
   if (!region) return null;
   const ep = region.energy_poverty;
   const ra = region.retrofit_activity;
+  const officialCounty =
+    region.province === "Nova Scotia" ? nsPoints.get(region.community)?.county ?? null : null;
   // Group provincial profile rows by category for display.
   const byCategory = [];
   for (const p of homeownerProfiles) {
@@ -65,7 +73,11 @@ export default function DetailPanel({ region, onClose }) {
               {region.province}
               {region.fsa ? ` · FSA ${region.fsa}` : " · postal area not recorded"}
               {region.fsa_catchment ? ` · rural catchment ${region.fsa_catchment}` : ""}
-              {region.region_county ? ` · ${region.region_county}` : ""}
+              {officialCounty
+                ? ` · ${officialCounty} County`
+                : region.region_county
+                ? ` · ${region.region_county}`
+                : ""}
             </p>
             {region.saltbox_pilot && (
               <p className="mt-1 rounded-md bg-violet-50 px-2 py-1 text-xs text-violet-800">

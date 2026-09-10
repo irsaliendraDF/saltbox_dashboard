@@ -1,0 +1,140 @@
+{
+ "source": "Natural Resources Canada, Canadian Geographical Names Database, via the geogratis geonames API",
+ "retrieved": "2026-09-10",
+ "note": "Official point for each Nova Scotia community in the dashboard, used to place it on the map and to verify it sits inside its postal area. Town records where one exists. Richmond is the rural Municipality of the County of Richmond, not the hamlets named Richmond in Yarmouth or Cumberland, matching its 3,960 households in the Need Index. West Hants is the West Hants Regional Municipality.",
+ "communities": [
+  {
+   "community": "Oxford",
+   "record_type": "TOWN",
+   "county": "Cumberland",
+   "lat": 45.7363,
+   "lon": -63.8673
+  },
+  {
+   "community": "Shelburne",
+   "record_type": "TOWN",
+   "county": "Shelburne",
+   "lat": 43.7632,
+   "lon": -65.3235
+  },
+  {
+   "community": "Clark's Harbour",
+   "record_type": "TOWN",
+   "county": "Shelburne",
+   "lat": 43.4426,
+   "lon": -65.629
+  },
+  {
+   "community": "Pictou",
+   "record_type": "TOWN",
+   "county": "Pictou",
+   "lat": 45.6691,
+   "lon": -62.7294
+  },
+  {
+   "community": "Trenton",
+   "record_type": "TOWN",
+   "county": "Pictou",
+   "lat": 45.6265,
+   "lon": -62.6317
+  },
+  {
+   "community": "Stellarton",
+   "record_type": "TOWN",
+   "county": "Pictou",
+   "lat": 45.5422,
+   "lon": -62.6912
+  },
+  {
+   "community": "Richmond",
+   "record_type": "MUN1",
+   "county": "Richmond",
+   "lat": 45.6501,
+   "lon": -60.7659
+  },
+  {
+   "community": "Annapolis Royal",
+   "record_type": "TOWN",
+   "county": "Annapolis",
+   "lat": 44.7437,
+   "lon": -65.5189
+  },
+  {
+   "community": "Westville",
+   "record_type": "TOWN",
+   "county": "Pictou",
+   "lat": 45.5742,
+   "lon": -62.7417
+  },
+  {
+   "community": "West Hants",
+   "record_type": "MUN1",
+   "county": "Hants",
+   "lat": 45.0001,
+   "lon": -64.116
+  },
+  {
+   "community": "Middleton",
+   "record_type": "TOWN",
+   "county": "Annapolis",
+   "lat": 44.9566,
+   "lon": -65.0768
+  },
+  {
+   "community": "Digby",
+   "record_type": "TOWN",
+   "county": "Digby",
+   "lat": 44.6265,
+   "lon": -65.771
+  },
+  {
+   "community": "Lunenburg",
+   "record_type": "TOWN",
+   "county": "Lunenburg",
+   "lat": 44.3777,
+   "lon": -64.3
+  },
+  {
+   "community": "Mahone Bay",
+   "record_type": "TOWN",
+   "county": "Lunenburg",
+   "lat": 44.4487,
+   "lon": -64.4033
+  },
+  {
+   "community": "Antigonish",
+   "record_type": "TOWN",
+   "county": "Antigonish",
+   "lat": 45.6228,
+   "lon": -61.9916
+  },
+  {
+   "community": "Stewiacke",
+   "record_type": "TOWN",
+   "county": "Colchester",
+   "lat": 45.1124,
+   "lon": -63.3601
+  },
+  {
+   "community": "Berwick",
+   "record_type": "TOWN",
+   "county": "Kings",
+   "lat": 45.0552,
+   "lon": -64.7423
+  },
+  {
+   "community": "Wolfville",
+   "record_type": "TOWN",
+   "county": "Kings",
+   "lat": 45.088,
+   "lon": -64.3372
+  },
+  {
+   "community": "New Glasgow",
+   "record_type": "TOWN",
+   "county": "Pictou",
+   "lat": 45.5709,
+   "lon": -62.6525
+  }
+ ]
+}
